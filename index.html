@@ -3,341 +3,299 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Builders Digest — 2026-03-26</title>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<title>AI Builders Digest — 2026-03-27</title>
 <style>
-*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-:root {
-  --bg: #f7f5f2; --surface: #fff; --surface-hover: #faf8f6;
-  --card: #fff; --text-primary: #1a1a1a; --text-secondary: #5c5c5c;
-  --text-muted: #999; --accent: #c47a2a; --accent-light: #faf0e3;
-  --accent-border: rgba(196,122,42,0.2); --border: #e8e5e0;
-  --tag-twitter: #1a8cd8; --tag-podcast: #9333ea;
-  --font-serif: 'Noto Serif SC', Georgia, serif;
-  --font-sans: 'Noto Sans SC', -apple-system, sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
-}
-html { font-size: 16px; scroll-behavior: smooth; }
-body { font-family: var(--font-sans); background: var(--bg); color: var(--text-primary); line-height: 1.7; min-height: 100vh; -webkit-font-smoothing: antialiased; }
-.header { position: sticky; top: 0; z-index: 100; background: rgba(247,245,242,0.88); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); padding: 0 2rem; }
-.header-inner { max-width: 760px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 60px; }
-.logo { display: flex; align-items: center; gap: 0.7rem; }
-.logo-mark { width: 34px; height: 34px; border-radius: 10px; background: linear-gradient(135deg, #c47a2a, #e8a849); display: flex; align-items: center; justify-content: center; font-size: 0.95rem; font-weight: 700; color: #fff; font-family: var(--font-serif); }
-.logo-text { display: flex; flex-direction: column; line-height: 1.2; }
-.logo-title { font-family: var(--font-serif); font-weight: 700; font-size: 0.95rem; color: var(--text-primary); }
-.logo-sub { font-size: 0.62rem; color: var(--text-muted); letter-spacing: 0.1em; text-transform: uppercase; }
-.header-date { font-size: 0.82rem; color: var(--text-secondary); font-family: var(--font-mono); }
-.hero { max-width: 760px; margin: 0 auto; padding: 3rem 2rem 0; }
-.hero-date { font-family: var(--font-serif); font-size: 3rem; font-weight: 700; color: var(--accent); line-height: 1.1; }
-.hero-sub { font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem; font-weight: 300; }
-.hero-line { height: 1px; background: linear-gradient(90deg, var(--accent) 0%, transparent 60%); margin-top: 1.5rem; opacity: 0.25; }
-.main { max-width: 760px; margin: 0 auto; padding: 2rem 2rem 4rem; }
-.digest-section { margin-bottom: 3rem; opacity: 0; transform: translateY(14px); animation: fadeUp 0.5s ease forwards; }
-.digest-section:nth-child(1) { animation-delay: 0.05s; }
-.digest-section:nth-child(2) { animation-delay: 0.15s; }
-@keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
-.section-label { display: inline-flex; align-items: center; gap: 0.5rem; margin-bottom: 1.2rem; }
-.section-dot { width: 8px; height: 8px; border-radius: 50%; }
-.section-dot.twitter { background: var(--tag-twitter); box-shadow: 0 0 8px rgba(26,140,216,0.3); }
-.section-dot.podcast { background: var(--tag-podcast); box-shadow: 0 0 8px rgba(147,51,234,0.3); }
-.section-name { font-size: 0.72rem; font-weight: 600; color: var(--text-secondary); letter-spacing: 0.1em; text-transform: uppercase; }
-.card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.3rem 1.5rem; margin-bottom: 0.7rem; transition: all 0.2s; }
-.card:hover { border-color: var(--accent-border); background: var(--surface-hover); transform: translateY(-1px); box-shadow: 0 8px 24px rgba(0,0,0,0.06); }
-.card-author { font-size: 0.78rem; font-weight: 600; color: var(--accent); margin-bottom: 0.45rem; display: flex; align-items: center; gap: 0.5rem; }
-.card-author .role { font-weight: 400; color: var(--text-muted); font-size: 0.72rem; }
-.card-body { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.75; }
-.card-body strong { color: var(--text-primary); font-weight: 500; }
-.card-link { display: inline-flex; align-items: center; gap: 0.3rem; margin-top: 0.65rem; font-size: 0.72rem; color: var(--text-muted); text-decoration: none; transition: color 0.2s; font-family: var(--font-mono); }
-.card-link:hover { color: var(--accent); }
-.card-link svg { width: 12px; height: 12px; }
-.podcast-card { background: linear-gradient(135deg, rgba(147,51,234,0.04), rgba(147,51,234,0.01)); border-color: rgba(147,51,234,0.12); }
-.podcast-card:hover { border-color: rgba(147,51,234,0.25); }
-.podcast-title { font-size: 0.9rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.3rem; }
-.podcast-show { font-size: 0.75rem; color: var(--tag-podcast); margin-bottom: 0.8rem; font-weight: 500; }
-.podcast-points { list-style: none; display: flex; flex-direction: column; gap: 0.55rem; }
-.podcast-points li { font-size: 0.85rem; color: var(--text-secondary); padding-left: 1.2rem; position: relative; line-height: 1.7; }
-.podcast-points li::before { content: ''; position: absolute; left: 0; top: 0.55em; width: 5px; height: 5px; border-radius: 50%; background: var(--tag-podcast); opacity: 0.5; }
-.podcast-points li strong { color: var(--text-primary); }
-.podcast-quote { margin: 1rem 0; padding: 0.8rem 1rem; border-left: 3px solid var(--tag-podcast); background: rgba(147,51,234,0.04); border-radius: 0 8px 8px 0; font-size: 0.85rem; color: var(--text-secondary); font-style: italic; line-height: 1.8; }
-.footer { max-width: 760px; margin: 0 auto; padding: 0 2rem 4rem; text-align: center; }
-.footer-line { height: 1px; background: var(--border); margin-bottom: 1.5rem; }
-.footer-text { font-size: 0.72rem; color: var(--text-muted); line-height: 1.8; }
-.footer-text a { color: var(--accent); text-decoration: none; }
-.footer-text a:hover { text-decoration: underline; }
-@media (max-width: 640px) {
-  .header { padding: 0 1rem; }
-  .hero { padding: 2rem 1rem 0; }
-  .hero-date { font-size: 2rem; }
-  .main { padding: 1.5rem 1rem 3rem; }
-  .card { padding: 1rem 1.1rem; }
-}
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: #0a0a0a;
+    color: #e0e0e0;
+    line-height: 1.7;
+    padding: 0 16px;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 40px 0 80px; }
+  h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .date { color: #666; font-size: 0.85rem; margin-bottom: 32px; }
+  .section-title {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #888;
+    margin-top: 36px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #1a1a2e;
+  }
+  .builder {
+    background: #111118;
+    border: 1px solid #1a1a2e;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 16px;
+    transition: border-color 0.2s;
+  }
+  .builder:hover { border-color: #2a2a4e; }
+  .builder-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+  .builder-role { color: #777; font-size: 0.8rem; margin-bottom: 10px; }
+  .builder p { font-size: 0.9rem; color: #ccc; margin-bottom: 8px; }
+  .builder p:last-child { margin-bottom: 0; }
+  .tweet-links { margin-top: 10px; }
+  .tweet-links a {
+    display: inline-block;
+    font-size: 0.75rem;
+    color: #555;
+    text-decoration: none;
+    margin-right: 8px;
+    margin-bottom: 4px;
+  }
+  .tweet-links a:hover { color: #a78bfa; }
+  .podcast {
+    background: #111118;
+    border: 1px solid #1a1a2e;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 16px;
+  }
+  .podcast-title { font-weight: 600; font-size: 0.95rem; color: #fff; margin-bottom: 4px; }
+  .podcast-source { color: #777; font-size: 0.8rem; margin-bottom: 10px; }
+  .podcast p { font-size: 0.9rem; color: #ccc; margin-bottom: 8px; }
+  .takeaway {
+    background: #1a1a2e;
+    border-left: 3px solid #764ba2;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #d4c5f9;
+  }
+  .podcast-link { margin-top: 10px; }
+  .podcast-link a { font-size: 0.8rem; color: #a78bfa; text-decoration: none; }
+  .podcast-link a:hover { text-decoration: underline; }
+  blockquote {
+    border-left: 2px solid #333;
+    padding-left: 12px;
+    color: #999;
+    font-style: italic;
+    margin: 8px 0;
+  }
+  .footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #1a1a2e;
+    text-align: center;
+    color: #444;
+    font-size: 0.75rem;
+  }
+  .footer a { color: #666; text-decoration: none; }
+  .footer a:hover { color: #a78bfa; }
 </style>
 </head>
 <body>
+<div class="container">
 
-<header class="header">
-  <div class="header-inner">
-    <div class="logo">
-      <div class="logo-mark">AI</div>
-      <div class="logo-text">
-        <span class="logo-title">AI Builders Digest</span>
-        <span class="logo-sub">Follow Builders, Not Influencers</span>
-      </div>
-    </div>
-    <span class="header-date">2026-03-26</span>
+<h1>AI Builders Digest</h1>
+<div class="date">2026 年 3 月 27 日 星期五</div>
+
+<div class="section-title">X / Twitter</div>
+
+<div class="builder">
+  <div class="builder-name">Aaron Levie</div>
+  <div class="builder-role">Box CEO</div>
+  <p>Jevons 悖论正在 AI 时代实时上演。企业发现 AI 让软件开发成本大幅下降，于是开始承接以前根本不敢碰的项目。大公司市场团队会雇佣工程师自动化工作流，生命科学领域的工程师会自动化研究，小企业会第一次雇佣工程师构建数字化体验。Aaron 认为，只要 AI agent 仍需要人类理解如何 prompt、review、维护和修复，工程师的需求就不会减少，反而会增加。</p>
+  <div class="tweet-links">
+    <a href="https://x.com/levie/status/2036832183131033977" target="_blank">🔗 原推</a>
   </div>
-</header>
-
-<div class="hero">
-  <div class="hero-date">3月26日</div>
-  <div class="hero-sub">追踪 AI 领域真正的建设者 — 研究者、创始人、工程师和产品人</div>
-  <div class="hero-line"></div>
 </div>
 
-<main class="main">
-
-<!-- X / Twitter Section -->
-<div class="digest-section">
-  <div class="section-label">
-    <span class="section-dot twitter"></span>
-    <span class="section-name">X / Twitter</span>
+<div class="builder">
+  <div class="builder-name">Andrej Karpathy</div>
+  <div class="builder-role">前 Tesla AI 总监，OpenAI 联合创始人</div>
+  <p>指出所有 LLM 在个性化方面都存在一个共性问题：模型对记忆信息过度关注。两个月前随口问过的一个话题，模型会反复当作你的"深度兴趣"提起，似乎在过度用力地讨好用户。Karpathy 推测这可能是因为训练过程中上下文窗口中的信息大多与任务相关，导致模型养成了"利用已有信息"的偏差，到推理时就对通过 memory/RAG 检索到的内容过度拟合。</p>
+  <div class="tweet-links">
+    <a href="https://x.com/karpathy/status/2036836816654147718" target="_blank">🔗 原推</a>
+    <a href="https://x.com/karpathy/status/2036841069636370467" target="_blank">🔗 后续讨论</a>
   </div>
-
-  <div class="card">
-    <div class="card-author">Andrej Karpathy <span class="role">前 Tesla AI 总监 / OpenAI 联合创始人</span></div>
-    <div class="card-body">
-      <strong>litellm 供应链攻击</strong>：Karpathy 警告了近期 litellm PyPI 包被投毒事件，仅 <code>pip install litellm</code> 就可能导致 SSH 密钥、AWS/GCP/Azure 凭证、Kubernetes 配置、加密钱包等全部泄露。litellm 月下载量达 9700 万，且作为传递依赖影响 dspy 等大量项目。被投毒版本仅存活不到 1 小时，因导致机器内存耗尽才被发现。Karpathy 对此深感忧虑，表示这让他越来越倾向于用 LLM 来"提取"功能，而非依赖第三方包。
-    </div>
-    <a class="card-link" href="https://x.com/karpathy/status/2036487306585268612">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-      x.com/karpathy
-    </a>
-  </div>
-
-  <div class="card">
-    <div class="card-author">Sam Altman <span class="role">OpenAI CEO</span></div>
-    <div class="card-body">
-      <strong>OpenAI 成立基金会</strong>：宣布成立 OpenAI Foundation，首年投入至少 10 亿美元，聚焦两大方向：AI 帮助发现新科学（如疾病治疗）和应对 AI 带来的社会威胁。联合创始人 Wojciech Zaremba 转任 AI Resilience 负责人，Jacob Tref 加入负责生命科学。Altman 认为这些是"我们必须做对"的最重要议题。
-    </div>
-    <a class="card-link" href="https://x.com/sama/status/2036488680769241223">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-      x.com/sama
-    </a>
-  </div>
-
-  <div class="card">
-    <div class="card-author">Claude <span class="role">Anthropic</span></div>
-    <div class="card-body">
-      <strong>Claude Code 新增 Auto Mode</strong>：取代此前争议性的 <code>--dangerously-skip-permissions</code>，Auto Mode 让 Claude 自主判断权限，通过分类器审查每个操作的潜在风险，安全操作自动执行，危险操作被拦截。目前已在 Team 计划上作为研究预览提供，Enterprise 和 API 访问即将推出。
-    </div>
-    <a class="card-link" href="https://x.com/claudeai/status/2036503582166393240">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-      x.com/claudeai
-    </a>
-  </div>
-
-  <div class="card">
-    <div class="card-author">Guillermo Rauch <span class="role">Vercel CEO</span></div>
-    <div class="card-body">
-      <strong>SaaS 末日论</strong>：Rauch 透露 Vercel 内部几乎所有 SaaS 应用都已被生成式 App 或 Agent 界面取代，涵盖客服、销售、营销、PM、HR 等所有职能。他们用生成式方案替代了 Salesforce 中难以定制的客户健康度视图，并持续迁移 API 质量差的遗留系统。核心观点：UI 是数据的函数，而这个函数正在被 LLM 取代。
-    </div>
-    <a class="card-link" href="https://x.com/rauchg/status/2036447879985037495">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-      x.com/rauchg
-    </a>
-  </div>
-
-  <div class="card">
-    <div class="card-author">Aaron Levie <span class="role">Box CEO</span></div>
-    <div class="card-body">
-      <strong>Agent 是软件的未来使用者</strong>：回应 Rauch 的 SaaS 末日论，Levie 指出如果你构建的软件不能以 headless 方式让 Agent 使用，你就没有准备好面对未来。Agent 使用软件的频率将是人类的 100 倍，人们将越来越多地通过 Agent 与数据和流程交互。软件不会消失，但会变成 Agent 操作的业务逻辑护栏。
-    </div>
-    <a class="card-link" href="https://x.com/levie/status/2036478998667207012">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-      x.com/levie
-    </a>
-  </div>
-
-  <div class="card">
-    <div class="card-author">Nan Yu <span class="role">Linear 产品负责人</span></div>
-    <div class="card-body">
-      <strong>Agent 正在改变工作方式</strong>：Nan Yu 表示自己已经好几个月没有手写 PRD、手动提 Issue 或手写代码了，但产出量和质量标准却前所未有地高。驱动这一切的动机是"让 Agent 来处理烦人的工作"。
-    </div>
-    <a class="card-link" href="https://x.com/thenanyu/status/2036549647267709110">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-      x.com/thenanyu
-    </a>
-  </div>
-
-  <div class="card">
-    <div class="card-author">Peter Yang <span class="role">Roblox 产品经理</span></div>
-    <div class="card-body">
-      <strong>AI Agent 解放产品经理</strong>：希望 AI Agent 能让团队不再沉迷于 Specs、设计文档、Issue、路线图和策略文档，而是把精力放在改善终端产品和与用户的快速迭代上。"产品开发应该是好玩的。"
-    </div>
-    <a class="card-link" href="https://x.com/petergyang/status/2036621615086309468">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-      x.com/petergyang
-    </a>
-  </div>
-
-  <div class="card">
-    <div class="card-author">Garry Tan <span class="role">Y Combinator CEO</span></div>
-    <div class="card-body">
-      <strong>"替代开发者"是错误的思路</strong>：Tan 认为这就像"汽车替代步行"一样是伪命题，汽车没有替代走路，而是让你去了步行到不了的地方。此外他感慨自己的产出量将达到 2013 年的 90 倍。
-    </div>
-    <a class="card-link" href="https://x.com/garrytan/status/2036674371855823153">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-      x.com/garrytan
-    </a>
-  </div>
-
-  <div class="card">
-    <div class="card-author">Zara Zhang <span class="role">Builder / GitHub 13k+ Stars</span></div>
-    <div class="card-body">
-      <strong>"GitHub 是新的 Substack"</strong>：Zhang 认为代码正在成为一种自我表达的形式。她去年还不太会用 GitHub，现在已经积累了超过 13000 个 Stars。此外她的 frontend-slides 项目现在支持将幻灯片部署为 URL 并导出 PDF。
-    </div>
-    <a class="card-link" href="https://x.com/zarazhangrui/status/2036590721927618988">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-      x.com/zarazhangrui
-    </a>
-  </div>
-
-  <div class="card">
-    <div class="card-author">Nikunj Kothari <span class="role">FPV Ventures 合伙人</span></div>
-    <div class="card-body">
-      <strong>DeployGraph</strong>：爬取了 417 家公司的 SOC II subprocessor 列表，揭示 AI 原生公司实际使用的基础设施。用 Claude Code + Conductor + Railway 三天就做完了。
-    </div>
-    <a class="card-link" href="https://x.com/nikunj/status/2036572222081606065">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-      x.com/nikunj
-    </a>
-  </div>
-
-  <div class="card">
-    <div class="card-author">Thariq <span class="role">Claude Code 团队 / Anthropic</span></div>
-    <div class="card-body">
-      <strong>做 AI 安全的公司果然有用</strong>：暗示 Anthropic 的安全研究背景在确保 AI 安全运行方面发挥了关键作用。Auto Mode 目前仅在 Teams 计划提供，正在扩展中。此外将于 3 月 31 日与 Figma 联合直播。
-    </div>
-    <a class="card-link" href="https://x.com/trq212/status/2036513038983995820">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-      x.com/trq212
-    </a>
-  </div>
-
-  <div class="card">
-    <div class="card-author">Aditya Agarwal <span class="role">South Park Commons 合伙人 / 前 Dropbox CTO</span></div>
-    <div class="card-body">
-      <strong>看多美国机器人</strong>：机器人硬件已经准备好了，只差软件的可靠性和可扩展性。软件是美国擅长的事，硬件和供应链也在快速追赶。
-    </div>
-    <a class="card-link" href="https://x.com/adityaag/status/2036426693930291334">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-      x.com/adityaag
-    </a>
-  </div>
-
-  <div class="card">
-    <div class="card-author">Josh Woodward <span class="role">Google Labs / Gemini VP</span></div>
-    <div class="card-body">
-      Woodward 表示 Google 目前正处于前所未有的激动时刻，正在大规模招聘 Gemini、Google AI Studio 和 Google Labs 团队人才。
-    </div>
-    <a class="card-link" href="https://x.com/joshwoodward/status/2036513009661780291">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-      x.com/joshwoodward
-    </a>
-  </div>
-
-  <div class="card">
-    <div class="card-author">Amjad Masad <span class="role">Replit CEO</span></div>
-    <div class="card-body">
-      向内容创作者强烈推荐一个视频：Nick 分享了他学习软件开发后如何彻底改变了自己业务的经历。
-    </div>
-    <a class="card-link" href="https://x.com/amasad/status/2036427267296067875">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-      x.com/amasad
-    </a>
-  </div>
-
-  <div class="card">
-    <div class="card-author">Peter Steinberger <span class="role">OpenClaw</span></div>
-    <div class="card-body">
-      在 WhatsApp 上给朋友发消息，结果收到了 OpenClaw 的"门卫"迎接。提醒用户用独立号码 + WhatsApp Business 来避免这种情况。
-    </div>
-    <a class="card-link" href="https://x.com/steipete/status/2036486352964035013">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-      x.com/steipete
-    </a>
-  </div>
-
-  <div class="card">
-    <div class="card-author">Swyx <span class="role">AI Engineer 播客 / DX Tips</span></div>
-    <div class="card-body">
-      称赞 Devin 团队的 Walden Yan 做出了一个真正能让 Devin 自己发现并修正错误的功能。此外，OpenAI 对 Side Quests 的打击导致 Sora 被关停。
-    </div>
-    <a class="card-link" href="https://x.com/swyx/status/2036565584515899445">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-      x.com/swyx
-    </a>
-  </div>
-
-  <div class="card">
-    <div class="card-author">Matt Turck <span class="role">FirstMark Capital 合伙人</span></div>
-    <div class="card-body">
-      "以前写错字：粗心！现在写错字：哇，这是非 AI 生成的原创内容！" 一语道破了 2026 年的内容悖论。
-    </div>
-    <a class="card-link" href="https://x.com/mattturck/status/2036488357077717094">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-      x.com/mattturck
-    </a>
-  </div>
-
-  <div class="card">
-    <div class="card-author">Cat Wu <span class="role">Anthropic Claude Code 团队</span></div>
-    <div class="card-body">
-      Claude Code 将举办 "Code with Claude" 活动，向社区征集最想了解的内容方向。
-    </div>
-    <a class="card-link" href="https://x.com/_catwu/status/2036594646370210229">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-      x.com/_catwu
-    </a>
-  </div>
-
 </div>
 
-<!-- Podcast Section -->
-<div class="digest-section">
-  <div class="section-label">
-    <span class="section-dot podcast"></span>
-    <span class="section-name">Podcasts</span>
+<div class="builder">
+  <div class="builder-name">Claude（Anthropic）</div>
+  <div class="builder-role">Anthropic 官方账号</div>
+  <p>Claude 的工作工具集成现在可以在移动端使用了。用户可以直接在手机上浏览 Figma 设计、创建 Canva 幻灯片、查看 Amplitude 数据面板。这对移动办公场景是一个不小的升级。</p>
+  <div class="tweet-links">
+    <a href="https://x.com/claudeai/status/2036850783526719610" target="_blank">🔗 原推</a>
   </div>
-
-  <div class="card podcast-card">
-    <div class="podcast-show">Latent Space</div>
-    <div class="podcast-title">🔬 材料科学没有 AlphaFold — AI 与材料发现</div>
-    <div class="card-body">
-      <ul class="podcast-points">
-        <li><strong>AI 发现了人类化学家想不到的材料设计</strong>：MIT 教授 Heather Kulik 的团队用 AI 筛选了数万种聚合物材料，发现了一个完全出乎意料的量子力学现象，将塑料韧性提升约 4 倍。实验验证后确实如此，化学家们表示"自己绝不会想到这种设计"。</li>
-        <li><strong>材料科学没有 AlphaFold</strong>：蛋白质只有 20 种天然氨基酸构建块，而材料空间有几乎无限种组合和化学键类型。现有的"基础模型"在超越训练分布后经常失效（分子直接散架），Kulik 认为目前宣称的"基础势能"模型被严重过度宣传。</li>
-        <li><strong>"ChatGPT 是维基百科级别的化学知识"</strong>：Kulik 每次更新都让 LLM 设计一个 22 原子的配体，至今无法成功。"如果你能让 LLM 一次生成一个正确的 22 原子配体，我很想看看。"</li>
-        <li><strong>主动学习是最大机会</strong>：在金属有机框架的 CO2 捕获项目中，团队同时在 7 个维度上优化，每个维度都能获得 100-1000 倍加速。关键是不必等模型完全准确就开始优化。</li>
-      </ul>
-      <div class="podcast-quote">"你应该学足够的化学来判断这些模型是对还是错。如果你完全不懂化学，就很难正确评估。"</div>
-    </div>
-    <a class="card-link" href="https://youtube.com/watch?v=KSCCKCz2x04">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-      youtube.com
-    </a>
-  </div>
-
 </div>
 
-</main>
-
-<footer class="footer">
-  <div class="footer-line"></div>
-  <div class="footer-text">
-    Generated through the Follow Builders skill: <a href="https://github.com/zarazhangrui/follow-builders">github.com/zarazhangrui/follow-builders</a>
+<div class="builder">
+  <div class="builder-name">Ryo Lu</div>
+  <div class="builder-role">Cursor 设计负责人</div>
+  <p>随着 agent 让添加功能变得简单，设计的价值反而更高了。设计师的角色不再是推像素，而是决定什么应该存在、各个部分如何组合、人类如何保持控制权，以及智能体验如何清晰可信。品味、工艺和判断力始终是瓶颈，游戏不是谁发布最快，而是谁为人类做对了东西。</p>
+  <div class="tweet-links">
+    <a href="https://x.com/ryolu_/status/2036886854805709097" target="_blank">🔗 原推</a>
   </div>
-</footer>
+</div>
 
+<div class="builder">
+  <div class="builder-name">Cat Wu</div>
+  <div class="builder-role">Claude Code 工程师 @ Anthropic</div>
+  <p>宣布 Claude Code 的 Auto Mode 现已向 Claude for Team 用户开放。Auto Mode 在自主性和安全性之间取得了显著平衡，Anthropic 团队几乎全员将其作为日常开发工具使用。通过 <code>claude --enable-auto-mode</code> 开启，然后用 Shift+Tab 进入该模式。</p>
+  <div class="tweet-links">
+    <a href="https://x.com/_catwu/status/2036852880624541938" target="_blank">🔗 原推</a>
+  </div>
+</div>
+
+<div class="builder">
+  <div class="builder-name">Thariq</div>
+  <div class="builder-role">Claude Code 工程师 @ Anthropic</div>
+  <p>宣布 iMessage 现已作为 Claude Code 的可用 channel，用户可以在 iMessage 上直接与 Claude 交互。</p>
+  <div class="tweet-links">
+    <a href="https://x.com/trq212/status/2036959638646866021" target="_blank">🔗 原推</a>
+  </div>
+</div>
+
+<div class="builder">
+  <div class="builder-name">Guillermo Rauch</div>
+  <div class="builder-role">Vercel CEO</div>
+  <p>认为每家公司都将成为 AI 工厂，生产的基本单位是 token。但 token 带来了与传统 SaaS 完全不同的使用量追踪和计费难题。Vercel 的 AI Gateway 推出了新的 metering 功能，通过一个 API 调用解决跨模型和供应商的计量问题。</p>
+  <div class="tweet-links">
+    <a href="https://x.com/rauchg/status/2036963706576527623" target="_blank">🔗 原推</a>
+  </div>
+</div>
+
+<div class="builder">
+  <div class="builder-name">Dan Shipper</div>
+  <div class="builder-role">Every CEO</div>
+  <p>邀请了 Instagram 联合创始人、现 Anthropic Labs 负责人 Mike Krieger 做 AI&amp;I 播客，深入讨论 agent-native 产品设计。要点：最好的产品（如 Claude Code）能让用户做创作者从未想过的事情，但这需要在自由度和安全性之间做出艰难取舍。现在从想法到接近发布只需一天，但这反而缺少了过去告诉你"不该做什么"的增量反馈。AI 进步意味着大部分 harness 很快就会过时，最好的团队每三到六个月就要推翻重来一次。Anthropic Labs 的新产品实验只由两人负责，通常是一个 PM/设计师配一个工程师。</p>
+  <div class="tweet-links">
+    <a href="https://x.com/danshipper/status/2036827118915485942" target="_blank">🔗 原推</a>
+  </div>
+</div>
+
+<div class="builder">
+  <div class="builder-name">Peter Yang</div>
+  <div class="builder-role">Roblox 产品经理</div>
+  <p>分享了如何用 AI skill 解决"猜测领导想要什么"这个科技公司最大的时间浪费问题。一位 Meta VP 构建了一个用自己声音审查文档的 /exec-review skill。文章包含 6 步构建领导 profile 的方法和完整的 skill 文件。</p>
+  <div class="tweet-links">
+    <a href="https://x.com/petergyang/status/2036812870365917284" target="_blank">🔗 原推</a>
+  </div>
+</div>
+
+<div class="builder">
+  <div class="builder-name">Garry Tan</div>
+  <div class="builder-role">Y Combinator CEO</div>
+  <p>强调在新时代必须大胆使用 token 来创造非凡之物。如果你有自主性和品味，放手去做，结果会令人惊叹。token 积分让 AI 对创业者来说变得触手可及，无论你来自哪里、家庭背景如何。</p>
+  <div class="tweet-links">
+    <a href="https://x.com/garrytan/status/2037055498974093629" target="_blank">🔗 原推</a>
+  </div>
+</div>
+
+<div class="builder">
+  <div class="builder-name">Peter Steinberger</div>
+  <div class="builder-role">OpenClaw 联合创始人</div>
+  <p>宣布 OpenClaw 新 beta 版本发布，改进了 MS Teams 集成、支持 Open WebUI 等。</p>
+  <div class="tweet-links">
+    <a href="https://x.com/steipete/status/2036824286988816737" target="_blank">🔗 原推</a>
+  </div>
+</div>
+
+<div class="builder">
+  <div class="builder-name">Aditya Agarwal</div>
+  <div class="builder-role">South Park Commons 合伙人</div>
+  <p>分享了在 Hill Valley Forum 的观察：硬科技/深科技需要 Builder+投资人+政策制定者三者协同，目前的热情令人振奋但有趣的是并不局限于湾区，而是分散在美国各地。从 bits 到 atoms+bits 的转变也意味着资金来源的多样化，出现了很多远离传统 VC 的有趣对话。</p>
+  <div class="tweet-links">
+    <a href="https://x.com/adityaag/status/2036824253970923925" target="_blank">🔗 原推</a>
+  </div>
+</div>
+
+<div class="builder">
+  <div class="builder-name">Matt Turck</div>
+  <div class="builder-role">FirstMark Capital 合伙人</div>
+  <p>用一段简洁的时间线总结了 VC 在公司董事会中的角色演变：2016 年是治理、指导和支持；2021 年变成了啦啦队；2026 年则成了 Anthropic 和 OpenAI 的销售代表。</p>
+  <div class="tweet-links">
+    <a href="https://x.com/mattturck/status/2036747586468499889" target="_blank">🔗 原推</a>
+  </div>
+</div>
+
+<div class="builder">
+  <div class="builder-name">Amjad Masad</div>
+  <div class="builder-role">Replit CEO</div>
+  <p>指出 Apple 对用 Replit 构建的应用接受率很高，这是 AI coding 工具在 App Store 生态中表现良好的一个积极信号。</p>
+  <div class="tweet-links">
+    <a href="https://x.com/amasad/status/2037004600893472936" target="_blank">🔗 原推</a>
+  </div>
+</div>
+
+<div class="builder">
+  <div class="builder-name">Nan Yu</div>
+  <div class="builder-role">Linear 产品负责人</div>
+  <p>呼吁重新定义"设计"的含义，回归到"为特定目的安排元素的方案"这一本质。他认为我们过度沉迷于安排元素，却忘记了目的本身。还以 Instagram 对 Snapchat Stories 的应对为例，说明有时候不存在折中的"第三选项"。</p>
+  <div class="tweet-links">
+    <a href="https://x.com/thenanyu/status/2037042617213481410" target="_blank">🔗 原推</a>
+    <a href="https://x.com/thenanyu/status/2037008518515953803" target="_blank">🔗 原推</a>
+  </div>
+</div>
+
+<div class="builder">
+  <div class="builder-name">Swyx</div>
+  <div class="builder-role">AI Engineer 播客主持人</div>
+  <p>透露 AI Engineer 大会即将在伦敦举办。坦率表示首次举办国际版 AIE 对团队挑战极大，尽管展位和门票全部售罄但尚未盈利。呼吁更多赞助商支持。</p>
+  <div class="tweet-links">
+    <a href="https://x.com/swyx/status/2036918746854678830" target="_blank">🔗 原推</a>
+  </div>
+</div>
+
+<div class="builder">
+  <div class="builder-name">Kevin Weil</div>
+  <div class="builder-role">OpenAI VP of Science</div>
+  <p>转发了一条值得关注的内容。</p>
+  <div class="tweet-links">
+    <a href="https://x.com/kevinweil/status/2036809393405317545" target="_blank">🔗 原推</a>
+  </div>
+</div>
+
+<div class="section-title">Podcasts</div>
+
+<div class="podcast">
+  <div class="podcast-title">Biology's Waymo Moment: Ginkgo Bioworks' Jason Kelly</div>
+  <div class="podcast-source">Training Data Podcast</div>
+
+  <div class="takeaway">
+    <strong>核心观点：</strong>AI 不会通过设计更好的生物学来颠覆生物科技，而是通过把人类科学家从实验室台面上赶走，让 AI + 机器人实验室 24/7 不间断运行实验。这是生物科技的 Waymo 时刻。
+  </div>
+
+  <p>Ginkgo Bioworks 创始人 Jason Kelly 在 MIT 读博时花了五年在实验台前手动移液，他深知科学实验 95% 的工作是体力劳动。Ginkgo 的核心洞察是：实验设计本质上是逻辑推理，而推理模型已经能做到这一点。关键不是让模型更聪明，而是让模型能跑实验。</p>
+
+  <p>他们与 OpenAI 合作了一个项目：让推理模型自主设计并执行无细胞蛋白质合成的优化实验。四轮之后超越 SOTA，六轮之后超越 40%。关键突破不是模型的"聪明程度"，而是它能每天 24 小时运行实验、每天在 100 个并行 AI 科学家之间共享数据。人类科学家可能一两年才在论文中交换一次信息，而且只分享蒸馏后的结论而非原始数据。</p>
+
+  <blockquote>"All of the previous revolutions in tech have been totally meaningless to biotechnology. Not this. This is actually going to change the fundamentals of how we do science."</blockquote>
+
+  <p>Kelly 还谈到了实验室自动化的核心挑战：这不是像自动驾驶那样面对不断变化的外部环境，而是面对"高混合低产量"的实验需求。解决方案不是人形机器人，而是基于磁悬浮轨道的模块化系统。他认为未来的实验室会更小而非更大，因为不再需要为每个科学家配备独立的实验室空间。</p>
+
+  <p>展望未来，他认为最大的机会不在疾病治疗（仅占生物科技 85% 的市场），而在消费者健康：延长健康寿命、改善睡眠、增肌。如果能研发出一粒能多给你五年健康寿命的药，那将是无限的价值。此外他正在推动让普通大众也能像程序员一样设计生物学实验，最低只需 $39。</p>
+
+  <div class="podcast-link">
+    <a href="https://youtube.com/watch?v=g45Alfg7diw" target="_blank">▶️ 收看完整节目</a>
+  </div>
+</div>
+
+<div class="footer">
+  Generated through the Follow Builders skill: <a href="https://github.com/zarazhangrui/follow-builders" target="_blank">github.com/zarazhangrui/follow-builders</a>
+</div>
+
+</div>
 </body>
 </html>
