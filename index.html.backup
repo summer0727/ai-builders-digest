@@ -1,0 +1,1324 @@
+<<<<<<< HEAD
+## AI Builders Digest - 2026/3/30
+
+Summarize the latest updates from AI builders, focusing on insights about AI development, product strategy, and industry trends.
+
+📊 **今日统计**
+- 1 个播客
+- 16 位 AI 构建者
+- 36 条推文
+
+### 🎧 播客精选
+
+**Data Driven NYC - Benedict Evans: OpenAI’s Moat Problem & the Future of Software**
+https://youtube.com/watch?v=jH2ZIUKvazU
+
+摘要：这是一个关于人工智能发展趋势的深度讨论。
+
+### 💬 AI 构建者观点
+
+**Andrej Karpathy (@karpathy)** - I like to train large deep neural nets. Previously Director of AI @ Tesla, founding team @ OpenAI, PhD @ Stanford.
+
+> Andy Weir showing some of the spreadsheets underlying the calculations in the book
+https://t.co/3CyprVTzXX
+i mean, it's not quality scifi if it doesn't come with a supplementary whitepaper https://t.co/MsDnEoNBA7
+> https://x.com/karpathy/status/2034873049753997619
+
+> Had to go see Project Hail Mary right away (it's based on the book of Andy Weir, of also The Martian fame). Both very pleased and relieved to say that 1) the movie sticks very close to the book in both content and tone and 2) is really well executed.
+
+The book is one of my favorites when it comes to alien portrayals because a lot of thought was clearly given to the scientific details of an alternate biochemistry, evolutionary history, sensorium, psychology, language, tech tree, etc. It's different enough that it is highly creative and plausible, but also similar enough that you get a compelling story and one of the best bromances in fiction. Not to mention the other (single-cellular) aliens. I can count fictional portrayals of aliens of this depth on one hand. A lot of these aspects are briefly featured - if you read the book you'll spot them but if you haven't, the movie can't spend the time to do them justice.
+
+I'll say that the movie inches a little too much into the superhero movie tropes with the pacing, the quips, the Bathos and such for my taste, and we get a little bit less the grand of Interstellar and a little bit less of the science of The Martian, but I think it's ok considering the tone of the original content. And it does really well where it counts - on Rocky and the bromance. Thank you to the film crew for the gem!
+> https://x.com/karpathy/status/2034865693544604001
+
+**Swyx (@swyx)** - achieve ambition with intentionality, intensity, integrity & insanity.
+
+affiliations:
+- @dxtipshq 
+- @cognition
+- @temporalio
+- @aidotengineer
+- @latentspacepod
+
+> lol
+
+lmao, even https://t.co/SonUroNO09 https://t.co/hE0OFCSp23
+> https://x.com/swyx/status/2034833969204928781
+
+> to: every single dev that works with a designer
+
+msg: Give your designer access to your coding agent. It is imperative that you do so. You'll see the most productivity and beauty in your work in a month. And then you'll realize just how much -you- were holding them back this entire time.
+> https://x.com/swyx/status/2034802359470330249
+
+> @auth0 @WorkOS @Cloudflare boosting https://t.co/b86WcG3BvA
+> https://x.com/swyx/status/2034790106549428680
+
+**Josh Woodward (@joshwoodward)** - VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio
+
+> ✅ Papercut fixed: Gemini won’t cut you off if you pause while talking on Android anymore. (iOS in a few weeks!)
+
+So next time you hit the mic icon, feel free to pause, take a breath, or ramble. No more anxiety to speak it all out before @GeminiApp jumps in prematurely. https://t.co/SatN6Gf6gW
+> https://x.com/joshwoodward/status/2034797067344998862
+
+> Start building your first app for free at https://t.co/WNp6rOvCYr https://t.co/xRjlrVDOXc
+> https://x.com/joshwoodward/status/2034665935777477005
+
+**Peter Yang (@petergyang)** - I share extremely practical AI tutorials and interviews | Join 140K+ readers at https://t.co/XYKTmGVH14 | Product at Roblox
+
+> @trq212 it’s weird to call this thing Claude Code still if I’m just using it to text my AI friend in bed
+
+How about Clawd 😅
+> https://x.com/petergyang/status/2034786835088764952
+
+> I think OpenAI’s strategy is pretty clear:
+
+1. More people have ChatGPT installed than any other AI product
+
+2. Make ChatGPT great for coding and knowledge work
+
+3. Make it a personal assistant like OpenClaw that knows you and can do whatever you want 
+
+They just need to do 2 and 3 faster before people switch to Claude or Gemini for the same use cases.
+> https://x.com/petergyang/status/2034786020160635031
+
+> Research preview is the new beta
+> https://x.com/petergyang/status/2034784797168685322
+
+**Nan Yu (@thenanyu)** - head of product @linear
+
+> Harry Potter and LotR references henceforth banned. Just Death Note and Evangelion from here on out.
+> https://x.com/thenanyu/status/2034870724930801715
+
+> I always enjoy Nikita’s product management truth telling from the front lines. In a world of bland podcast interviews, this is a taste of what big time PM work is like https://t.co/Ib9MyhSz9i
+> https://x.com/thenanyu/status/2034869255150198982
+
+> Forbes 30 under 30 remains undefeated (fraud)
+> https://x.com/thenanyu/status/2034776884085469323
+
+**Amanda Askell (@AmandaAskell)** - Philosopher & ethicist trying to make AI be good @AnthropicAI.
+Personal account. All opinions come from my training data.
+
+> Perhaps I should get married again so that the media has a more recent man they can reference any time they mention me or my work.
+> https://x.com/AmandaAskell/status/2034690963696967822
+
+**Thariq (@trq212)** - Claude Code @anthropicai.   prev YC W20, mit media lab. 
+
+towards machines of loving grace
+
+> This is a research preview that we'll be expanding more on.
+
+Read more in our docs on Channels here: https://t.co/apaPL9496Z
+> https://x.com/trq212/status/2034761704601690432
+
+> read here on how to setup Telegram: https://t.co/fT5VfGwIVc
+
+and Discord: https://t.co/vyXtbUox2N
+> https://x.com/trq212/status/2034761017771925996
+
+> We just released Claude Code channels, which allows you to control your Claude Code session through select MCPs, starting with Telegram and Discord. 
+
+Use this to message Claude Code directly from your phone. https://t.co/sl3BP2BEzS
+> https://x.com/trq212/status/2034761016320696565
+
+**Amjad Masad (@amasad)** - ceo @replit. civilizationist
+
+> Happy Eid! 😊
+> https://x.com/amasad/status/2034877335917519068
+
+> The most magical thing about this is once when you’re done infinitely exploring designs you can just click “Build” and you get a production app! https://t.co/8Jr5ev0nXh
+> https://x.com/amasad/status/2034702399718539355
+
+**Aaron Levie (@levie)** - ceo @box - your business lives in content. unleash it with AI
+
+> Without getting into the specific numbers, this underlying concept and trend is going to be very real. For any worker who is able to wield AI agents effectively in an organization, their compute budgets are just going to monotonically go up over time. 
+
+This will of course start in engineering, where we already know developers can run multiple agents in parallel, or have projects going over night. But this eventually hit the rest of knowledge work as well. Lawyers that can create and review more drafts, marketed that can build more campaigns and test more ideals in parallel, sales reps that can reach out to more customers and process more leads. 
+
+Many of these activities will essentially be token-dependent in how much work a single person can do. These aren’t chatbot workflows answering a simple question, but agents that are running and processing through incredible amounts of data at scale, and generating all new forms of information.
+
+Companies will have to figure out how they budget for this, and it likely won’t be an IT budget item over time, but ultimately owned and allocated by the business. Maybe the CFO is ultimately the head of AI :-).
+> https://x.com/levie/status/2034833274506281061
+
+**Ryo Lu (@ryolu_)** - Design @Cursor_ai. Early @NotionHQ, @Stripe, built startups. I make a world where anyone can make software. Aspiring k-pop idol.
+
+> Frontier intelligence.
+Fraction of cost.
+Fast.
+Composer 2. https://t.co/lQjEbZbcOp
+> https://x.com/ryolu_/status/2034690837444272266
+
+**Garry Tan (@garrytan)** - President & CEO @ycombinator —Founder https://t.co/7aoJjp1iIK—designer/engineer who helps founders—SF Dem accelerating the boom loop—haters not allowed in my sauna
+
+> I am so thankful for @paulg @jesslivingston @bchesky @cjoneslevy for believing me and selecting me to be the President &amp; CEO of YC. To be able to lead this brilliant band of partners is beyond the best job I’ve ever had!
+
+If you love what you do, you never work a day in your life https://t.co/v4Aonvke1a
+> https://x.com/garrytan/status/2034883862460080542
+
+> Markdown+LLM is code and for creating high value complex contextual and intelligence-required tasks it is much much better than any deterministic language https://t.co/Q8I2vfITGR
+> https://x.com/garrytan/status/2034881003140129145
+
+> I did slip one easter egg for YC into my /office-hours skill https://t.co/w4ohWMvBEk
+> https://x.com/garrytan/status/2034853668739252419
+
+**Matt Turck (@mattturck)** - VC at @FirstMarkCap.  Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD Landscape.
+
+> This awesome conversation with @benedictevans is also available on Spotify, Apple Podcasts and here on YouTube:
+
+https://t.co/F9T2xJiiMP
+> https://x.com/mattturck/status/2034667424377700676
+
+> My latest conversation with the always incredible @benedictevans: OpenAI’s moat problem, the rise of ephemeral and improvised sofware, OpenClaw & agents.
+
+00:00 Intro
+
+01:06 OpenAI's Focus Shift
+
+03:12 ChatGPT usage: a "mile wide, inch deep"
+
+09:03 Why better models do not solve the real problem
+
+13:58 Why AI product teams are strategy takers, not strategy setters
+
+15:38 Do agents help create defensibility?
+
+20:06 OpenClaw and the "Desktop Linux" moment for AI
+
+25:52 Why "everyone will build their own software" is completely wrong
+
+28:09 Improvised software vs. institutionalized software
+
+29:23 Why there will be more software, not less
+
+36:15 Are we heading toward value destruction before value creation?
+
+38:03 Circular revenue, leverage, and AI bubble dynamics
+
+38:53 Big Tech's Trillion-Dollar CapEx Crisis & Financial Gravity
+
+45:23 Why AI job exposure charts can be misleading
+
+52:15 How Fortune 500 Execs are actually deploying AI today
+
+56:45 The White Space: What this means for founders and investors
+> https://x.com/mattturck/status/2034661487445258382
+
+**Zara Zhang (@zarazhangrui)** - Builder. Dangerously skips permissions. Harvard’17. YouTube: https://t.co/8xzbGWtf6w Substack: https://t.co/dDPEWGiuBW
+
+> Powered by @GeminiApp Live API cc @googleaidevs
+> https://x.com/zarazhangrui/status/2034700826992939255
+
+> Try it now at https://t.co/dwtb34iKcj
+> https://x.com/zarazhangrui/status/2034699688226787496
+
+> Introducing MySay, an AI that asks you questions via voice, and turns what you said into tweets and LinkedIn posts that actually sound like you.
+
+This is the only AI writing solution I've found that doesn't produce slop.
+
+It's like a smart podcast host that guides you to share your most unique insights through great questions.
+
+Try it at mysay dot ai
+> https://x.com/zarazhangrui/status/2034699643104501958
+
+**Nikunj Kothari (@nikunj)** - partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧
+
+> I *think* the tide is finally going to turn on all the actors (LPs, VCs, founders, employees) who believe momentum is simply everything.. 
+
+It has led to terrible trickle down effects across the entire ecosystem (manipulating data, no diligence, growth at all costs etc.)
+
+As they say, what goes up must eventually come down. I hope these are not infamous last words, but I’m hopeful 🤞
+> https://x.com/nikunj/status/2034833966835134612
+
+> Inspired to build this after listening to the latest episode of @dwarkesh_sp &amp; @dylan522p on the bottlenecks behind AI.
+
+Link here: https://t.co/HUdzvwGcbc
+> https://x.com/nikunj/status/2034765202420650480
+
+> Ever wondered what are ALL the layers behind the answer when you get a response from ChatGPT..
+
+Introducing Prompt to Chip 💬
+
+Full visualization with explainers on how your prompt literally gets to the chip and all the way back. 
+
+Play with it at prompt to chip dot com https://t.co/aIhRPcfbZV
+> https://x.com/nikunj/status/2034764522662281562
+
+**Peter Steinberger (@steipete)** - Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world @openclaw🦞
+
+> "Your frustration is the product." https://t.co/6eeio8gBde
+> https://x.com/steipete/status/2034778291845132389
+
+**Dan Shipper (@danshipper)** - ceo @every — the only subscription you need to stay at the edge of AI
+
+> i asked composer 2 to optimize my production QA process and pitted it against gpt-5.4
+
+composer 2's response won (as judged by both 5.4 and opus 4.6): https://t.co/IWdOum0JV0
+> https://x.com/danshipper/status/2034746435401314659
+
+> we just published the definitive guide to writing good prose with your AI
+
+read it on @every: https://t.co/N8H3p5doOM https://t.co/SxlqXIJAJ8
+> https://x.com/danshipper/status/2034723450644840606
+
+> learn to surf the models, read @every:
+https://t.co/9wRhOCUCAk
+> https://x.com/danshipper/status/2034703852012769499
+
+
+---
+*AI Builders Digest - 每日更新来自 AI 领域顶级构建者的观点和洞察*
+
+=======
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Builders Digest</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --bg: #f7f5f2; --surface: #fff; --surface-hover: #faf8f6;
+  --card: #fff; --text-primary: #1a1a1a; --text-secondary: #5c5c5c;
+  --text-muted: #999; --accent: #c47a2a; --accent-light: #faf0e3;
+  --accent-border: rgba(196,122,42,0.2); --border: #e8e5e0;
+  --tag-twitter: #1a8cd8; --tag-podcast: #9333ea;
+  --font-serif: 'Noto Serif SC', Georgia, serif;
+  --font-sans: 'Noto Sans SC', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+html { font-size: 16px; scroll-behavior: smooth; }
+body { font-family: var(--font-sans); background: var(--bg); color: var(--text-primary); line-height: 1.7; min-height: 100vh; -webkit-font-smoothing: antialiased; }
+
+.header { position: sticky; top: 0; z-index: 100; background: rgba(247,245,242,0.88); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); padding: 0 2rem; }
+.header-inner { max-width: 760px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 60px; }
+.logo { display: flex; align-items: center; gap: 0.7rem; }
+.logo-mark { width: 34px; height: 34px; border-radius: 10px; background: linear-gradient(135deg, #c47a2a, #e8a849); display: flex; align-items: center; justify-content: center; font-size: 0.95rem; font-weight: 700; color: #fff; font-family: var(--font-serif); }
+.logo-text { display: flex; flex-direction: column; line-height: 1.2; }
+.logo-title { font-family: var(--font-serif); font-weight: 700; font-size: 0.95rem; color: var(--text-primary); }
+.logo-sub { font-size: 0.62rem; color: var(--text-muted); letter-spacing: 0.1em; text-transform: uppercase; }
+.header-date { font-size: 0.82rem; color: var(--text-secondary); font-family: var(--font-mono); }
+
+.hero { max-width: 760px; margin: 0 auto; padding: 3rem 2rem 0; }
+.hero-date { font-family: var(--font-serif); font-size: 3rem; font-weight: 700; color: var(--accent); line-height: 1.1; }
+.hero-sub { font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem; font-weight: 300; }
+.hero-line { height: 1px; background: linear-gradient(90deg, var(--accent) 0%, transparent 60%); margin-top: 1.5rem; opacity: 0.25; }
+
+.main { max-width: 760px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+
+.digest-section { margin-bottom: 3rem; opacity: 0; transform: translateY(14px); animation: fadeUp 0.5s ease forwards; }
+.digest-section:nth-child(1) { animation-delay: 0.05s; }
+.digest-section:nth-child(2) { animation-delay: 0.15s; }
+@keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+
+.section-label { display: inline-flex; align-items: center; gap: 0.5rem; margin-bottom: 1.2rem; }
+.section-dot { width: 8px; height: 8px; border-radius: 50%; }
+.section-dot.twitter { background: var(--tag-twitter); box-shadow: 0 0 8px rgba(26,140,216,0.3); }
+.section-dot.podcast { background: var(--tag-podcast); box-shadow: 0 0 8px rgba(147,51,234,0.3); }
+.section-name { font-size: 0.72rem; font-weight: 600; color: var(--text-secondary); letter-spacing: 0.1em; text-transform: uppercase; }
+
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.3rem 1.5rem; margin-bottom: 0.7rem; transition: all 0.2s; }
+.card:hover { border-color: var(--accent-border); background: var(--surface-hover); transform: translateY(-1px); box-shadow: 0 8px 24px rgba(0,0,0,0.06); }
+.card-author { font-size: 0.78rem; font-weight: 600; color: var(--accent); margin-bottom: 0.45rem; display: flex; align-items: center; gap: 0.5rem; }
+.card-author .role { font-weight: 400; color: var(--text-muted); font-size: 0.72rem; }
+.card-body { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.75; }
+.card-body strong { color: var(--text-primary); font-weight: 500; }
+.card-link { display: inline-flex; align-items: center; gap: 0.3rem; margin-top: 0.65rem; font-size: 0.72rem; color: var(--text-muted); text-decoration: none; transition: color 0.2s; font-family: var(--font-mono); }
+.card-link:hover { color: var(--accent); }
+.card-link svg { width: 12px; height: 12px; }
+
+.podcast-card { background: linear-gradient(135deg, rgba(147,51,234,0.04), rgba(147,51,234,0.01)); border-color: rgba(147,51,234,0.12); }
+.podcast-card:hover { border-color: rgba(147,51,234,0.25); }
+.podcast-title { font-size: 0.9rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.3rem; }
+.podcast-show { font-size: 0.75rem; color: var(--tag-podcast); margin-bottom: 0.8rem; font-weight: 500; }
+.podcast-points { list-style: none; display: flex; flex-direction: column; gap: 0.55rem; }
+.podcast-points li { font-size: 0.85rem; color: var(--text-secondary); padding-left: 1.2rem; position: relative; line-height: 1.7; }
+.podcast-points li::before { content: ''; position: absolute; left: 0; top: 0.55em; width: 5px; height: 5px; border-radius: 50%; background: var(--tag-podcast); opacity: 0.5; }
+.podcast-points li strong { color: var(--text-primary); }
+.podcast-quote { margin: 1rem 0; padding: 0.8rem 1rem; border-left: 3px solid var(--tag-podcast); background: rgba(147,51,234,0.04); border-radius: 0 8px 8px 0; font-size: 0.85rem; color: var(--text-secondary); font-style: italic; line-height: 1.8; }
+
+/* Side nav buttons */
+.side-nav {
+  position: fixed; top: 50%; z-index: 90;
+  transform: translateY(-50%);
+  display: flex; flex-direction: column; align-items: center; gap: 0.6rem;
+  width: 56px; height: 140px;
+  justify-content: center;
+}
+.side-nav.left { left: 0; }
+.side-nav.right { right: 0; }
+
+.nav-arrow-btn {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  border: 1.5px solid var(--border);
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: var(--text-secondary);
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+.nav-arrow-btn svg { width: 18px; height: 18px; }
+.nav-arrow-btn:hover:not(:disabled) {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(255,255,255,0.95);
+  transform: scale(1.12);
+  box-shadow: 0 4px 20px rgba(196,122,42,0.15);
+}
+.nav-arrow-btn:active:not(:disabled) {
+  transform: scale(0.95);
+  transition-duration: 0.1s;
+}
+.nav-arrow-btn:disabled {
+  opacity: 0; pointer-events: none;
+}
+
+.nav-label {
+  font-size: 0.6rem;
+  color: var(--text-muted);
+  writing-mode: vertical-lr;
+  letter-spacing: 0.08em;
+  font-family: var(--font-sans);
+  white-space: nowrap;
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+.side-nav:hover .nav-label { opacity: 1; }
+.nav-arrow-btn:disabled ~ .nav-label { opacity: 0 !important; }
+
+/* Slide transition for content */
+.page-wrapper {
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+.page-wrapper.slide-left { opacity: 0; transform: translateX(-20px); }
+.page-wrapper.slide-right { opacity: 0; transform: translateX(20px); }
+
+.footer { max-width: 760px; margin: 0 auto; padding: 0 2rem 4rem; text-align: center; }
+.footer-line { height: 1px; background: var(--border); margin-bottom: 1.5rem; }
+.footer-text { font-size: 0.7rem; color: var(--text-muted); letter-spacing: 0.06em; }
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+@media (max-width: 640px) {
+  .header { padding: 0 1rem; }
+  .hero { padding: 2rem 1rem 0; }
+  .main { padding: 1.5rem 1rem 3rem; }
+  .hero-date { font-size: 2.2rem; }
+  .card { padding: 1rem 1.2rem; }
+  .logo-sub { display: none; }
+  .side-nav { width: 40px; }
+  .nav-arrow-btn { width: 36px; height: 36px; }
+  .nav-arrow-btn svg { width: 14px; height: 14px; }
+  .nav-label { display: none; }
+}
+</style>
+</head>
+<body>
+<header class="header"><div class="header-inner"><div class="logo"><div class="logo-mark">B</div><div class="logo-text"><div class="logo-title">AI Builders</div><div class="logo-sub">Daily Digest</div></div></div><div class="header-date" id="headerDate"></div></div></header>
+
+<div class="side-nav left" id="navLeft">
+  <button class="nav-arrow-btn" id="prevBtn" onclick="go(1)" title="后一天">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+  </button>
+  <span class="nav-label" id="navLeftLabel">后一天</span>
+</div>
+
+<div class="side-nav right" id="navRight">
+  <button class="nav-arrow-btn" id="nextBtn" onclick="go(-1)" title="前一天">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg>
+  </button>
+  <span class="nav-label" id="navRightLabel">前一天</span>
+</div>
+
+<div class="page-wrapper" id="pageWrapper">
+  <div id="content"></div>
+</div>
+
+<footer class="footer"><div class="footer-line"></div><div class="footer-text">Chen &middot; Powered by follow-builders</div></footer>
+<script>
+var digests = {
+
+
+
+"2026-03-30": {
+    "date": "3月30日",
+    "dateShort": "03.30",
+    "heroSub": "Karpathy 用 LLM 验证自我观点、Swyx 谈虚假等价陷阱、Rauch「Agent 即计算机」、Amjad 重申千倍工程师论",
+    "twitter": [
+      {
+        "author": "Andrej Karpathy",
+        "role": "前 OpenAI / Tesla AI 总监",
+        "text": "分享用 LLM 做观点验证的体验：写了一篇文章，让 LLM 花 4 小时精心优化论证，效果很好——然后让它<strong>反过来论证对立面，结果 LLM 轻松推翻了整个论点</strong>。建议把它当形成自己观点的工具，但要注意谄媚倾向，务必多方向提问。",
+        "url": "https://x.com/karpathy/status/2037921699824607591"
+      },
+      {
+        "author": "Swyx",
+        "role": "AI 工程师, Latent Space",
+        "text": "谈 <strong>False Equivalence（虚假等价）</strong>的危害——在内容、战略、政策中常见，把所有选项赋予同等权重，但现实是幂律分布，一件事可能比下一件重要 50 倍。这杀死了他的第一个 devtools 创业项目。建议：押注极少数事情，不要对冲，但保持可逆性，设触发器监控判断对错，对了就加倍投入。",
+        "url": "https://x.com/swyx/status/2037969691910848941"
+      },
+      {
+        "author": "Amjad Masad",
+        "role": "Replit CEO",
+        "text": "重申四年前提出的<strong>「千倍工程师」概念</strong>：AI 让所有人都能构建应用，最好的工程师得以专注更底层、更雄心勃勃的工作——推进平台本身，拓展可能性边界。",
+        "url": "https://x.com/amasad/status/2037951485418344835"
+      },
+      {
+        "author": "Guillermo Rauch",
+        "role": "Vercel CEO",
+        "text": "三连发：(1) 在亚利桑那公司 offsite 后表示「<strong>Agent 即计算机</strong>」——网络概念被 Agent 取代；(2) 终于能发布他梦想中的文本排版方案；(3) Vercel 团队在亚利桑那留下印记，准备推进前沿。",
+        "url": "https://x.com/rauchg/status/2037935190073569326"
+      },
+      {
+        "author": "Zara Zhang",
+        "role": "创作者 / 开发者",
+        "text": "两条核心洞察：(1) <strong>好的 Agent 产品应该能做创造者没想到它能做的事</strong>——互联网时代产品按设计工作，Agent 时代产品应该带来惊喜；(2) 再次强调<strong>人类的 context window 才是新瓶颈</strong>。",
+        "url": "https://x.com/zarazhangrui/status/2038144755478237654"
+      },
+      {
+        "author": "Peter Steinberger",
+        "role": "OpenClaw 联合创始人",
+        "text": "<strong>MCPorter 0.8.0 发布</strong>：更强的 OAuth 处理、JSON fallback 输出、改进的 mcporter 调用行为和错误处理、CLI 对对象参数的处理改善、keep-alive/daemon 可靠性提升。另外感慨做开源需要厚脸皮（或外骨骼）。",
+        "url": "https://x.com/steipete/status/2038074759527981416"
+      },
+      {
+        "author": "Garry Tan",
+        "role": "YC 总裁",
+        "text": "分享数据案例：Richmond 禁用 Flock 安全摄像头后，<strong>车辆盗窃上升 33%</strong>，移民店主恳求恢复。另外表示 GStack 每天仍在增长，以及「拥抱煮海（boiling the ocean）」的态度。",
+        "url": "https://x.com/garrytan/status/2038054087451885747"
+      },
+      {
+        "author": "Peter Yang",
+        "role": "Roblox 产品",
+        "text": "三条观察：(1) 希望 <strong>Grok 能帮整理 X 上收藏的帖子</strong>，不想手动翻；(2) 吐槽 X 的 AI 垃圾内容泛滥，踩按钮应该对原创帖也可见；(3) 快速增长的公司（Linear、Ramp）<strong>喜欢招前创始人当 PM</strong>——这是检验公司吸引力的好标准。",
+        "url": "https://x.com/petergyang/status/2038068968792162594"
+      },
+      {
+        "author": "Dan Shipper",
+        "role": "Every CEO",
+        "text": "分享一张图并配文「如果你一直在关注，这不意外」——暗示 AI 发展趋势的加速。",
+        "url": "https://x.com/danshipper/status/2037897135543161326"
+      },
+      {
+        "author": "Nan Yu",
+        "role": "Linear 产品负责人",
+        "text": "锐评 <strong>TED 和 30 Under 30 应该被商学院当作品牌自我毁灭的经典案例</strong>来教学。",
+        "url": "https://x.com/thenanyu/status/2038025287955280120"
+      }
+    ],
+    "podcasts": []
+  },
+"2026-03-29": {
+    "date": "3月29日",
+    "dateShort": "03.29",
+    "heroSub": "OpenClaw 变身 MCP、Sam Altman Stargate 开工、Claude Cowork 设计师分享内幕、create-context-graph 一键生成行业图谱",
+    "twitter": [
+      {
+        "author": "Peter Steinberger",
+        "role": "OpenClaw 联合创始人",
+        "text": "宣布 <strong>下一版 OpenClaw 本身就是一个 MCP server</strong>，可替代 Anthropic 的 message channel MCP，连接更广泛的消息平台。另外展示了新功能：<code>/acp spawn codex --bind here</code>，可以在当前会话直接接管为 Codex 模式。这条获得 <strong>1548 个赞</strong>，是当日最热推文。",
+        "url": "https://x.com/steipete/status/2037715163562815817"
+      },
+      {
+        "author": "Sam Altman",
+        "role": "OpenAI CEO",
+        "text": "分享 <strong>Stargate 密歇根数据中心第一根钢梁已架设</strong>，与 Oracle 和 Related Digital 合作推进中。",
+        "url": "https://x.com/sama/status/2037610000122839116"
+      },
+      {
+        "author": "Swyx",
+        "role": "AI 工程师, Latent Space",
+        "text": "推荐 <strong>create-context-graph</strong>——一条命令就能为 22 个行业领域生成核心实体关系图。他表示一直在找这种工具，可以给每个应用叠加一层社交图谱。",
+        "url": "https://x.com/swyx/status/2037620876179537989"
+      },
+      {
+        "author": "Peter Yang",
+        "role": "Roblox 产品",
+        "text": "预告与 <strong>Claude Cowork 设计师 Jenny 的深度访谈</strong>：她在 Anthropic 内部如何使用 Cowork、从用户反馈到产品方案的 live demo、Cowork 诞生的真实故事。另外分享了如何构建 <strong>/exec-review AI skill</strong>——用领导的决策框架来模拟他的产品反馈。",
+        "url": "https://x.com/petergyang/status/2037704776331448686"
+      },
+      {
+        "author": "Aaron Levie",
+        "role": "Box CEO",
+        "text": "指出<strong>企业自动化工作的最大瓶颈是 context gap</strong>——数据躺在遗留系统的孤岛里，权限混乱，信息不是 agent-ready 的。编程领域进展快是因为代码库本身包含必要上下文、用户技术足够、输出可快速验证，而大多数知识工作完全不具备这些条件。",
+        "url": "https://x.com/levie/status/2037744753073385518"
+      },
+      {
+        "author": "Garry Tan",
+        "role": "YC 总裁",
+        "text": "表示在 GStack 上通常只跑 <code>/plan-eng-review</code> 和 <code>/ship</code> 就够了。另外分享 Boris 的访谈改变了他对软件的思维——促使他更快迭代自己的构建方式，距那次访谈才一个月。",
+        "url": "https://x.com/garrytan/status/2037776210898600402"
+      },
+      {
+        "author": "Zara Zhang",
+        "role": "创作者 / 开发者",
+        "text": "三条金句：(1) <strong>下一代 AI 产品需要解决人类的易错性和 agent 的无误性之间的矛盾</strong>；(2) <strong>瓶颈是人类的 context window，不是 AI 的</strong>（146 赞当日最高互动）；(3) 分享了一个她见过最好的 Careers 页面。",
+        "url": "https://x.com/zarazhangrui/status/2037610198349894039"
+      },
+      {
+        "author": "Aditya Agarwal",
+        "role": "South Park Commons GP, 前 Dropbox CTO",
+        "text": "分享两个观点：(1) <strong>Lingering is fatal</strong>——犹豫不决比选错路更致命；(2) 不要回避和大模型正面竞争，而是<strong>押注 12-18 个月后的能力</strong>——模型今天不擅长的事，未来可能就够了。",
+        "url": "https://x.com/adityaag/status/2037562946423767168"
+      },
+      {
+        "author": "Dan Shipper",
+        "role": "Every CEO",
+        "text": "提出 <strong>Compound Engineering</strong> 概念——为 AI 时代设计的工程哲学。Every 的 Demo Day 超过 1200 人参加。另外推荐了由 Kieran Klaassen 开发的插件，改变了团队的工作方式。",
+        "url": "https://x.com/danshipper/status/2037589016371974486"
+      },
+      {
+        "author": "Josh Woodward",
+        "role": "Google Labs VP",
+        "text": "Gemini 的 <strong>Veo 3「水手」形象回归</strong>，提醒大家依然可以在 Gemini 里用 Veo 生成视频。",
+        "url": "https://x.com/joshwoodward/status/2037674926715605331"
+      },
+      {
+        "author": "Nan Yu",
+        "role": "Linear 产品负责人",
+        "text": "提出一个有趣的担忧：如果接下来几批 YC 公司都使用 GStack，<strong>会不会导致它们的表现过度相关</strong>——犯同样的错误，但也因为同样的模式被偏好录取？",
+        "url": "https://x.com/thenanyu/status/2037617782943056148"
+      }
+    ],
+    "podcasts": []
+  },
+"2026-03-28": {
+    "date": "3月28日",
+    "dateShort": "03.28",
+    "heroSub": "Gemini Live 大升级、Claude Code 调整高峰期限流、Karpathy 谈 DevOps 自动化、Steinberger 联手 Telegram",
+    "twitter": [
+      {
+        "author": "Josh Woodward",
+        "role": "Google Labs VP",
+        "text": "<strong>Gemini Live 迎来最大升级</strong>——响应更快、更智能、EQ 更高、语言覆盖更广、2 倍上下文长度。Android 和 iOS 均已上线，由 Gemini 3.1 Flash 驱动。另外 Gemini 新增<strong>从其他聊天机器人导入记忆和对话</strong>的功能。",
+        "url": "https://x.com/joshwoodward/status/2037196616223121886"
+      },
+      {
+        "author": "Thariq",
+        "role": "Anthropic Claude Code",
+        "text": "<strong>Claude Code 调整高峰期限流策略</strong>：工作日太平洋时间 5am-11am / GMT 1pm-7pm 期间，5 小时会话限额消耗更快。周总额不变，约 7% 的用户会受到影响（尤其是 Pro 用户）。建议 token 密集型任务尽量在非高峰时段运行。",
+        "url": "https://x.com/trq212/status/2037254607001559305"
+      },
+      {
+        "author": "Andrej Karpathy",
+        "role": "前 OpenAI / Tesla AI 总监",
+        "text": "<strong>AI 编程最难的不是代码本身，是 DevOps</strong>——组装各种服务（支付、认证、数据库、域名）才是真正的苦力活。期待有一天只需告诉 agent「build menugen」，它就能从写代码到部署上线全部搞定。",
+        "url": "https://x.com/karpathy/status/2037200624450936940"
+      },
+      {
+        "author": "Sam Altman",
+        "role": "OpenAI CEO",
+        "text": "分享了 <strong>Paul 用 ChatGPT + AlphaFold 为自己的狗设计 mRNA 癌症疫苗</strong>的故事——LLM 赋予个人以研究所级别的科研能力，但每一步仍有人类参与。「这应该成为一家公司。」",
+        "url": "https://x.com/sama/status/2037396826060673188"
+      },
+      {
+        "author": "Peter Steinberger",
+        "role": "OpenClaw 联合创始人",
+        "text": "<strong>与 Durov 和 Telegram 团队直接沟通</strong>，Telegram 开发者 izhukov 加入 OpenClaw 维护团队，首要任务是修复 bot streaming API 导致的消息重复问题。另外 MS Teams 集成已上线，Slack 支持在推进中。",
+        "url": "https://x.com/steipete/status/2037197024081195188"
+      },
+      {
+        "author": "Aaron Levie",
+        "role": "Box CEO",
+        "text": "Box 发布了 <strong>Codex 插件</strong>，可以自动处理 Box 中的企业内容。Coding agent 将成为知识工作自动化的 backbone。另外指出我们<strong>严重低估了自动化知识工作所需的变革管理难度</strong>。",
+        "url": "https://x.com/levie/status/2037383187245273477"
+      },
+      {
+        "author": "Amjad Masad",
+        "role": "Replit CEO",
+        "text": "在一场活动上遇到了参议员 Josh Hawley，聊了<strong> vibecoding 如何释放新一波美国创业浪潮</strong>。强调平台不应该 gatekeep 创新。",
+        "url": "https://x.com/amasad/status/2037275196240052724"
+      },
+      {
+        "author": "Guillermo Rauch",
+        "role": "Vercel CEO",
+        "text": "发布 <strong>Vercel Sandbox</strong>——给 agent 一台有持久化的计算机。没有持久化的计算机不是好计算机。另外分享：<strong>「我们应该发布一个 CLI」</strong>——1961 年和 2026 年的共识。",
+        "url": "https://x.com/rauchg/status/2037303296034316379"
+      },
+      {
+        "author": "Zara Zhang",
+        "role": "创作者 / 开发者",
+        "text": "分享产品创意的来源：<strong>不是靠「想」，是靠「玩」和「聊」</strong>——不断摆弄模型、跟用户/创业者/开发者广泛交流。创意诞生于碰撞和非功利性的探索中。",
+        "url": "https://x.com/zarazhangrui/status/2037254276389757313"
+      },
+      {
+        "author": "Amanda Askell",
+        "role": "Anthropic 哲学家",
+        "text": "<strong>科技公司花几百万招人，然后把他们塞进开放式办公室</strong>，让人几乎没法工作。挖人的最佳策略可能就是——给一个带门的办公室。",
+        "url": "https://x.com/AmandaAskell/status/2037208098121933188"
+      },
+      {
+        "author": "Nikunj Kothari",
+        "role": "FirstMark Capital 合伙人",
+        "text": "用 Claude Code + Google Calendar MCP + Ramp CLI，<strong>12 分钟搞定了 3 个月的费用分类</strong>。",
+        "url": "https://x.com/nikunj/status/2037305617589948818"
+      },
+      {
+        "author": "Swyx",
+        "role": "AI 工程师, Latent Space",
+        "text": "把 4 年的 Mac 设置博客文章全部给了 Claude，让它一次性转成 bash 脚本——<strong>写博客的人迎来了黄金时代</strong>。另外发布了 2026 Mac 设置的 OpenClaw skill。",
+        "url": "https://x.com/swyx/status/2037370812123209943"
+      },
+      {
+        "author": "Garry Tan",
+        "role": "YC 总裁",
+        "text": "一天内合并了 7 个社区 PR，又修了 6 个 bug——<strong>持续的代码园艺永远不停</strong>。",
+        "url": "https://x.com/garrytan/status/2037399918718152902"
+      },
+      {
+        "author": "Peter Yang",
+        "role": "Roblox 产品",
+        "text": "转发新「Capybara」系列模型的消息——据说比 Opus 更大更智能。评论：「<strong>这就是 AGI 的样子</strong>」。",
+        "url": "https://x.com/petergyang/status/2037386319429865885"
+      },
+      {
+        "author": "Nan Yu",
+        "role": "Linear 产品负责人",
+        "text": "感叹 <strong>Heroku 错失的机会</strong>——曾经的「heroku addons:create YOU HAD IT ALL」。",
+        "url": "https://x.com/thenanyu/status/2037253938144030960"
+      }
+    ],
+    "podcasts": []
+  },
+
+"2026-03-27": {
+    "date": "3月27日",
+    "dateShort": "03.27",
+    "heroSub": "Claude 控制你的 Mac、Sora 突然关停、Anthropic 起诉国防部、Ginkgo 自主实验室",
+    "twitter": [
+      {
+        "author": "Claude",
+        "role": "Anthropic",
+        "text": "<strong>Claude 现在可以控制你的 Mac</strong>——直接点击按钮、打开应用、输入文字。已上线 Claude Cowork 和 Claude Code，付费用户可用。优先级：API 直连 > Chrome 插件 > 屏幕操作。另外工作工具（Figma、Canva、Amplitude）<strong>已支持移动端</strong>。",
+        "url": "https://x.com/claudeai/status/2036850783526719610"
+      },
+      {
+        "author": "Thariq",
+        "role": "Anthropic 工程师，Claude Code",
+        "text": "<strong>iMessage 已成为 Claude Code 的可用 channel</strong>。Claude Code Auto Mode 现已向 Team 用户开放，团队几乎全员作为日常驱动。启用：<code>claude --enable-auto-mode</code>，然后 Shift + Tab 进入。",
+        "url": "https://x.com/trq212/status/2036959638646866021"
+      },
+      {
+        "author": "Cat Wu",
+        "role": "Claude Code + Cowork，Anthropic",
+        "text": "Auto Mode 是 Claude Code UX 的<strong>质的飞跃</strong>，在自主性和安全性之间取得平衡。另外预告 3 月 31 日与 Figma 的联合直播。",
+        "url": "https://x.com/_catwu/status/2036852880624541938"
+      },
+      {
+        "author": "Andrej Karpathy",
+        "role": "前 OpenAI / Tesla AI 总监",
+        "text": "指出了所有 LLM 个性化中的一个<strong>普遍问题</strong>：模型对 memory 过度关注。两个月前随口问的一个话题会被反复提起，好像变成了你的深度兴趣。所有模型都有这个问题，可能和训练时 context window 内信息高相关的偏差有关。",
+        "url": "https://x.com/karpathy/status/2036836816654147718"
+      },
+      {
+        "author": "Aaron Levie",
+        "role": "Box CEO",
+        "text": "<strong>Jevons 悖论正在 AI 领域实时上演</strong>——因为 AI 让软件开发变得更便宜，公司反而承担得起以前不敢碰的软件项目。营销团队会有自己的工程师，生命科学团队会自动化研究，小企业首次雇佣工程师。只要 AI agent 仍需要人类来 prompt、审核、维护，工程师需求不会消失。",
+        "url": "https://x.com/levie/status/2036832183131033977"
+      },
+      {
+        "author": "Dan Shipper",
+        "role": "Every CEO",
+        "text": "邀请了 <strong>Instagram 联合创始人 Mike Krieger</strong>（现 Anthropic Labs）讨论如何构建真正的 agent-native 产品。关键洞察：agent 时代产品团队只需两人；从 idea 到 shipped 只要一天，但缺少渐进反馈来判断不该做什么；每 3-6 个月需要推倒重来一次。",
+        "url": "https://x.com/danshipper/status/2036827118915485942"
+      },
+      {
+        "author": "Guillermo Rauch",
+        "role": "Vercel CEO",
+        "text": "<strong>每家公司都将成为 AI 工厂，生产单位是 token</strong>。但 token 的用量追踪和计费和传统 SaaS 完全不同。AI Gateway 现在用一个 API 调用解决了跨模型、跨供应商的计量问题。",
+        "url": "https://x.com/rauchg/status/2036963706576527623"
+      },
+      {
+        "author": "Ryo Lu",
+        "role": "Cursor 设计负责人",
+        "text": "Agent 让加功能变得容易，<strong>设计因此更重要而非更次要</strong>。设计者的角色不再是推像素，而是决定什么东西应该存在、如何组合、人类如何保持控制、智能如何感觉清晰可信。品味、工艺和判断力一直是瓶颈。",
+        "url": "https://x.com/ryolu_/status/2036886854805709097"
+      },
+      {
+        "author": "Peter Yang",
+        "role": "Roblox 产品 VP",
+        "text": "Meta VP 用 Claude Code 构建了一个 <strong>/exec-review skill</strong>，用自己的语气审查文档——让 AI 代替 leader review 是 Agent 解放产品经理的一个绝佳案例。分享了构建 leader profile 的 6 步流程。",
+        "url": "https://x.com/petergyang/status/2036812870365917284"
+      },
+      {
+        "author": "Nan Yu",
+        "role": "Linear 产品负责人",
+        "text": "呼吁<strong>「设计」应回归其本义</strong>——「为实现特定目的而安排元素的方案」。我们过度沉迷于安排元素，却忘记了目的本身。",
+        "url": "https://x.com/thenanyu/status/2037042617213481410"
+      },
+      {
+        "author": "Garry Tan",
+        "role": "YC 总裁",
+        "text": "这个新时代最重要的事：<strong>你必须大胆地使用 token 来创造非凡之物</strong>。如果你有能动性和品味，放手去做，结果会令人惊叹。Token credits 让创业变得无门槛。",
+        "url": "https://x.com/garrytan/status/2037055498974093629"
+      },
+      {
+        "author": "Amjad Masad",
+        "role": "Replit CEO",
+        "text": "Apple 对 Replit 构建的应用<strong>接受率非常高</strong>——暗示用 AI 工具做出来的 App 并不会被打低分。",
+        "url": "https://x.com/amasad/status/2037004600893472936"
+      },
+      {
+        "author": "Peter Steinberger",
+        "role": "OpenClaw 联合创始人",
+        "text": "OpenClaw 新 beta 发布，<strong>新增 MS Teams 集成、Open WebUI 支持等</strong>。获 800+ likes。",
+        "url": "https://x.com/steipete/status/2036824286988816737"
+      },
+      {
+        "author": "Matt Turck",
+        "role": "FirstMark Capital 合伙人",
+        "text": "VC 在董事会上的角色演变：<strong>2016 年治理与指导，2021 年啦啦队长，2026 年 Anthropic 和 OpenAI 销售代表</strong>。",
+        "url": "https://x.com/mattturck/status/2036747586468499889"
+      }
+    ],
+    "podcasts": [
+      {
+        "show": "Training Data",
+        "title": "生物学的 Waymo 时刻：Ginkgo Bioworks CEO Jason Kelly",
+        "url": "https://youtube.com/watch?v=g45Alfg7diw",
+        "quote": "我们 95% 的科学工作都是实验性的，不是理论计算。推理模型能不能代替实验科学家做实验？答案是——可以，而且做得很好。",
+        "points": [
+          "<strong>Ginkgo 与 OpenAI 合作成果</strong>：给推理模型一个机器人实验室，让它自主设计、运行、分析 384 孔板实验。6 轮之后比人类 State-of-the-art 高 40%——突破不是因为它更聪明，而是它能 24 小时不间断跑实验",
+          "<strong>科学方法论将被重写</strong>：传统实验室里不同课题组的失败数据互相看不到，而 100 个 AI 科学家可以每日共享所有原始数据。一个课题组的失败可能是另一个课题组的关键线索",
+          "<strong>成本结构将彻底改变</strong>：目前 NIH/生物制药 60-80% 的钱花在间接成本（人力、实验室空间），不到 5% 花在试剂上。自主实验室可以把 90% 的预算变成试剂——<strong>每美元获得 10 倍以上的数据量</strong>",
+          "<strong>为什么不需要人形机器人</strong>：实验室的物理环境是不变的（不像自动驾驶面对不断变化的道路），用磁悬浮轨道系统比双足行走可靠得多，精度达到微米级",
+          "<strong>实验室会变小而非变大</strong>：去掉人类活动空间、消除设备冗余、提高利用率从 20% 到 70%，实际所需空间大幅缩小。已向美国能源部 Genesis 项目出售 97 台机器人",
+          "<strong>中国正在追赶</strong>：中国创新药从美国 biotech 采购占比三年前不到 5%，上季度已达 40%+。科学家数量相当、成本更低、实验更多——如果不变革实验方式，美国在科学上的优势可能不保"
+        ]
+      }
+    ]
+  },
+  "2026-03-26": {
+    "date": "3月26日",
+    "dateShort": "03.26",
+    "heroSub": "litellm 供应链攻击波及 9700 万用户、Claude Code auto mode 上线、OpenAI Foundation 首年投 10 亿美元",
+    "twitter": [
+        {
+            "author": "Andrej Karpathy",
+            "role": "前 Tesla AI 总监, OpenAI 联合创始人",
+            "text": "<strong>警告 litellm PyPI 供应链攻击。</strong>中毒版本的 <code>pip install litellm</code> 会窃取 SSH keys、AWS/GCP/Azure 凭证、Kubernetes 配置、git 凭证、环境变量、加密钱包、SSL 私钥等。LiteLLM 月下载量 9700 万，传播极广。好在中毒版本只上线不到 1 小时就被发现——因为它导致了内存溢出。",
+            "url": "https://x.com/karpathy/status/2036487306585268612"
+        },
+        {
+            "author": "Sam Altman",
+            "role": "OpenAI CEO",
+            "text": "<strong>宣布成立 OpenAI Foundation，首年投入超 10 亿美元。</strong>聚焦 AI 带来的新型社会威胁：生物安全、经济剧变等。联合创始人 Wojciech Zaremba 转任 AI Resilience 负责人。新加入 Jacob Tref（生命科学与疾病治愈负责人）、Robert Kaiden（CFO）、Jeff Arnold（运营总监）。",
+            "url": "https://x.com/sama/status/2036488680769241223"
+        },
+        {
+            "author": "Claude",
+            "role": "Anthropic",
+            "text": "<strong>发布 Claude Code auto mode。</strong>不再逐个批准文件写入和 bash 命令，Claude 自主判断权限。每次操作前有分类器审查——安全操作自动执行，危险操作被阻止。先以研究预览上线 Team 计划，企业版和 API 随后开放。",
+            "url": "https://x.com/claudeai/status/2036503582166393240"
+        },
+        {
+            "author": "Guillermo Rauch",
+            "role": "Vercel CEO",
+            "text": "Vercel 内部几乎所有 SaaS 工具都被自生成的 agent 界面替代了。<strong>「SaaSpocalypse 既被高估也被低估」</strong>——关键系统（Salesforce、Snowflake）还在，但生成的软件更美观、更个性化、更贴合业务。UI 就是数据的函数 f，而 f 正在变成 LLM。",
+            "url": "https://x.com/rauchg/status/2036447879985037495"
+        },
+        {
+            "author": "Aaron Levie",
+            "role": "Box CEO",
+            "text": "「如果你构建的软件不能以 headless 方式让 agent 使用，你还没准备好迎接软件的未来。<strong>Agent 使用软件的频率将是人类的 100 倍。</strong>」",
+            "url": "https://x.com/levie/status/2036478998667207012"
+        },
+        {
+            "author": "Nan Yu",
+            "role": "Linear 产品负责人",
+            "text": "「我好几个月没手写 PRD、手动提 issue、手写代码了。但我产出的工作量和质量标准都比以前更高。」认为做 agent 的动力就是「不想再做烦人的工作了」。",
+            "url": "https://x.com/thenanyu/status/2036549647267709110"
+        },
+        {
+            "author": "Garry Tan",
+            "role": "YC 总裁",
+            "text": "「一旦你说『替代开发者』，你的思路就错了。汽车没有替代走路，它让人能去到步行去不了的地方。」",
+            "url": "https://x.com/garrytan/status/2036674371855823153"
+        },
+        {
+            "author": "Josh Woodward",
+            "role": "Google Labs VP",
+            "text": "「我在 Google 从实习生做到现在，从来没这么激动过。整个公司在脉动。我们在招人。」Gemini App 和 Google Labs 都在招聘。",
+            "url": "https://x.com/joshwoodward/status/2036513009661780291"
+        },
+        {
+            "author": "Peter Yang",
+            "role": "Roblox 产品经理",
+            "text": "Telegram 里全是跟 OpenClaw 和 Claude bot 的对话，还没跟真人说过话。认为 AI agent 会让大家不再沉迷于 specs、designs、roadmaps 这些文档，而是专注于改进产品和快速迭代。",
+            "url": "https://x.com/petergyang/status/2036621615086309468"
+        },
+        {
+            "author": "Zara Zhang",
+            "role": "创作者",
+            "text": "「GitHub 就是新的 Substack，代码是一种自我表达。」她一个非技术背景的人，从不懂 GitHub 到积累了 13k+ stars。",
+            "url": "https://x.com/zarazhangrui/status/2036675965003411514"
+        },
+        {
+            "author": "Swyx",
+            "role": "AI 工程师, Latent Space",
+            "text": "OpenAI 打压 Side Quests 的第一个牺牲品——Sora 死了。另外称赞 Walden Yan 在 Devin 上做的「让 Devin 审查自己的代码」功能，等同于「睡一觉再用新鲜眼光看 PR」。",
+            "url": "https://x.com/swyx/status/2036533647659143630"
+        },
+        {
+            "author": "Alex Albert",
+            "role": "Anthropic 研究员",
+            "text": "「再见 --dangerously-skip-permissions，你好 auto mode」",
+            "url": "https://x.com/alexalbert__/status/2036510206155432293"
+        },
+        {
+            "author": "Thariq",
+            "role": "Claude Code 团队, Anthropic",
+            "text": "「做 AI 安全公司的好处是，你需要确保 AI 能安全运行的时候，这经验刚好用得上。」预告 3/31 和 Figma 的联合直播。",
+            "url": "https://x.com/trq212/status/2036513038983995820"
+        },
+        {
+            "author": "Nikunj Kothari",
+            "role": "FirstMark Capital 合伙人",
+            "text": "抓取了 417 家公司的 subprocessor 列表，发现 AI 原生公司都在用什么基础设施。发布了 DeployGraph.com。",
+            "url": "https://x.com/nikunj/status/2036572222081606065"
+        },
+        {
+            "author": "Peter Steinberger",
+            "role": "OpenClaw ClawFather",
+            "text": "给朋友发 WhatsApp，结果收到了 OpenClaw 的「门卫」回应——agent 自动拦截并回复了消息。",
+            "url": "https://x.com/steipete/status/2036486352964035013"
+        },
+        {
+            "author": "Matt Turck",
+            "role": "FirstMark Capital VC",
+            "text": "「以前：你写了错别字！真糟糕。现在：你写了非 AI 生成的内容！太棒了。」",
+            "url": "https://x.com/mattturck/status/2036488357077717094"
+        },
+        {
+            "author": "Dan Shipper",
+            "role": "Every CEO",
+            "text": "发布了新的 OpenClaw mac mini 贴纸。",
+            "url": "https://x.com/danshipper/status/2036501111394148578"
+        },
+        {
+            "author": "Cat Wu",
+            "role": "Anthropic Claude Code",
+            "text": "邀请大家参加 Code with Claude 大会。",
+            "url": "https://x.com/_catwu/status/2036594646370210229"
+        },
+        {
+            "author": "Amjad Masad",
+            "role": "Replit CEO",
+            "text": "推荐了一个内容创作者学习编程后改变业务的真实故事。",
+            "url": "https://x.com/amasad/status/2036427267296067875"
+        },
+        {
+            "author": "Aditya Agarwal",
+            "role": "South Park Commons 合伙人, 前 Dropbox CTO",
+            "text": "「机器人硬件已经准备好了，只差软件的可靠性和可扩展性。这对美国是利好。」",
+            "url": "https://x.com/adityaag/status/2036426693930291334"
+        }
+    ],
+    "podcasts": [
+        {
+            "title": "There Is No AlphaFold for Materials — AI for Materials Discovery with Heather Kulik",
+            "show": "Latent Space",
+            "points": [
+                "材料空间比蛋白质复杂得多——蛋白质只有 20 种氨基酸，而材料的构建块几乎是无限的",
+                "目前没有像 CASP 那样的统一基准来衡量材料科学 AI 的进展",
+                "用 AI 发现了一种让塑料韧性提高 4 倍的新材料",
+                "LLM 连生成 22 个原子的配体都做不到，但可以辅助理解化学",
+                "AlphaFold 解决了蛋白质结构预测，但材料发现是更难的问题"
+            ],
+            "quote": "There is no AlphaFold for materials.",
+            "url": "https://youtube.com/watch?v=KSCCKCz2x04"
+        }
+    ]
+},
+"2026-03-25": {
+    "date": "3月25日",
+    "dateShort": "03.25",
+    "heroSub": "Claude Code 能操控你的电脑了、Sam Altman 辞去 Helion 董事会、Steinberger 663 likes 的 PR 审查心法",
+    "twitter": [
+        {
+            "author": "Claude",
+            "role": "Anthropic",
+            "text": "<strong>Claude Code 现在可以操控你的电脑了。</strong>手机上分配任务，转头在电脑上看到已完成的工作。让它每天早上扫邮件或每周五拉报告，它自己就会处理。优先使用 Slack、日历等已连接的应用，没有 connector 时会请求权限直接操作你屏幕上的应用。目前 Pro 和 Max 用户可用。",
+            "url": "https://x.com/claudeai/status/2036195792101212445"
+        },
+        {
+            "author": "Thariq",
+            "role": "Anthropic 工程师，Claude Code",
+            "text": "Claude Code computer use 正式上线，仅限桌面版。另外一条获 186 likes 的推：Anthropic 收购了一家 computer use 公司，4 周后就 shipped。",
+            "url": "https://x.com/trq212/status/2036199619416178814"
+        },
+        {
+            "author": "Sam Altman",
+            "role": "OpenAI CEO",
+            "text": "<strong>辞去 Helion（核聚变公司）董事会职务。</strong>原因是 Helion 和 OpenAI 开始探讨大规模合作，同时担任两方董事不合适。但仍保留财务利益。称 David 和 Chris 是杰出的创始人，公司进展令人印象深刻。",
+            "url": "https://x.com/sama/status/2036137695605563682"
+        },
+        {
+            "author": "Peter Steinberger",
+            "role": "OpenClaw 联合创始人",
+            "text": "分享了自己的 <strong>PR 审查心法（663 likes）</strong>：0) 让 Codex 先审，1) issue 是否清晰（不清晰直接 trash），2) 这是不是最优解（95% 的时候不是），3) 继续讨论、权衡 tradeoff、通常重写。大多数人提交的修复太小太局部，会让项目变得不可维护。另外发布了 CodexBar 0.19.0。",
+            "url": "https://x.com/steipete/status/2036252448399171717"
+        },
+        {
+            "author": "Alex Albert",
+            "role": "Anthropic Research",
+            "text": "极力推荐阅读理论物理学家 Matthew Schwartz 的客座文章。Schwartz 发现 <strong>Opus 4.5 大约相当于二年级研究生水平，帮他加速了 10 倍的研究</strong>。另一条获 917 likes：「不用打开笔记本就能完成工作的未来，正以极快的速度变成现实。」",
+            "url": "https://x.com/alexalbert__/status/2036232980059062550"
+        },
+        {
+            "author": "Kevin Weil",
+            "role": "OpenAI VP Science",
+            "text": "介绍了一位年轻天文学家用 AI 分析海量数据集，<strong>发现了 150 万个新的天体</strong>，NASA 局长直接给了他一份工作外加战斗机兜风作为签约奖励。为此 OpenAI 推出 <strong>ChatGPT 26 项目</strong>：选中者可到 OpenAI 总部、获取最新技术、获得 $10K 现金资助。",
+            "url": "https://x.com/kevinweil/status/2036095876628693168"
+        },
+        {
+            "author": "Aaron Levie",
+            "role": "Box CEO",
+            "text": "深度分析 agent 的「计算机操控」能力：这是 agent 接管知识工作的终极原语。大多数工作需要跨多个应用、处理大量数据，agent 需要能在这些系统间自由穿梭。但安全、权限、身份验证、prompt 注入等都是待解难题。另外还讨论了 agent 到底应该代表用户行动，还是拥有自己的身份和受限权限。",
+            "url": "https://x.com/levie/status/2036290915950797314"
+        },
+        {
+            "author": "Matt Turck",
+            "role": "FirstMark Capital VC",
+            "text": "「未来的人很难理解，在 Claude Code 出现之前，有想法的人会花好几年去找一个『技术合伙人』。」（525 likes）",
+            "url": "https://x.com/mattturck/status/2036182407779365309"
+        },
+        {
+            "author": "Garry Tan",
+            "role": "YC 总裁",
+            "text": "用 GStack 向 Y Combinator 代码库（184 万行代码、14 年技术债务）提交了第一个 PR，2400 行。证明 GStack 不仅适合个人小项目，对巨型企业级代码库同样有效。",
+            "url": "https://x.com/garrytan/status/2036330296308802012"
+        },
+        {
+            "author": "Nan Yu",
+            "role": "Linear 产品负责人",
+            "text": "Codex 注意到 prompt 中有一行间接引用了 app 内另一个 feature flag 后面的功能，并且主动标记了出来。「多少人类审查员能发现这个问题？」（64 likes）",
+            "url": "https://x.com/thenanyu/status/2036095568733143258"
+        },
+        {
+            "author": "Amjad Masad",
+            "role": "Replit CEO",
+            "text": "分享了一个在 Replit 上构建的 <strong>TSA 安检等待时间查询应用</strong>，已经爆火传播（288 likes）。",
+            "url": "https://x.com/amasad/status/2036272008158433564"
+        },
+        {
+            "author": "Dan Shipper",
+            "role": "Every CEO",
+            "text": "「vibe code 出来的东西，vibe fix 也能修。但不一定能修得快。」（47 likes）另外对 Claude computer use 的评价：「这显然是未来。」（279 likes）",
+            "url": "https://x.com/danshipper/status/2036146776319680624"
+        },
+        {
+            "author": "Peter Yang",
+            "role": "Roblox 产品 VP",
+            "text": "盛赞 Anthropic 基本上每天都在 ship 新东西，「真正定义了什么是 AI native 的开发节奏。」（291 likes）",
+            "url": "https://x.com/petergyang/status/2036212646962434395"
+        },
+        {
+            "author": "Nikunj Kothari",
+            "role": "FPV Ventures 合伙人",
+            "text": "在 SF 你会不断听到同样的三件事——Jevons 悖论、Goodhart 定律和 The Bitter Lesson。「给自己提个醒，多读点历史、艺术和科幻。」（196 likes）",
+            "url": "https://x.com/nikunj/status/2036108908532801630"
+        },
+        {
+            "author": "Swyx",
+            "role": "AI 工程师，Latent Space",
+            "text": "总结了一个模式：在 Latent Space 或 AI Dot Engineer 上聊过的创始人，都被 Alex Wang 和 Nat Friedman 投了数十亿美元。祝贺的同时预言 Meta 的 MSL Apps 年底会展示什么。",
+            "url": "https://x.com/swyx/status/2036205006806982931"
+        },
+        {
+            "author": "Google Labs",
+            "role": "Google",
+            "text": "虚拟试穿实验应用 Doppl 将于 4 月 30 日关闭。相关技术已整合到 Google 产品列表和图片搜索结果中。Labs 的目标是测试新想法，成功的技术会被规模化。",
+            "url": "https://x.com/GoogleLabs/status/2036188820128071786"
+        }
+    ],
+    "podcasts": []
+},
+
+  "2026-03-24": {
+    "date": "3月24日",
+    "dateShort": "03.24",
+    "heroSub": "Rauch「Code is Output」、Shipper「海盗与建筑师」、Thariq 新版 /init",
+    "twitter": [
+      {
+        "author": "Dan Shipper",
+        "role": "Every CEO",
+        "text": "提出了<strong>「海盗与建筑师」模型</strong>——2026 年的工程团队只需要两个人。海盗用 vibe coding 极速推进、端到端拥有产品；建筑师负责把海盗探索出的产品表面转化成可靠的、结构化的机器。每个产品都需要海盗，但大多数产品只有到 PMF 之后才需要建筑师，而且不需要全职。",
+        "url": "https://x.com/danshipper/status/2035842017553465814"
+      },
+      {
+        "author": "Guillermo Rauch",
+        "role": "Vercel CEO",
+        "text": "<strong>「Code is an output. Nature is healing.」</strong>— 我们过去把代码当输入，美化它、格式化它、给它搭花哨的 IDE。但代码本质上是输出，真正的输入应该是需求、规格、反馈和设计灵感。Coding agent 需要理解用户真实体验，然后把那些转化成代码。另外用 v0 在周日做了一个程序化生成的 3D Jenga 游戏。",
+        "url": "https://x.com/rauchg/status/2035829366165471702"
+      },
+      {
+        "author": "Thariq",
+        "role": "Anthropic 工程师，Claude Code",
+        "text": "<strong>新版 /init 开始测试</strong>——它会主动采访你，帮你设置 skills、hooks 等配置。基于大量用户反馈开发。启用方式：<code>CLAUDE_CODE_NEW_INIT=1 claude</code>，然后在目标 repo 运行 /init 即可。",
+        "url": "https://x.com/trq212/status/2035799806640115806"
+      },
+      {
+        "author": "Aaron Levie",
+        "role": "Box CEO",
+        "text": "用云计算历史类比 agent 的早期程度：2010 年硅谷已认定 cloud 是未来，但 AWS 收入才 5 亿美元。到 2025 年三大云平台约 2250 亿——近 1000 倍增长。<strong>现在的 agent 就像云计算早期的开发者阶段</strong>，大多数公司连 coding agent 都还没大规模用。",
+        "url": "https://x.com/levie/status/2035762343502836020"
+      },
+      {
+        "author": "Peter Steinberger",
+        "role": "OpenClaw 联合创始人",
+        "text": "过去几天把重点放在测试上，<strong>OpenClaw harness 从约 10 分钟缩短到 2 分钟</strong>。另外发了一条获 1600+ likes 的引用推，以及一条「OpenClaw 长大了」的推。",
+        "url": "https://x.com/steipete/status/2035945773729493466"
+      },
+      {
+        "author": "Zara Zhang",
+        "role": "follow-builders 作者",
+        "text": "发布了 <strong>codebase to course</strong> skill——把任何代码库转化成交互式编程课程，带可视化、白话翻译、比喻甚至小测验。核心理念：「先建后学」——vibe coding 很酷但不知道底层怎么跑，让 AI 把你的项目变成学习材料。",
+        "url": "https://x.com/zarazhangrui/status/2035962536474837019"
+      },
+      {
+        "author": "Peter Yang",
+        "role": "Roblox 产品 VP",
+        "text": "发起「同时用 OpenClaw 和 Claude Code 的人，你们分别用来做什么」讨论，引发 77 条回复。他自己的体验：Claude Code 没有远程 dangerously skip permissions、远程控制不够可靠、没有语音回复缺乏个人感；OpenClaw 的问题是会随机忘事。预告了 Claude Cowork 和 Codex 背后建造者的播客。",
+        "url": "https://x.com/petergyang/status/2035883215840542861"
+      },
+      {
+        "author": "Garry Tan",
+        "role": "YC 总裁",
+        "text": "<strong>GStack 免费开源</strong>。另外预告 Claude Code 即将通过 GStack 进入 Chrome Sidebar，Codex 现在可以在 GStack 的每个评审阶段提供帮助。",
+        "url": "https://x.com/garrytan/status/2035941741824729186"
+      },
+      {
+        "author": "Swyx",
+        "role": "AI 工程师，Latent Space",
+        "text": "重新分享 Devin AI explainer，因为 Ryan Carson 带火了 cloud coding。提到 <strong>Devin 使用量今年每月增长超 50%</strong>，「连 Scott 都觉得震惊」。",
+        "url": "https://x.com/swyx/status/2035879529340932413"
+      },
+      {
+        "author": "Aditya Agarwal",
+        "role": "South Park Commons 合伙人",
+        "text": "分享了对创始人和资本关系的思考：有些创始人需要钱才有安全感，而另一些，你会发现不管资本来不来，公司都会被建出来。作为投资人，你可以选择搭这趟车——或者不搭。",
+        "url": "https://x.com/adityaag/status/2035808616964653316"
+      }
+    ],
+    "podcasts": []
+  },
+  "2026-03-23": {
+    "date": "3月23日",
+    "dateShort": "03.23",
+    "heroSub": "Karpathy 谈代码 agent、自动化研究和 AI 的「精神病」时代",
+    "twitter": [
+      {
+        "author": "Zara Zhang",
+        "role": "follow-builders 作者",
+        "text": "发了一条爆推（1.5k+ likes）：几乎每个 AI 重度用户使用 AI 后变得更加焦虑和忙碌。人们本以为 AI 会让你早下班休息，结果是生产力 10 倍之后，你发现自己有 20 倍更多的事情可以做。",
+        "url": "https://x.com/zarazhangrui/status/2035251996564103267"
+      },
+      {
+        "author": "Thariq",
+        "role": "Anthropic 工程师，Claude Code",
+        "text": "分享了 Claude Code agent SDK 的使用经验，称其为构建 agent 的最简单方式。另外一条广受关注的推文展示了多 agent 并行开发的设置，引发社区热议。",
+        "url": "https://x.com/trq212/status/2035372729726087456"
+      },
+      {
+        "author": "Ryo Lu",
+        "role": "Cursor 设计负责人",
+        "text": "发了一条充满信心的推文：「还很早，但更清晰了。」配合 Cursor 的产品截图，暗示了编程工具未来方向的明确意图。",
+        "url": "https://x.com/ryolu_/status/2035355825477447907"
+      },
+      {
+        "author": "Dan Shipper",
+        "role": "Every CEO",
+        "text": "买了 $5,000 的 Figma 股票，非常看好 SaaS 适应 AI 时代的能力。认为当前股价被低估，而 Figma 不会错过这波机会。",
+        "url": "https://x.com/danshipper/status/2035365060118253848"
+      },
+      {
+        "author": "Garry Tan",
+        "role": "YC 总裁",
+        "text": "开源了 gstack，他的个人 CLI 工具集。另外调侃了「这种情况太多了」类型的帖子，建议人们买台好的 MacBook Pro。",
+        "url": "https://x.com/garrytan/status/2035539745284177982"
+      },
+      {
+        "author": "Matt Turck",
+        "role": "FirstMark Capital VC",
+        "text": "回顾互联网历史：LinkedIn 2003、YouTube 2005、Twitter 2006 发布，网络效应创造了巨大的长期竞争壁垒。但 AI 时代能否建立自己的强飞车轮（数据循环等），目前还不清楚。",
+        "url": "https://x.com/mattturck/status/2035458987940880466"
+      },
+      {
+        "author": "Peter Yang",
+        "role": "Roblox 产品 VP",
+        "text": "探讨 Claude 和 Codex 之间切换的最佳界面：Composer、Cursor 还是终端？另外他四月初要去上海/杭州两周，求推荐科技场景。",
+        "url": "https://x.com/petergyang/status/2035564345430872095"
+      },
+      {
+        "author": "Nan Yu",
+        "role": "Linear 产品负责人",
+        "text": "评论了创业公司的生存率数据：考虑到融资的初创公司大幅增加，生存率没有断崖式下降，这其实很惊人。",
+        "url": "https://x.com/thenanyu/status/2035534048940958015"
+      }
+    ],
+    "podcasts": [
+      {
+        "title": "代码 Agent、自动化研究和 AI 的「精神病」时代",
+        "show": "No Priors — Andrej Karpathy",
+        "points": [
+          "<strong>从 80/20 到 20/80：</strong> Karpathy 说从去年 12 月开始，他已经基本不再手写代码了。软件工程师的工作流已经完全变了，但大多数人还没意识到这个变化有多么戏剧性。",
+          "<strong>技能问题，不是能力问题：</strong> 当 agent 没有按预期工作时，你会觉得这是「skill issue」——不是工具不行，是你还没学会怎么用它。这种感觉非常上瘾。",
+          "<strong>Dobby 家庭管家：</strong> Karpathy 用 agent 搭建了智能家居系统，取名 Dobby。三次 prompt 就找到了家里的 Sonos 音响并开始播放音乐。现在 Dobby 控制了灯光、空调、百叶窗、泳池和安防系统，全部通过 WhatsApp 自然语言交互。",
+          "<strong>AutoResearch：</strong> 让 agent 完全自主地进行模型训练超参优化。他给 NanoChat 跑了一晚上，第二天发现系统找到了他手动调参没发现的组合：忘了 value embeddings 的 weight decay、Adam betas 没调好。这个方向的终极目标是全自动化研究组织。",
+          "<strong>开源与闭源的动态平衡：</strong> 开源模型目前落后前沿约 6-8 个月，但这其实是健康的生态。他希望始终有一个公开的、行业共享的智能平台存在，不希望被少数封闭实验室完全主导。",
+          "<strong>教育的重塑：</strong> MicroGPT 只有 200 行 Python，现在他不再写教程给人看，而是写给 agent 理解。agent 理解了之后，再用无限耐心向不同水平的人解释。「人类互相教学的时代可能要结束了。」",
+          "<strong>AI 的「锯齿状」智能：</strong> 模型在可验证任务上表现惊人，但在「柔性」任务上仍然很笨。例如让 ChatGPT 讲笑话，它还是会讲那个「科学家不信任原子，因为它们组成了一切」的老笑话。代码智能不会自动带来全面智能提升。"
+        ],
+        "quote": "「人类心理上对 AI 的期待，实际上不是 LLM 的原始形态。人们想要的是一个个性化的实体，你可以告诉它事情，它记得你，它就像 WhatsApp 背后的一个存在。」",
+        "url": "https://youtube.com/watch?v=kwSVtQ7dziU"
+      }
+    ]
+  },
+  "2026-03-21": {
+    "date": "3月21日",
+    "dateShort": "03.21",
+    "heroSub": "Anthropic、Google、Replit、Cursor、OpenAI 等巨头的最新动态",
+    "twitter": [
+      {
+        "author": "Thariq",
+        "role": "Anthropic 工程师",
+        "text": "发布了 <strong>Claude Code Channels</strong>，现在可以通过 Telegram 和 Discord 直接从手机控制你的 Claude Code 会话。获得了社区的极大欢迎（17k+ likes）。",
+        "url": "https://x.com/trq212/status/2034761016320696565"
+      },
+      {
+        "author": "Aaron Levie",
+        "role": "Box CEO",
+        "text": "认为未来知识工作者的计算预算会持续上升。工程师已经在并行运行多个 agent，接下来律师、市场、销售都会跟上。",
+        "url": "https://x.com/levie/status/2034833274506281061"
+      },
+      {
+        "author": "Josh Woodward",
+        "role": "Google Labs VP",
+        "text": "修复了一个让人头疼的问题：<strong>Gemini 在 Android 上对话时如果你停下来思考或犹豫，它不会再急着打断你抢答了</strong>。",
+        "url": "https://x.com/joshwoodward/status/2034797067344998862"
+      },
+      {
+        "author": "Amjad Masad",
+        "role": "Replit CEO",
+        "text": "分享了 Replit 的「无限探索设计」体验，你可以无限探索各种设计方案，然后一键 Build，直接变成一个生产级的应用。",
+        "url": "https://x.com/amasad/status/2034702399718539355"
+      },
+      {
+        "author": "Ryo Lu",
+        "role": "Cursor 设计负责人",
+        "text": "推介了 <strong>Composer 2</strong>，号称「前沿智能、成本极低、速度极快」。",
+        "url": "https://x.com/ryolu_/status/2034690837444272266"
+      },
+      {
+        "author": "Dan Shipper",
+        "role": "Every CEO",
+        "text": "发了关于「如何用 AI 写出好文章」的指南，同时展示了用 Cursor Composer 2 优化生产 QA 流程。",
+        "url": "https://x.com/danshipper/status/2034723450644840606"
+      },
+      {
+        "author": "Zara Zhang",
+        "role": "follow-builders 作者",
+        "text": "发布了 <strong>MySay</strong>，一个通过语音对话帮你写推文和 LinkedIn 帖子的 AI 工具。",
+        "url": "https://x.com/zarazhangrui/status/2034699643104501958"
+      },
+      {
+        "author": "Peter Yang",
+        "role": "Roblox 产品 VP",
+        "text": "分析 OpenAI 的策略：1) ChatGPT 安装量最大；2) 让它成为 coding 和知识工作的利器；3) 把它变成个人助手。",
+        "url": "https://x.com/petergyang/status/2034786020160635031"
+      },
+      {
+        "author": "Nikunj Kothari",
+        "role": "FPV Ventures 合伙人",
+        "text": "发布了 <strong>Prompt to Chip</strong>，一个交互式可视化工具，展示你的 prompt 从输入到芯片处理再到返回结果的完整路径。",
+        "url": "https://x.com/nikunj/status/2034764522662281562"
+      },
+      {
+        "author": "Garry Tan",
+        "role": "YC CEO",
+        "text": "认为 <strong>Markdown + LLM 本质上就是代码</strong>，在处理高价值、高复杂度的任务时，远优于任何确定性语言。",
+        "url": "https://x.com/garrytan/status/2034881003140129145"
+      },
+      {
+        "author": "Peter Steinberger",
+        "role": "OpenClaw 联合创始人",
+        "text": "引用了一句话：<strong>「你的挫败感就是产品本身。」</strong>",
+        "url": "https://x.com/steipete/status/2034778291845132389"
+      },
+      {
+        "author": "Andrej Karpathy",
+        "role": "",
+        "text": "推荐了电影《Project Hail Mary》，称赞电影在保留原著内核的同时拍出了少见的科幻友谊。",
+        "url": "https://x.com/karpathy/status/2034865693544604001"
+      }
+    ],
+    "podcasts": [
+      {
+        "title": "OpenAI 的护城河问题与软件的未来",
+        "show": "Data Driven NYC — Benedict Evans",
+        "points": [
+          "<strong>OpenAI 没有护城河</strong> — 基础模型没有赢家通吃效应，3-6 家公司能做出 frontier 模型且不断互相超越。",
+          "<strong>更好的模型解决不了根本问题</strong> — 从 90% 准确率到 95% 没有本质区别，只有从「差不多对」到「完全对」才是质变。",
+          "<strong>AI 产品团队是「策略接受者」而非「策略制定者」</strong> — 你不知道下周模型能做什么。",
+          "<strong>OpenClaw 是 AI 的 Desktop Linux 时刻</strong> — 突然之间你可以自己动手搭建。",
+          "软件会更多，不是更少 — 就像 SaaS 让软件从 5 个变成数百个，AI coding 会让软件数量再上一个量级。"
+        ],
+        "url": "https://youtube.com/watch?v=jH2ZIUKvazU"
+      }
+    ]
+  }
+};
+var dates = Object.keys(digests).sort().reverse();
+var idx = 0;
+var sliding = false;
+function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function render(){
+  var dk=dates[idx], d=digests[dk];
+  document.getElementById('headerDate').textContent=d.date;
+  document.title='AI Builders Digest - '+d.date;
+  var h='<div class="hero"><div class="hero-date">'+esc(d.date)+'</div><div class="hero-sub">'+esc(d.heroSub)+'</div><div class="hero-line"></div></div><div class="main">';
+  if(d.twitter&&d.twitter.length){h+='<div class="digest-section"><div class="section-label"><div class="section-dot twitter"></div><div class="section-name">X / Twitter</div></div>';for(var i=0;i<d.twitter.length;i++){var t=d.twitter[i];h+='<div class="card"><div class="card-author">'+esc(t.author)+(t.role?' <span class="role">/ '+esc(t.role)+'</span>':'')+'</div><div class="card-body">'+t.text+'</div><a class="card-link" href="'+esc(t.url)+'" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> 查看原文</a></div>';}h+='</div>';}
+  if(d.podcasts&&d.podcasts.length){h+='<div class="digest-section"><div class="section-label"><div class="section-dot podcast"></div><div class="section-name">Podcasts</div></div>';for(var i=0;i<d.podcasts.length;i++){var p=d.podcasts[i];h+='<div class="card podcast-card"><div class="podcast-title">'+esc(p.title)+'</div><div class="podcast-show">'+esc(p.show)+'</div><ul class="podcast-points">';for(var j=0;j<p.points.length;j++){h+='<li>'+p.points[j]+'</li>';}h+='</ul>';if(p.quote){h+='<div class="podcast-quote">'+p.quote+'</div>';}h+='<a class="card-link" href="'+esc(p.url)+'" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> 收听完整播客</a></div>';}h+='</div>';}
+  h+='</div>';
+  document.getElementById('content').innerHTML=h;
+  var total=dates.length;
+  var hasNewer=idx<total-1, hasOlder=idx>0;
+  document.getElementById('prevBtn').disabled=!hasNewer;
+  document.getElementById('nextBtn').disabled=!hasOlder;
+  document.getElementById('navLeftLabel').textContent=hasNewer?digests[dates[idx+1]].date:'';
+  document.getElementById('navRightLabel').textContent=hasOlder?digests[dates[idx-1]].date:'';
+}
+function go(dir){
+  if(sliding) return;
+  var ni=idx+dir;
+  if(ni<0||ni>=dates.length) return;
+  sliding=true;
+  var pw=document.getElementById('pageWrapper');
+  pw.classList.add(dir>0?'slide-left':'slide-right');
+  setTimeout(function(){
+    idx=ni;
+    render();
+    window.scrollTo({top:0,behavior:'instant'});
+    pw.classList.remove('slide-left','slide-right');
+    pw.classList.add(dir>0?'slide-right':'slide-left');
+    requestAnimationFrame(function(){
+      requestAnimationFrame(function(){
+        pw.classList.remove('slide-left','slide-right');
+        sliding=false;
+      });
+    });
+  },260);
+}
+document.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')go(1);if(e.key==='ArrowRight')go(-1);});
+render();
+</script>
+</body>
+</html>
+>>>>>>> 9cd51971284ab8100d6e1bb21eb72abdd8e6632f
