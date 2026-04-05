@@ -173,6 +173,91 @@ body { font-family: var(--font-sans); background: var(--bg); color: var(--text-p
 <footer class="footer"><div class="footer-line"></div><div class="footer-text">Chen &middot; Powered by follow-builders</div></footer>
 <script>
 var digests = {
+
+"2026-04-05": {
+  "date": "4月5日",
+  "dateShort": "04.05",
+  "heroSub": "Marc Andreessen 谈 Agent 架构的本质、Anthropic 锁闭生态引发社区反弹、Claude Code 送免费额度、Cursor 新界面发布",
+  "twitter": [
+    {
+      "author": "Peter Steinberger",
+      "role": "OpenClaw 联合创始人",
+      "text": "公开批评 <strong>Anthropic 锁闭生态</strong>——先是把热门开源功能搬进自家闭源产品，然后封锁开源接入。他说自己和 Dave Morin 曾试图说服 Anthropic，最多只拖延了一周。3220 赞、295 转发，是今天最大的一条。另一条提到 <strong>GitHub API 配额不够用</strong>——设计时没考虑到 Agent 场景，1832 赞。",
+      "url": "https://x.com/steipete/status/2040209434019082522"
+    },
+    {
+      "author": "Thariq",
+      "role": "Claude Code 团队 / Anthropic",
+      "text": "宣布给 Claude Code 用户<strong>赠送一个月免费额度</strong>，作为最近服务不稳定补偿。1728 赞。虽然大方，但在 OpenClaw 被封的背景下，社区情绪很复杂。",
+      "url": "https://x.com/trq212/status/2040215427931156595"
+    },
+    {
+      "author": "Ryo Lu",
+      "role": "Cursor 设计负责人",
+      "text": "发布 <strong>Composer 2 新界面和全新图标系统</strong>——「made with care and character」。强调「simpler is better」的设计哲学。周末开放 2x 使用量。411 赞那条「simpler is better」是互动最高的。",
+      "url": "https://x.com/ryolu_/status/2040270917637648749"
+    },
+    {
+      "author": "Swyx",
+      "role": "Latent Space 播客 / AI 工程师",
+      "text": "展示了一个令人惊讶的实验：<strong>把博客和推文粘贴进 Devin，它一次性完成了完整实现</strong>——他称之为「agentic self improvement」。用的底层模型是 Gemini Flash Lite，表现远超预期。130 赞。另外吐槽 AI Twitter 的信息质量「这就是为什么没人把 AI Twitter 当回事」——127 赞。",
+      "url": "https://x.com/swyx/status/2040181076237443299"
+    },
+    {
+      "author": "Aaron Levie",
+      "role": "Box CEO",
+      "text": "讨论 <strong>Agent 管理的认知极限</strong>：人能 hold 住的上下文有限，所以公司需要层层管理。Agent 目前和人类一样受限于上下文，所以管理 Agent 也需要花费真实的心智成本——这反驳了「人会失业」的论点。127 赞。",
+      "url": "https://x.com/levie/status/2040264454982480138"
+    },
+    {
+      "author": "Claude",
+      "role": "Anthropic",
+      "text": "宣布 <strong>Microsoft 365 连接器</strong>登陆所有 Claude 套餐——可以接入 Outlook、OneDrive、SharePoint，把邮件和文档直接带入对话。14043 赞、1178 转发，是今天互动量最高的推文。",
+      "url": "https://x.com/claudeai/status/2040086268562842097"
+    },
+    {
+      "author": "Peter Yang",
+      "role": "Roblox 产品 / AI 教程博主",
+      "text": "分享了他给 OpenClaw soul.md 写的 prompt——风格定义：<strong>温暖、犀利、干幽默，不是聊天机器人而是一个人</strong>。核心规则包括「跳过 Great question 直接帮忙」「有强观点不要说 it depends」。25 赞，但对于 Agent 人格定制很有参考价值。",
+      "url": "https://x.com/petergyang/status/2040269162719887610"
+    },
+    {
+      "author": "Zara Zhang",
+      "role": "Builder / Harvard '17",
+      "text": "观察到新趋势：<strong>人们开始把同事、网红甚至前任「蒸馏」成 Agent 技能</strong>。78 赞。这个观察很有意思——从模仿名人到个性化 Agent 的人格建模。",
+      "url": "https://x.com/zarazhangrui/status/2040211603875074512"
+    },
+    {
+      "author": "Garry Tan",
+      "role": "Y Combinator CEO",
+      "text": "宣布 GStack 发布 <strong>/plan-devex-review</strong> 工具，帮助开发者创建优秀的开发体验。还秀了 Garry's List 页面速度评分达到 95——「代码生成反对者可以闭嘴了」。113 赞。",
+      "url": "https://x.com/garrytan/status/2040211569775395042"
+    },
+    {
+      "author": "Nan Yu",
+      "role": "Linear 产品负责人",
+      "text": "讨论组织架构：<strong>产品管理和产品营销应该合并</strong>，但设计不应该归产品管理管——否则探索会变浅、美学和品牌会受影响。181 赞，是今天互动最高的非官方推文之一。",
+      "url": "https://x.com/thenanyu/status/2040177368187212157"
+    }
+  ],
+  "podcasts": [
+    {
+      "show": "Latent Space",
+      "title": "Marc Andreessen on The Death of the Browser, Pi + OpenClaw, and Why This Time Is Different",
+      "quote": "Agent 的本质就是 LLM + shell + 文件系统 + markdown + cron。就这么简单。而且它能在你睡觉的时候给自己加新功能。",
+      "points": [
+        "<strong>Agent 架构的本质</strong>：Marc 说 Agent = LLM + Unix shell + 文件系统 + markdown + cron。不需要 MCP 之类的花哨协议，shell 已经有足够的潜在能力。这个组合让 Agent 可以自我迁移、自我修改、自我扩展",
+        "<strong>Agent 和模型是解耦的</strong>：你的 Agent 本质上就是一堆文件。可以换底层 LLM、换执行环境、换文件系统——状态都在。这比任何锁定架构都更强大",
+        "<strong>四次根本性突破</strong>：LLM → 推理（o1/R1）→ Agent（OpenClaw）→ 自我改进（RSI）。四个都在工作，而且每个都在加速",
+        "<strong>浏览器可能要死了</strong>：当 Agent 之间直接对话、直接消费信息，人类不再需要 UI。Marc 说「你不需要浏览器，你只需要结果」。但这需要 Proof of Human 先解决",
+        "<strong>开源 AI 的独特价值</strong>：DeepSeek 的贡献不只是免费模型，而是让全世界知道了推理模型怎么做。R1 发布后三个月，所有 AI 都加了推理能力",
+        "<strong>编码的未来</strong>：软件从稀缺变成无限供应。安全漏洞会被 Agent 批量修复。十年后可能连「编程语言」这个概念都不再有意义",
+        "<strong>AI + Crypto 的统一</strong>：Agent 需要钱来买东西，Stablecoin 是天然的解决方案。AI 是 Crypto 的杀手级应用"
+      ],
+      "url": "https://www.youtube.com/@LatentSpacePod"
+    }
+  ]
+},
 "2026-04-04": {
   "date": "4月4日",
   "dateShort": "04.04",
