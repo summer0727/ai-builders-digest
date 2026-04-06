@@ -174,7 +174,73 @@ body { font-family: var(--font-sans); background: var(--bg); color: var(--text-p
 <script>
 var digests = {
 
-"2026-04-05": {
+
+  "2026-04-06": {
+    "date": "4月6日",
+    "dateShort": "04.06",
+    "heroSub": "Karpathy 分享个人 Wiki 式 AI 个性化方案、ChatGPT 联合创始人创办 Periodic Labs 用 AI 做材料科学、Aaron Levie 谈 Agent 架构从 embedding 走向类人工作流",
+    "twitter": [
+      {
+        "author": "Andrej Karpathy",
+        "role": "OpenAI 联合创始人 / 前 Tesla AI 总监",
+        "text": "连发三条重磅推文。<strong>个人 Wiki 式 AI 个性化方案</strong>（4186赞）：推荐 Farzapedia 这种做法——把个人信息组织成显式的、可审查的 Wiki 文件，而不是让 AI 「越用越懂你」。四大优势：显式可控、数据归你、File over App、BYOAI。另一条分享 <strong>「idea file」概念</strong>（17282赞，今天最火）：在 Agent 时代，与其分享具体代码/应用，不如分享 idea——然后让对方的 Agent 定制化构建。还提出 <strong>用 AI 提升政府透明度</strong>（3029赞）：AI 可以让普通人处理 4000 页法案、游说关系图谱、政府采购数据——以前只有调查记者能做的事。",
+        "url": "https://x.com/karpathy/status/2040470801506541998"
+      },
+      {
+        "author": "Aaron Levie",
+        "role": "Box CEO",
+        "text": "两条长文讨论 Agent 架构演进。<strong>从 embedding 走向类人工作流</strong>：以前 Agent 处理文档靠 embedding + 相似度搜索，现在上下文窗口大了、工具调用强了、推理能力提升了，Agent 可以像人一样「搜索-阅读-再搜索」，而不需要奇怪的 hack。<strong>企业 AI 的核心是上下文层</strong>：即使最先进的模型也不可能拥有所有知识——每个企业、每个用户的信息访问权限都不同。模型层做持续学习几乎不可能，所以 RAG/上下文层永远是 AI 技术栈的核心。",
+        "url": "https://x.com/levie/status/2040650799550722243"
+      },
+      {
+        "author": "Peter Steinberger",
+        "role": "OpenClaw 联合创始人",
+        "text": "发了一句意味深长的「<strong>There's a big wave coming</strong>」，1043赞。没有展开说是什么，但结合他最近 Anthropic 封锁生态的批评，应该在暗示更大的行业变局。",
+        "url": "https://x.com/steipete/status/2040492573819904026"
+      },
+      {
+        "author": "Thariq",
+        "role": "Claude Code 团队 / Anthropic",
+        "text": "发了一个「POV: you're cooking」的视频 meme，722赞。看起来 Claude Code 团队在周末也在加班搞东西。",
+        "url": "https://x.com/trq212/status/2040557561464885382"
+      },
+      {
+        "author": "Zara Zhang",
+        "role": "Builder / Harvard '17",
+        "text": "分享了一个实用的 <strong>prompting 技巧</strong>：「我总是问模型——你有什么问题吗？」71赞。简单但有效，让模型主动澄清模糊需求。",
+        "url": "https://x.com/zarazhangrui/status/2040565939100676382"
+      },
+      {
+        "author": "Garry Tan",
+        "role": "Y Combinator CEO",
+        "text": "GStack 更新：14 个安全 bug 修复，其中一半来自社区 PR。还在推进 <strong>adaptive code review</strong>，朝 L8 软件工厂迈进。",
+        "url": "https://x.com/garrytan/status/2040658880586522783"
+      },
+      {
+        "author": "Peter Yang",
+        "role": "Roblox 产品 / AI 教程博主",
+        "text": "问社区：<strong>OpenClaw + GPT 长什么样</strong>——有多少人格在里面？63赞。还凌晨三点在上海纠结要不要买 Mac Studio 来 vibe code。",
+        "url": "https://x.com/petergyang/status/2040414021091037685"
+      }
+    ],
+    "podcasts": [
+      {
+        "show": "No Priors",
+        "title": "AI for Atoms: How Periodic Labs is Revolutionizing Materials Engineering with Liam Fedus",
+        "quote": "科学的本质不是坐在房间里使劲想。你必须做实验、从实验中学习、与现实交互。而 AI 终于可以把这个循环闭环了。",
+        "points": [
+          "<strong>从 ChatGPT 到材料科学</strong>：Liam Fedus 是 ChatGPT 的联合创造者、OpenAI 前后训练 VP。他创办的 Periodic Labs 用 AI 做原子级的基础模型——不是写文章，是生成物质",
+          "<strong>为什么物理学家都跑去做 AI</strong>：Higgs 粒子发现后，高能物理缺少新 apparatus 推进下一个能量前沿。AI 提供了巨大的杠杆——用原理性的思维方式解决实际问题",
+          "<strong>AI + 实验的闭环</strong>：不是简单的数据池，而是交互式闭环——AI 分析实验数据、发现异常和模式、驱动下一轮实验。关键是自动化 + 智能系统缺一不可",
+          "<strong>AGI 的「尖刺性」</strong>：智能不是标量。系统可以在某个数学领域世界级，但对相邻问题可能像差生。递归自我改进在软件工程领域正在发生，但不会突然让 AI 懂生物学",
+          "<strong>从数字到物理世界</strong>：十年后如果物理世界能以哪怕数字世界一小部分的速度迭代，生活将彻底不同。半导体、航空航天、能源都是目标领域"
+        ],
+        "url": "https://www.youtube.com/@NoPriorsPodcast"
+      }
+    ]
+  },
+
+""2026-04-05": {
   "date": "4月5日",
   "dateShort": "04.05",
   "heroSub": "Marc Andreessen 谈 Agent 架构的本质、Anthropic 锁闭生态引发社区反弹、Claude Code 送免费额度、Cursor 新界面发布",
