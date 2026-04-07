@@ -175,6 +175,77 @@ body { font-family: var(--font-sans); background: var(--bg); color: var(--text-p
 var digests = {
 
 
+    "2026-04-07": {
+    "date": "4月7日",
+    "dateShort": "04.07",
+    "heroSub": "Moon Lake 用符号推理做世界模型、Guillermo Rauch 用 v0 做月球布料物理模拟、Aaron Levie 谈 Agent 为什么不会消灭工作岗位",
+    "twitter": [
+      {
+        "author": "Peter Yang",
+        "role": "Roblox 产品 / AI 教程博主",
+        "text": "分享了 OpenAI Codex 产品负责人 Ema Biriaco 关于产品路线图的思考：<strong>OpenAI 基本上不做中期路线图</strong>。短期是八周内能交付的具体东西，长期是一年后模型会更聪明的「感觉」。中间的产品路线图很尴尬，所以他们靠长期方向 + 短期赌注的组合来推进。272赞。",
+        "url": "https://x.com/petergyang/status/2040943889822232790"
+      },
+      {
+        "author": "Guillermo Rauch",
+        "role": "Vercel CEO",
+        "text": "用 <strong>v0 在月球上做了一面旗</strong>——基于物理的布料模拟，用弹簧网格模拟旗帜飘动，自动生成月球地形和陨石坑，还把物理模拟跑在 Web Worker 上提升性能。410赞。还分享了 Vercel 团队在 X 上持续收集用户反馈来塑造产品。1537赞。",
+        "url": "https://x.com/rauchg/status/2040822340532236565"
+      },
+      {
+        "author": "Aaron Levie",
+        "role": "Box CEO",
+        "text": "长文讨论 <strong>AI Agent 不会消灭工作，反而会增加需求</strong>。核心逻辑：Agent 让某个领域更高效 → 成本降低 → 该技能被应用到更多场景 → 反而需要更多人。代码变多→安全问题更多→更多安全岗。AI 降低内容制作成本→更多媒体工作。169赞。",
+        "url": "https://x.com/levie/status/2040967947275948357"
+      },
+      {
+        "author": "Peter Steinberger",
+        "role": "OpenClaw 联合创始人",
+        "text": "发了一条「<strong>it took a hammer, but i managed to beat emotions into GPT</strong>」，625赞。配图展示了 GPT 的情绪化输出。还在推复活节梗「<strong>GPTEESUS HAS RISEN</strong>」，311赞。",
+        "url": "https://x.com/steipete/status/2040982273193869671"
+      },
+      {
+        "author": "Garry Tan",
+        "role": "Y Combinator CEO",
+        "text": "「<strong>Golden age of open source is here</strong>」，3836赞，今天最高赞推文。还转发了一条呼吁合法化自动驾驶的帖子。",
+        "url": "https://x.com/garrytan/status/2040891664617848993"
+      },
+      {
+        "author": "Andrej Karpathy",
+        "role": "OpenAI 联合创始人 / 前 Tesla AI 总监",
+        "text": "感慨 <strong>GitHub Gist 的评论质量远超其他平台</strong>——更有帮助、更有洞察力、更少AI味。问社区是因为用户群、Markdown格式、还是缺乏激励？479赞。",
+        "url": "https://x.com/karpathy/status/2040806346556428585"
+      },
+      {
+        "author": "Zara Zhang",
+        "role": "Builder / Harvard '17",
+        "text": "两个观点：<strong>在 AI 帮你总结一切的时代，花时间深度阅读长内容反而更有价值</strong>。还有一个实用技巧——在 Agent 的 prompt 里加一句「让 Agent 成为你产品的布道师」，因为没有 GUI 的产品，Agent 就是界面。86赞。",
+        "url": "https://x.com/zarazhangrui/status/2041031588000252279"
+      },
+      {
+        "author": "Amjad Masad",
+        "role": "Replit CEO",
+        "text": "展示了 <strong>New X API + Replit 的组合玩法</strong>：有人用 X 实时数据做了一个 NASA Artemis II 任务可视化。359赞。",
+        "url": "https://x.com/amasad/status/2040918650245578906"
+      }
+    ],
+    "podcasts": [
+      {
+        "show": "Latent Space",
+        "title": "Moonlake: Causal World Models should be Multimodal, Interactive, and Efficient",
+        "quote": "视觉理解基本停滞了——你做到了物体识别，然后就没有进展了。任何视觉语言模型，语言做了90%的工作，视觉几乎没用。",
+        "points": [
+          "<strong>从像素到符号</strong>：NLP 传奇 Chris Manning 和学生孙凡云创办 Moon Lake，用符号推理而非纯像素来做世界模型。核心观点：语言是认知工具，符号表征比像素高效五个数量级",
+          "<strong>不是 Unity 代码生成</strong>：模型通过推理链理解物理、几何、因果关系，游戏引擎只是工具之一。可以按需切换物理引擎、流体力学模拟等",
+          "<strong>Reverie 渲染器</strong>：用扩散模型把推理模型生成的抽象世界「上色」成照片级画面。渲染器本身也能参与游戏循环——收集10个苹果后子弹变成苹果",
+          "<strong>与 LeCun 的根本分歧</strong>：LeCun 认为视觉是一切的基础，语言只是低带宽通信。Manning 认为这完全错了——黑猩猩也有极好的视觉，但只有人类发展出语言后才实现了智能飞跃",
+          "<strong>商业化路径</strong>：先做游戏，再扩展到具身智能。用户告诉模型目标（教孩子谦虚、训练无人机搜救），模型生成训练环境"
+        ],
+        "url": "https://www.youtube.com/@LatentSpacePod"
+      }
+    ]
+  },
+
   "2026-04-06": {
     "date": "4月6日",
     "dateShort": "04.06",
