@@ -175,6 +175,77 @@ body { font-family: var(--font-sans); background: var(--bg); color: var(--text-p
 var digests = {
 
 
+    "2026-04-08": {
+    "date": "4月8日",
+    "dateShort": "04.08",
+    "heroSub": "Peter Yang 谈 Agent 优先时代的5个工作趋势、Claude Code 预告新功能、Mistral 发布开源 TTS 模型 Voxtral",
+    "twitter": [
+      {
+        "author": "Peter Yang",
+        "role": "Roblox 产品 / AI 教程博主",
+        "text": "和 a16z 合伙人 Anish 聊 <strong>Agent 优先时代的工作未来</strong>，五个核心观点：1）编程会吃掉所有知识工作，他现在 80% 的工作通过 AI coding agent 完成；2）2-3 人小团队 + agent 群会取代臃肿的大组织；3）完成任务类的 App 会萎缩，娱乐类 App 会存活；4）个人 agent 会深度理解你——他的 OpenClaw 提醒他「孩子 7 岁和 4 岁了，多花时间陪他们」；5）人类野心没有天花板，经济形态在变而不是在缩小。74赞。",
+        "url": "https://x.com/petergyang/status/2041331383344443795"
+      },
+      {
+        "author": "Thariq",
+        "role": "Claude Code @ Anthropic",
+        "text": "预告明天会展示一个 <strong>尚未发布的新功能 Demo</strong>，355赞。还发帖征集 MAX 20x 计划 token 消耗异常的用户做调研，想改善 /usage 功能的透明度，1447赞。",
+        "url": "https://x.com/trq212/status/2041380183295590471"
+      },
+      {
+        "author": "Garry Tan",
+        "role": "Y Combinator CEO",
+        "text": "转发安全问题：<strong>Cowork 存在文件泄露漏洞</strong>，攻击者可以通过 Claude 编码环境中的未修补漏洞窃取用户文件。该漏洞最早由安全研究员 Johann Rehberger 披露，Anthropic 已确认但未修复，现在延伸到了 Cowork 产品。108赞。",
+        "url": "https://x.com/garrytan/status/2041388847930712399"
+      },
+      {
+        "author": "Aaron Levie",
+        "role": "Box CEO",
+        "text": "讨论 <strong>Agent 时代的工作本质</strong>：Agent 把工作往上提了一层抽象——你变成了编辑、管理者、制作人。关键步骤包括告诉 agent 做什么、给它正确的指令和上下文、在它偏移时介入干预、审核最终产出。任务越长，规划和审查阶段占比越大。<strong>品味很重要，理解手艺很重要，技能终究很重要</strong>。112赞。",
+        "url": "https://x.com/levie/status/2041347596342460439"
+      },
+      {
+        "author": "Dan Shipper",
+        "role": "Every CEO",
+        "text": "两个观点：<strong>因为 AI 去层级化是愚蠢的</strong>——agent 的经验让他确信专业化和层级依然非常有价值，也许可以少几层中层管理，但组织架构不会消失。77赞。还提到「context rot」问题意味着你必须要专业化。另更新了 Every 的实时 AI 头条追踪器，用 Spiral 做主笔，每 30 分钟自动生成。",
+        "url": "https://x.com/danshipper/status/2041302485315248595"
+      },
+      {
+        "author": "Nikunj Kothari",
+        "role": "FPV Ventures 合伙人",
+        "text": "<strong>Anthropic 三个月新增 210 亿美元估值</strong>，单月年化收入增长 110 亿美元，感叹增速惊人。",
+        "url": "https://x.com/nikunj/status/2041291304387444991"
+      },
+      {
+        "author": "Zara Zhang",
+        "role": "Builder / Harvard '17",
+        "text": "用 <strong>Fish Audio API 做个性化播客生成</strong>，即将发布 skill。55赞。还分享了产品思考：<strong>用 AI 做产品，最重要的是想清楚砍什么功能，而不是加什么</strong>。96赞。",
+        "url": "https://x.com/zarazhangrui/status/2041225124490420239"
+      },
+      {
+        "author": "Peter Steinberger",
+        "role": "OpenClaw 联合创始人",
+        "text": "「<strong>pop geek culture</strong>」配梗图，187赞。",
+        "url": "https://x.com/steipete/status/2041225122866938364"
+      }
+    ],
+    "podcasts": [
+      {
+        "show": "Latent Space",
+        "title": "Mistral: Voxtral TTS, Forge, Leanstral & what's next for Mistral 4",
+        "quote": "如果只是转录文本，用 30B 的通用模型完全没意义。一个专门的 3B 模型性能一样，成本只有零头。",
+        "points": [
+          "<strong>Voxtral TTS 开源发布</strong>：Mistral 首个语音生成模型，支持 9 种语言，3B 参数，基于 Minestral 架构，使用自回归 flow matching 替代传统 depth transformer，质量和效率都更好",
+          "<strong>音频生成的新架构探索</strong>：用自研神经音频编解码器将音频转为语义+声学 token，flow matching 在推理时只需 4-16 步，比传统 AR 方法延迟大幅降低",
+          "<strong>Mistral Small 统一多能力</strong>：首次将编码、推理、视觉、函数调用等能力合并到一个 MoE 模型，6B 激活参数，256K 上下文。策略是各团队先独立开发能力，成熟后合并",
+          "<strong>Leanstral 形式化证明</strong>：基于 Lean 的数学定理证明模型，核心价值在于可自动验证的正确性信号——不需要人工判断证明对不对，编译器说了算。未来可用于软件验证",
+          "<strong>AI for Science 方向</strong>：Mistral 正在和合作伙伴探索 AI 在物理、材料科学等领域的应用，核心思路是找到 AI 还未被应用的长输入场景",
+          "<strong>开源理念</strong>：团队认为不该生活在最聪明的模型只在少数公司闭门后面的世界，继续坚持开源和技术报告公开"
+        ],
+        "url": "https://www.youtube.com/@LatentSpacePod"
+      }
+    ]
+  },
     "2026-04-07": {
     "date": "4月7日",
     "dateShort": "04.07",
