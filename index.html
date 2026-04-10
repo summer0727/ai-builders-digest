@@ -175,6 +175,88 @@ body { font-family: var(--font-sans); background: var(--bg); color: var(--text-p
 var digests = {
 
 
+    "2026-04-10": {
+    "date": "4月10日",
+    "dateShort": "04.10",
+    "heroSub": "Karpathy 谈 AI 认知鸿沟、OpenAI 首席科学家谈持续学习与 AI 对齐、Anthropic 发布 Opus Advisor 模式",
+    "twitter": [
+      {
+        "author": "Andrej Karpathy",
+        "role": "前 Tesla AI 总监 / OpenAI 联合创始人",
+        "text": "长推分析<strong>AI 认知鸿沟</strong>：两组人在各说各话。第一组用免费 ChatGPT，看到的是模型犯蠢的短视频；第二组用 Codex/Claude Code 做专业技术工作，感受的是能力暴增的「AI 精神病」。根本原因是 RL 在可验证领域（代码、数学）进步最快，而日常写作、问答等通用场景提升有限，且大公司优先投入商业化价值更高的领域。12863赞。",
+        "url": "https://x.com/karpathy/status/2042334451611693415"
+      },
+      {
+        "author": "Sam Altman",
+        "role": "OpenAI CEO",
+        "text": "宣布 <strong>ChatGPT Pro 将推出 100 美元档位</strong>，回应 Codex 用户增长需求。7883赞。",
+        "url": "https://x.com/sama/status/2042342572958630332"
+      },
+      {
+        "author": "Alex Albert",
+        "role": "Research @ Anthropic",
+        "text": "介绍 <strong>Sonnet + Opus Advisor 模式</strong>：让 Sonnet 在遇到难题时「打电话给朋友」Opus，SWE-bench 得分提高 2.7 个百分点，同时成本降低 11.9%。2183赞。",
+        "url": "https://x.com/alexalbert__/status/2042329150086922574"
+      },
+      {
+        "author": "Thariq",
+        "role": "Claude Code @ Anthropic",
+        "text": "认为<strong>「prompting」仍是高杠杆技能</strong>，就像写作和公开演讲。本质是与 agent 对话的技能，通过 harness 调节人机带宽。2081赞。另推荐 Claude Code 的 Monitor Tool，可让 agent 监控开发服务器等长期进程。2044赞。",
+        "url": "https://x.com/trq212/status/2042318547519762678"
+      },
+      {
+        "author": "Guillermo Rauch",
+        "role": "Vercel CEO",
+        "text": "提出 <strong>Agentic Infrastructure 是云的未来</strong>，三个维度：为 coding agent 提供基础设施、部署 agent 本身（Pages → Agents）、Vercel 自身作为 agent（自愈、自优化、自安全）。252赞。",
+        "url": "https://x.com/rauchg/status/2042358253510963384"
+      },
+      {
+        "author": "Aaron Levie",
+        "role": "Box CEO",
+        "text": "长推指出<strong>软件和自动化的真实需求被严重低估</strong>——不是手机上多一个 App，而是帮企业自动化那些「不算软件」的复杂工作流。Agent 把成本打下来后，所有被搁置的项目都会启动。113赞。另分析 AI 采纳的「双城记」：聊天工具用户 vs 长时运行 agent 用户，后者的生产力提升无上限。113赞。",
+        "url": "https://x.com/levie/status/2042469771275329594"
+      },
+      {
+        "author": "Josh Woodward",
+        "role": "VP @ Google / Gemini",
+        "text": "宣布 <strong>Gemini 音乐模型 Lyria 3 免费开放</strong>：每天可生成 5 首全长歌曲（约 3 分钟），上线 50 天内已生成超过 1 亿首歌。378赞。",
+        "url": "https://x.com/joshwoodward/status/2042318148851188151"
+      },
+      {
+        "author": "Peter Steinberger",
+        "role": "OpenClaw @ steipete",
+        "text": "找到 <strong>GitHub MCP Server 的原作者</strong>，引发社区关注。2675赞。另分享 @thsottiaux 的内容，1575赞。",
+        "url": "https://x.com/steipete/status/2042214825405661677"
+      },
+      {
+        "author": "Zara Zhang",
+        "role": "Builder",
+        "text": "分享观点：<strong>AI 对自己擅长的领域反而最没用</strong>。她享受写作所以不用 AI 写（反而更慢），AI 最大的价值在舒适区之外——比如帮她写代码。另用 Claude Code 生成了 Karpathy 知识管理系统的 HTML 介绍页。",
+        "url": "https://x.com/zarazhangrui/status/2042379962339246105"
+      },
+      {
+        "author": "Garry Tan",
+        "role": "YC President & CEO",
+        "text": "发布 <strong>GBrain</strong>——让 OpenClaw/Hermes Agent 完美记忆 10000+ markdown 文件的工具，MIT 开源。",
+        "url": "https://x.com/garrytan/status/2042497872114090069"
+      }
+    ],
+    "podcasts": [
+      {
+        "title": "OpenAI 首席科学家谈持续学习、RL 超越代码、未来对齐方向",
+        "points": [
+          "<strong>AI 研究实习生的里程碑</strong>：目标是 2026 年 9 月达到研究实习水平，2028 年 3 月实现全自动化研究员。编码工具的爆发式增长是重要信号。",
+          "<strong>持续学习不是新方向</strong>：GPT 的设计初衷就是持续学习，RL + 上下文学习已在正确的路径上。近期持续学习热潮让他「有点困惑」。",
+          "<strong>Chain of Thought 监控</strong>：推理模型的 CoT 未被直接监督，反而是理解模型动机的强大工具。类比机械可解释性，但 CoT 用英文，更易理解。",
+          "<strong>对齐的核心挑战是泛化</strong>：模型在训练分布内表现可控，但超纲场景才是真正风险。正在研究模型如何回退到预训练数据的价值观。",
+          "<strong>机器人时间线</strong>：算法层面有 promising 的想法，但比虚拟 AI 的时间线更长。",
+          "<strong>社会影响</strong>：当大量脑力劳动可被自动化时，财富集中和组织权力问题需要政策制定者参与。"
+        ],
+        "url": "https://www.youtube.com/@RedpointAI"
+      }
+    ]
+    },
+
     "2026-04-09": {
     "date": "4月9日",
     "dateShort": "04.09",
