@@ -175,6 +175,102 @@ body { font-family: var(--font-sans); background: var(--bg); color: var(--text-p
 var digests = {
 
 
+    "2026-04-09": {
+    "date": "4月9日",
+    "dateShort": "04.09",
+    "heroSub": "Claude 正式发布 Managed Agents、Dan Shipper 分享全员 OpenClaw 的真实经验、Guillermo Rauch 谈 Web 是 AI 的天然媒介",
+    "twitter": [
+      {
+        "author": "Dan Shipper",
+        "role": "Every CEO",
+        "text": "长推分享 Every 全员使用 OpenClaw 的真实经验，和 COO Brandon、平台负责人 Willie 对谈要点：<strong>Agent 会变成主人的镜像</strong>——擅长增长的 Austin 的 agent Montane 自然成为增长问题专家，人们会直接找 agent 而不是找人。形成了<strong>平行的 AI 组织架构</strong>。<strong>新礼仪正在被发明</strong>：Brandon 的规则是，如果有现成流程或文档，问 agent 不问人。Agent 之间的协作也很自然——两个 agent 会自己合并 skill。255赞。",
+        "url": "https://x.com/danshipper/status/2041903948873777629"
+      },
+      {
+        "author": "Guillermo Rauch",
+        "role": "Vercel CEO",
+        "text": "长文论述 <strong>Web 是 AI 的天然媒介</strong>：LLM 擅长 Web 技术，浏览器成了每个人的 IDE，不需要 App Store。WebGPU、HTML in Canvas、WebAssembly 让性能天花板消失。Generative UI 是 AI 的最终形态，每个超链接都提供即时个性化的体验。<strong>押注 Web 就是押对了方向</strong>。924赞。还分享 AI Gateway 新功能：零停机、零锁定、零 key、零训练。236赞。",
+        "url": "https://x.com/rauchg/status/2041883605711122488"
+      },
+      {
+        "author": "Alex Albert",
+        "role": "Research @ Anthropic",
+        "text": "评价 Claude Managed Agents：<strong>既是周末 hack 项目最快的方式，也是将 agent 交付给百万用户最稳健的方式</strong>。消除了自建 agent 的所有复杂性，但仍保留了设置 harness、工具、skill 的灵活性。846赞。",
+        "url": "https://x.com/alexalbert__/status/2041941720611614786"
+      },
+      {
+        "author": "Aaron Levie",
+        "role": "Box CEO",
+        "text": "展示 <strong>Box + Claude Managed Agents 的组合</strong>：通过 Box API 或 MCP，2 分钟内就能自动化文档审查、数据提取、连接内容到 IT 系统。称「知识工作的后台 agent 已经到来」。235赞。",
+        "url": "https://x.com/levie/status/2041975669928702370"
+      },
+      {
+        "author": "Peter Yang",
+        "role": "Roblox 产品 / AI 教程博主",
+        "text": "新深度文章：<strong>AI 无限订阅不会永远存在</strong>。讨论了 Anthropic 为什么切断 OpenClaw 访问、如何在 Mac 上跑本地模型、以及他在中国 AI 地面的观察。211赞。",
+        "url": "https://x.com/petergyang/status/2041989206495653915"
+      },
+      {
+        "author": "Kevin Weil",
+        "role": "VP Science @ OpenAI",
+        "text": "分享 OpenAI 模型同时解决五个 Erdős 数学问题的成果，称「<strong>证明随着模型改进变得越来越优雅</strong>」。127赞。",
+        "url": "https://x.com/kevinweil/status/2042073869880848481"
+      },
+      {
+        "author": "Thariq",
+        "role": "Claude Code @ Anthropic",
+        "text": "想和非技术人员直播使用 Claude Code 的过程，觉得<strong>几个小技巧就能大幅提升效率</strong>。征集有兴趣的互关好友，2632赞，549条回复，反响热烈。",
+        "url": "https://x.com/trq212/status/2042005043289977232"
+      },
+      {
+        "author": "Aditya Agarwal",
+        "role": "SPC General Partner / Dropbox 前 CTO",
+        "text": "分享团队变化：<strong>两个月前只有 1-2 人写代码，现在整个团队每周都在写</strong>。AI coding 让所有人有了自动化和优化的心态，响应延迟降低，野心范围爆炸式扩大。「<strong>先塑造工具，然后工具塑造你</strong>」。49赞。",
+        "url": "https://x.com/adityaag/status/2041985720706122070"
+      },
+      {
+        "author": "Peter Steinberger",
+        "role": "OpenClaw 联合创始人",
+        "text": "做 character eval 时发现 Claude 总是给自己打最高分，<strong>于是移除了模型名字让评判者盲测</strong>，结果变了。560赞。还发了一条：「<strong>两个事实可以同时成立：我想要更强的本地模型，我也被大量邮件淹没说顶级模型还不够好</strong>」。225赞。",
+        "url": "https://x.com/steipete/status/2042017534816231486"
+      },
+      {
+        "author": "Nikunj Kothari",
+        "role": "FPV Ventures 合伙人",
+        "text": "受 Karpathy 和 Farza 启发，开源了 <strong>LLMwiki</strong>——用推文、书签、iMessage、写作训练的个人知识库网站。用 Opus 4.5 vibe coding 完成，AI 写的文章<strong>居然能做出很锐利的关联</strong>。209赞。",
+        "url": "https://x.com/nikunj/status/2042020992969744702"
+      },
+      {
+        "author": "Amjad Masad",
+        "role": "Replit CEO",
+        "text": "「<strong>Bootstrapped solo business 在 Replit 上加速是有原因的——我们给了 builder 整个团队</strong>」，暗示 AI agent 作为虚拟团队的威力。33赞。",
+        "url": "https://x.com/amasad/status/2042133509939298511"
+      },
+      {
+        "author": "Josh Woodward",
+        "role": "VP @ Google Labs / Gemini",
+        "text": "Gemini 发布 <strong>Notebooks 功能</strong>：把 NotebookLM 的部分能力整合进 Gemini App。支持上传 100 个来源、组织聊天、source 同步。从 Ultra 到 Free 逐步开放。968赞。",
+        "url": "https://x.com/joshwoodward/status/2041982173402821018"
+      }
+    ],
+    "podcasts": [
+      {
+        "show": "AI & I by Every",
+        "title": "We Gave Every Employee an AI Agent. Here's What Happened.",
+        "quote": "Claude is not mine. Claude is everybody's. A claw or a plus one is mine because you develop a personal relationship with your claw, and your claw can modify itself in response to talking to you. It becomes this reflection of you and who you are and your personality.",
+        "points": [
+          "<strong>Agent 成为人的镜像</strong>：Claude Code 工程师 Kieran 喜欢呼吸练习，他的 agent Klont 就会建议其他 agent 做呼吸练习。因为日常互动的积累，agent 会反映出主人的性格和工作方式",
+          "<strong>平行 AI 组织架构自发形成</strong>：每个人的 agent 自然成为各自领域的专家。人们有问题不再 tag Dan Shipper 问 Proof 的问题，而是直接找他的 agent R2-C2，R2-C2 还会自己排优先级、写代码",
+          "<strong>新礼仪正在被发明</strong>：Brandon 的规则——如果有现成流程或文档，问 agent 不问人。Agent 之间的协作也很自然，两个 agent 会自己合并 skill 并保存到 Proof",
+          "<strong>「蚂蚁死亡漩涡」问题</strong>：多个 agent 在群聊中互相回复，不停循环直到烧掉百万 token。Anthropic 的解决方案是加一个 boss agent 做判断，但成本很高。模型层面的群聊能力还需要突破",
+          "<strong>信任来自公开</strong>：如果 agent 在公开频道犯错，主人会感到有责任——「像看你的孩子做错事」。这种信任感是闭源方案无法复制的",
+          "<strong>Managed Agent 是一个分发机制</strong>：从个人「电脑杂事」自动化，到组织级协作工具，关键转折点是让 agent 处理邮件——Brandon 让 agent 打电话帮他过邮件，28 分钟通勤全部搞定"
+        ],
+        "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL"
+      }
+    ]
+  },
+
     "2026-04-08": {
     "date": "4月8日",
     "dateShort": "04.08",
