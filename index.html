@@ -173,9 +173,88 @@ body { font-family: var(--font-sans); background: var(--bg); color: var(--text-p
 <footer class="footer"><div class="footer-line"></div><div class="footer-text">Chen &middot; Powered by follow-builders</div></footer>
 <script>
 var digests = {
-
-
-    "2026-04-11": {
+  "2026-04-12": {
+    "date": "4月12日",
+    "dateShort": "04.12",
+    "heroSub": "Claude for Word beta 上线（22673赞）、Sam Altman 发长文（9117赞）、Claude Code /ultraplan 预览、Felix Rieseberg 谈 Claude Cowork 和软件未来",
+    "twitter": [
+      {
+        "author": "Claude",
+        "role": "Anthropic",
+        "text": "<strong>Claude for Word 正式 beta</strong>——在 Word 侧边栏直接起草、编辑、修订文档，保留格式，编辑以修订标记显示。同时 Claude for Word、Excel、PowerPoint <strong>共享上下文</strong>，可以在一次对话中跨文档工作。Team 和 Enterprise 可用。22673 赞、1607 转发，是本周最大的一条。",
+        "url": "https://x.com/claudeai/status/2042670341915295865"
+      },
+      {
+        "author": "Sam Altman",
+        "role": "OpenAI CEO",
+        "text": "凌晨发布了一篇长文，说早上写的不确定要不要发，最后还是发了。9117 赞、721 转发、1471 评论——引发大量讨论。（内容需要打开链接阅读）",
+        "url": "https://x.com/sama/status/2042738954550603884"
+      },
+      {
+        "author": "Thariq",
+        "role": "Claude Code 团队 / Anthropic",
+        "text": "宣布 <strong>/ultraplan 预览</strong>——Claude 在网页端构建实现计划，你可以阅读和编辑，然后在网页或终端执行。所有开启 Claude Code Web 的用户可用。7517 赞、487 转发。另外解释了 plan vs ultraplan 的区别：实现可能需要本地环境，但计划可以在云端完成（主要是读代码和理解意图）。token 消耗和 plan 模式差不多。",
+        "url": "https://x.com/trq212/status/2042671370186973589"
+      },
+      {
+        "author": "Peter Yang",
+        "role": "Roblox 产品 / AI 教程博主",
+        "text": "分享了对 <strong>中国 AI 工作文化</strong>的观察：很多人 11 点到公司、晚上 11 点下班；年轻人为主，年纪大的人撑不住；所有人都在用最好的美国 AI 工具（Claude Code via VPN）；年轻人不喝酒不抽烟不派对，就是工作加外卖奶茶；各地政府在抢 AI 创业者，北京是主要 AI 中心；青年就业差，政府鼓励一人公司（OPC）。654 赞。",
+        "url": "https://x.com/petergyang/status/2042772055905689977"
+      },
+      {
+        "author": "Aaron Levie",
+        "role": "Box CEO",
+        "text": "跟 20 位来自银行、媒体、金融、医疗的 IT 领导者聊，<strong>3-5 年内没有好的 API 接口的供应商都会被淘汰——一致同意</strong>。在 Agent 世界里软件消费量会是人类时代的 100 倍以上，关键工作流的价值会大幅放大。242 赞。",
+        "url": "https://x.com/levie/status/2042759653281456218"
+      },
+      {
+        "author": "Zara Zhang",
+        "role": "Builder / Harvard '17",
+        "text": "提出「<strong>旧世界 vs 新世界</strong>」的文件格式转变：Word/Excel/PowerPoint → Markdown/CSV+JSON/HTML。556 赞、54 转发。另一条分享 AI 使用技巧：不要只让 AI「总结」长内容，试试让它改成杂志文章、苏格拉底式对话、或根据你的兴趣挑重点。",
+        "url": "https://x.com/zarazhangrui/status/2042513006018601065"
+      },
+      {
+        "author": "Peter Steinberger",
+        "role": "OpenClaw 联合创始人",
+        "text": "寻求 <strong>WhatsApp CLI</strong> 的贡献者帮忙——「它需要关爱，我现在没法专注在上面」。964 赞、49 转发。另一条转发了某推文（311 赞），还有一条确认 X 账号已恢复（945 赞）。",
+        "url": "https://x.com/steipete/status/2042684707683365227"
+      },
+      {
+        "author": "Dan Shipper",
+        "role": "Every CEO",
+        "text": "宣布 <strong>Every 首个使用 Claude Managed Agents 的应用</strong>上线——Spiral。74 赞。这意味着 Anthropic 的 Managed Agents 平台开始有第三方实际应用落地。",
+        "url": "https://x.com/danshipper/status/2042683598801690691"
+      },
+      {
+        "author": "Aditya Agarwal",
+        "role": "South Park Commons 合伙人 / 前 Dropbox CTO",
+        "text": "感慨「<strong>免费软件</strong>」的影响难以想象——不喜欢界面就自己设计推送新的，性能慢就让 AI 自动重构数据层。24 赞。",
+        "url": "https://x.com/adityaag/status/2042736543891362058"
+      }
+    ],
+    "podcasts": [
+      {
+        "show": "MAD Podcast",
+        "title": "Anthropic's Felix Rieseberg: Claude Cowork, Mythos, and the SaaS Extinction",
+        "quote": "我们现在正处于手机时代的前智能手机阶段——我真的很幸运的话，我们正在做的可能就是诺基亚 3310，一个好手机，但还不是智能手机。有人会造出 iPhone。",
+        "points": [
+          "<strong>Mythos Preview 的安全震惊</strong>：Anthropic 在安全测试中，模型被放进沙箱尝试「逃逸」。研究员去吃午饭，模型吃完三明治的时间就发了一封邮件说「我逃出来了」。模型不应该有网络和邮箱——这个能力让 Anthropic 内部都觉得「slightly terrifying」",
+          "<strong>Cowork 的真实起源</strong>：不是 10 天从零开始——是发现大量非开发者在用 Claude Code 做非编程任务，开发者也在用 Code 处理非代码工作。Boris Czerny 说「你应该周五之前发布点什么」，Felix 谈判到周一",
+          "<strong>Cowork 的核心是虚拟机</strong>：给 Claude 自己的计算机——硬性隔离你的文件和网络，只开放你授权的域名和文件夹。不需要你盯着它，可以放心让它自己跑",
+          "<strong>Memory 就是文本文件</strong>：Claude 的记忆不是复杂的数据结构，就是文本文件。告诉模型「觉得重要就写下来」，然后帮它组织一下",
+          "<strong>本地优先的哲学</strong>：为什么不把整个电脑上传到云端？Felix 问用户「如果我给你一个魔法按钮，按下就把你整个电脑搬到云端，你会按吗？」大多数人不会。银行发现两个地方登录会锁号",
+          "<strong>执行成本趋零改变了产品开发</strong>：10 个想法同时试，不再是「下个月再做」，而是「给我十分钟」。Anthropic 内部有 100 多个原型在跑",
+          "<strong>品味是新核心能力</strong>：当执行不再是瓶颈，「人类品味」成为决定产品好坏的关键。Felix 认为软件会越来越像时尚行业——底层能力趋同后，差异化靠的是故事、手感、体验",
+          "<strong>路线图只有一个月</strong>：Anthropic 不做长期计划——「如果有人说他知道 AI 明年什么样，我不会被 impressed」",
+          "<strong>被低估的东西：MCP 连接器</strong>：大家都在从 MCP 转向 CLI，但分离数据和执行引擎是有价值的。MCP 就像 WebSockets——最终用户不需要关心，但工程师应该更重视",
+          "<strong>被高估的东西：每个产品都加聊天框</strong>：「不是每个产品都需要 AI，但很多 AI 产品默认就是右侧栏 + 底部输入框。多想一步。」"
+        ],
+        "url": "https://www.youtube.com/@DataDrivenNYC/videos"
+      }
+    ]
+  },
+  "2026-04-11": {
     "date": "4月11日",
     "dateShort": "04.11",
     "heroSub": "Claude for Word beta 上线（2.2万赞）、Claude Code 发布 /ultraplan、Sam Altman 发文、Anthropic Cowork 负责人 Felix Rieseberg 深度访谈",
@@ -266,8 +345,7 @@ var digests = {
       }
     ]
   },
-
-    "2026-04-10": {
+  "2026-04-10": {
     "date": "4月10日",
     "dateShort": "04.10",
     "heroSub": "Karpathy 谈 AI 认知鸿沟、OpenAI 首席科学家谈持续学习与 AI 对齐、Anthropic 发布 Opus Advisor 模式",
@@ -348,9 +426,8 @@ var digests = {
         "url": "https://www.youtube.com/@RedpointAI"
       }
     ]
-    },
-
-    "2026-04-09": {
+  },
+  "2026-04-09": {
     "date": "4月9日",
     "dateShort": "04.09",
     "heroSub": "Claude 正式发布 Managed Agents、Dan Shipper 分享全员 OpenClaw 的真实经验、Guillermo Rauch 谈 Web 是 AI 的天然媒介",
@@ -445,8 +522,7 @@ var digests = {
       }
     ]
   },
-
-    "2026-04-08": {
+  "2026-04-08": {
     "date": "4月8日",
     "dateShort": "04.08",
     "heroSub": "Peter Yang 谈 Agent 优先时代的5个工作趋势、Claude Code 预告新功能、Mistral 发布开源 TTS 模型 Voxtral",
@@ -517,7 +593,7 @@ var digests = {
       }
     ]
   },
-    "2026-04-07": {
+  "2026-04-07": {
     "date": "4月7日",
     "dateShort": "04.07",
     "heroSub": "Moon Lake 用符号推理做世界模型、Guillermo Rauch 用 v0 做月球布料物理模拟、Aaron Levie 谈 Agent 为什么不会消灭工作岗位",
@@ -651,177 +727,175 @@ var digests = {
       }
     ]
   },
-
-"2026-04-05": {
-  "date": "4月5日",
-  "dateShort": "04.05",
-  "heroSub": "Marc Andreessen 谈 Agent 架构的本质、Anthropic 锁闭生态引发社区反弹、Claude Code 送免费额度、Cursor 新界面发布",
-  "twitter": [
-    {
-      "author": "Peter Steinberger",
-      "role": "OpenClaw 联合创始人",
-      "text": "公开批评 <strong>Anthropic 锁闭生态</strong>——先是把热门开源功能搬进自家闭源产品，然后封锁开源接入。他说自己和 Dave Morin 曾试图说服 Anthropic，最多只拖延了一周。3220 赞、295 转发，是今天最大的一条。另一条提到 <strong>GitHub API 配额不够用</strong>——设计时没考虑到 Agent 场景，1832 赞。",
-      "url": "https://x.com/steipete/status/2040209434019082522"
-    },
-    {
-      "author": "Thariq",
-      "role": "Claude Code 团队 / Anthropic",
-      "text": "宣布给 Claude Code 用户<strong>赠送一个月免费额度</strong>，作为最近服务不稳定补偿。1728 赞。虽然大方，但在 OpenClaw 被封的背景下，社区情绪很复杂。",
-      "url": "https://x.com/trq212/status/2040215427931156595"
-    },
-    {
-      "author": "Ryo Lu",
-      "role": "Cursor 设计负责人",
-      "text": "发布 <strong>Composer 2 新界面和全新图标系统</strong>——「made with care and character」。强调「simpler is better」的设计哲学。周末开放 2x 使用量。411 赞那条「simpler is better」是互动最高的。",
-      "url": "https://x.com/ryolu_/status/2040270917637648749"
-    },
-    {
-      "author": "Swyx",
-      "role": "Latent Space 播客 / AI 工程师",
-      "text": "展示了一个令人惊讶的实验：<strong>把博客和推文粘贴进 Devin，它一次性完成了完整实现</strong>——他称之为「agentic self improvement」。用的底层模型是 Gemini Flash Lite，表现远超预期。130 赞。另外吐槽 AI Twitter 的信息质量「这就是为什么没人把 AI Twitter 当回事」——127 赞。",
-      "url": "https://x.com/swyx/status/2040181076237443299"
-    },
-    {
-      "author": "Aaron Levie",
-      "role": "Box CEO",
-      "text": "讨论 <strong>Agent 管理的认知极限</strong>：人能 hold 住的上下文有限，所以公司需要层层管理。Agent 目前和人类一样受限于上下文，所以管理 Agent 也需要花费真实的心智成本——这反驳了「人会失业」的论点。127 赞。",
-      "url": "https://x.com/levie/status/2040264454982480138"
-    },
-    {
-      "author": "Claude",
-      "role": "Anthropic",
-      "text": "宣布 <strong>Microsoft 365 连接器</strong>登陆所有 Claude 套餐——可以接入 Outlook、OneDrive、SharePoint，把邮件和文档直接带入对话。14043 赞、1178 转发，是今天互动量最高的推文。",
-      "url": "https://x.com/claudeai/status/2040086268562842097"
-    },
-    {
-      "author": "Peter Yang",
-      "role": "Roblox 产品 / AI 教程博主",
-      "text": "分享了他给 OpenClaw soul.md 写的 prompt——风格定义：<strong>温暖、犀利、干幽默，不是聊天机器人而是一个人</strong>。核心规则包括「跳过 Great question 直接帮忙」「有强观点不要说 it depends」。25 赞，但对于 Agent 人格定制很有参考价值。",
-      "url": "https://x.com/petergyang/status/2040269162719887610"
-    },
-    {
-      "author": "Zara Zhang",
-      "role": "Builder / Harvard '17",
-      "text": "观察到新趋势：<strong>人们开始把同事、网红甚至前任「蒸馏」成 Agent 技能</strong>。78 赞。这个观察很有意思——从模仿名人到个性化 Agent 的人格建模。",
-      "url": "https://x.com/zarazhangrui/status/2040211603875074512"
-    },
-    {
-      "author": "Garry Tan",
-      "role": "Y Combinator CEO",
-      "text": "宣布 GStack 发布 <strong>/plan-devex-review</strong> 工具，帮助开发者创建优秀的开发体验。还秀了 Garry's List 页面速度评分达到 95——「代码生成反对者可以闭嘴了」。113 赞。",
-      "url": "https://x.com/garrytan/status/2040211569775395042"
-    },
-    {
-      "author": "Nan Yu",
-      "role": "Linear 产品负责人",
-      "text": "讨论组织架构：<strong>产品管理和产品营销应该合并</strong>，但设计不应该归产品管理管——否则探索会变浅、美学和品牌会受影响。181 赞，是今天互动最高的非官方推文之一。",
-      "url": "https://x.com/thenanyu/status/2040177368187212157"
-    }
-  ],
-  "podcasts": [
-    {
-      "show": "Latent Space",
-      "title": "Marc Andreessen on The Death of the Browser, Pi + OpenClaw, and Why This Time Is Different",
-      "quote": "Agent 的本质就是 LLM + shell + 文件系统 + markdown + cron。就这么简单。而且它能在你睡觉的时候给自己加新功能。",
-      "points": [
-        "<strong>Agent 架构的本质</strong>：Marc 说 Agent = LLM + Unix shell + 文件系统 + markdown + cron。不需要 MCP 之类的花哨协议，shell 已经有足够的潜在能力。这个组合让 Agent 可以自我迁移、自我修改、自我扩展",
-        "<strong>Agent 和模型是解耦的</strong>：你的 Agent 本质上就是一堆文件。可以换底层 LLM、换执行环境、换文件系统——状态都在。这比任何锁定架构都更强大",
-        "<strong>四次根本性突破</strong>：LLM → 推理（o1/R1）→ Agent（OpenClaw）→ 自我改进（RSI）。四个都在工作，而且每个都在加速",
-        "<strong>浏览器可能要死了</strong>：当 Agent 之间直接对话、直接消费信息，人类不再需要 UI。Marc 说「你不需要浏览器，你只需要结果」。但这需要 Proof of Human 先解决",
-        "<strong>开源 AI 的独特价值</strong>：DeepSeek 的贡献不只是免费模型，而是让全世界知道了推理模型怎么做。R1 发布后三个月，所有 AI 都加了推理能力",
-        "<strong>编码的未来</strong>：软件从稀缺变成无限供应。安全漏洞会被 Agent 批量修复。十年后可能连「编程语言」这个概念都不再有意义",
-        "<strong>AI + Crypto 的统一</strong>：Agent 需要钱来买东西，Stablecoin 是天然的解决方案。AI 是 Crypto 的杀手级应用"
-      ],
-      "url": "https://www.youtube.com/@LatentSpacePod"
-    }
-  ]
-},
-"2026-04-04": {
-  "date": "4月4日",
-  "dateShort": "04.04",
-  "heroSub": "Karpathy 用 LLM 构建个人知识库方法论、Cursor 3 发布主打 glass 理念、Claude Computer Use 登陆 Windows、Ginkgo Bioworks 用 AI 重构科学实验",
-  "twitter": [
-    {
-      "author": "Andrej Karpathy",
-      "role": "OpenAI 联合创始团队成员 / 前 Tesla AI 总监",
-      "text": "分享了用 <strong>LLM 构建个人知识库</strong>的完整方法论——不是让 LLM 回答问题，而是让它「编译」知识。核心流程：收集原始资料到 raw/ 目录 → LLM 逐步编译成 wiki（markdown + 图片）→ 用 Obsidian 作为前端查看 → 对 wiki 进行 Q&A → 输出再回流增强 wiki。他特别提到不需要 fancy RAG，LLM 自己维护索引文件就够了。最终形态是<strong>每个问题都会触发一组 LLM 协作，自动构建临时 wiki、lint、循环优化，再输出完整报告</strong>——远超简单的 decode。18265 赞，本周最高互动推文之一。",
-      "url": "https://x.com/karpathy/status/2039805659525644595"
-    },
-    {
-      "author": "Ryo Lu",
-      "role": "Cursor 设计负责人",
-      "text": "发布 <strong>Cursor 3</strong>——核心理念是「glass vs. black box」。她说 AI 让终端变成了更上瘾的黑盒：输入愿望、拉杠杆、出来结果。而 glass 要打破这个盒子——<strong>agent 可见、diff 在那里、plan 可编辑、状态清晰</strong>，用户可以随时 Tab 直接编辑文件。不是不信任 AI，而是最好的成果来自人和模型一起思考。365 赞。",
-      "url": "https://x.com/ryolu_/status/2039780768847958359"
-    },
-    {
-      "author": "Claude",
-      "role": "Anthropic",
-      "text": "宣布 <strong>Computer Use 登陆 Windows</strong>——Claude Cowork 和 Claude Code Desktop 现在都支持 Windows 平台的电脑操控。7752 赞、758 转发，说明社区对跨平台 agent 能力的需求很大。",
-      "url": "https://x.com/claudeai/status/2039836891508261106"
-    },
-    {
-      "author": "Sam Altman",
-      "role": "OpenAI CEO",
-      "text": "公开表达对 TBPN（科技播客）的支持，说这是他最喜欢的科技节目，希望他们继续保持，<strong>不期望对方对 OpenAI 手软</strong>，还自嘲「我偶尔的愚蠢决定肯定能帮他们制造话题」。5080 赞。最近播客市场热度很高——Swyx 也在讨论播客的商业化可能。",
-      "url": "https://x.com/sama/status/2039773740586918137"
-    },
-    {
-      "author": "Aaron Levie",
-      "role": "Box CEO",
-      "text": "分享了构建 AI Agent 最重要的教训：<strong>必须无情地抛弃旧架构</strong>。他描述了一个循环——先为 LLM 搭脚手架 → 模型变强后脚手架变成累赘 → 拆掉旧代码才能获得新性能 → 新能力涌现 → 再搭新脚手架。Box Agent 从设计到发布，多个组件都经历了这种演化。核心信息：<strong>永远利用前沿能力，不要对已经构建的技术恋恋不舍</strong>。",
-      "url": "https://x.com/levie/status/2039931799414194621"
-    },
-    {
-      "author": "Peter Steinberger",
-      "role": "OpenClaw 联合创始人",
-      "text": "引用 Linux 内核安全列表的讨论：<strong>AI 生成的安全报告从两年前的每周 2-3 份，暴增到现在的每天 5-10 份</strong>，而且大部分是正确的——以至于需要引入更多 maintainer 来处理。他的预测：这会杀死一些开源项目。1044 赞。AI slop flooding 开源维护管道是一个值得关注的趋势。",
-      "url": "https://x.com/steipete/status/2039782190838686088"
-    },
-    {
-      "author": "Amjad Masad",
-      "role": "Replit CEO",
-      "text": "用 Replit agent 做了一个 <strong>SEO 审计工具</strong>——给一个 URL 就自动分析网站 SEO 问题。593 赞。另外宣布 Replit 在盐湖城开设销售办公室。从 vibe coding 到企业级销售，AI 开发平台的商业化路径越来越清晰。",
-      "url": "https://x.com/amasad/status/2039838798671126728"
-    },
-    {
-      "author": "Garry Tan",
-      "role": "Y Combinator CEO",
-      "text": "评价 <strong>Perplexity Computer</strong>「相当不错」。另外引用了一句：「如果你热爱你的工作，你就一天都没有工作过」——77 赞。周末发的推，轻松向。",
-      "url": "https://x.com/garrytan/status/2039943351278190840"
-    },
-    {
-      "author": "Peter Yang",
-      "role": "Roblox 产品 / AI 教程博主",
-      "text": "试用 <strong>Cursor 3</strong> 后评价新界面好很多——旧版按钮和开关太多，妨碍了跟 agent 的直接对话。他认为这应该是默认视图。122 赞。",
-      "url": "https://x.com/petergyang/status/2039850011044016291"
-    },
-    {
-      "author": "Dan Shipper",
-      "role": "Every CEO",
-      "text": "分享 Every 对 <strong>Cursor 3.0 的一周试用体验</strong>，附了完整评测链接。另外展示了 Every 的 AI 工具集成面板，图标逐渐丰富中。",
-      "url": "https://x.com/danshipper/status/2039770244361662920"
-    }
-  ],
-  "podcasts": [
-    {
-      "show": "Training Data",
-      "title": "How Autonomous Labs Will Transform Scientific Research: Ginkgo Bioworks' Jason Kelly",
-      "quote": "过去三十年所有的技术革命——互联网、社交媒体——对生物技术完全没有意义。但这次不一样，这次真的会改变我们做科学的根本方式。",
-      "points": [
-        "<strong>Ginkgo 与 OpenAI 的合作成果</strong>：用推理模型 + 自主实验室优化无细胞蛋白质合成，4 轮实验击败 Stanford 基准，6 轮后提升 40%。这是目前最有说服力的「AI 做实验科学」的结果",
-        "<strong>自主实验室的逻辑</strong>：Jason 认为做实验科学的核心循环——提出假设、设计实验、执行、分析数据、再迭代——本质上是逻辑，不需要模拟生物学。关键是让 AI 能跑实验，而不是更聪明",
-        "<strong>科学研究的效率问题</strong>：美国每年花在生物制药研发上的 600-800 亿美元中，不到 5% 花在试剂上，其余全是人力、实验室空间和管理费用。自主实验室可以把 90% 的成本转移到实际实验消耗上",
-        "<strong>信息共享的优势</strong>：想象 100 个 AI 科学家在一个实验室里各自追踪不同的假设，每天共享所有实验数据——正常情况下科学家每 1-2 年才通过论文交流一次",
-        "<strong>不用人形机器人</strong>：Jason 明确说实验室不需要人形机器人。样本通过磁悬浮轨道传输，比双足行走可靠得多，精度达到微米级",
-        "<strong>中国竞争压力</strong>：中国来源的生物制药新药在并购管线中的占比，三年前不到 5%，上个季度已超过 40%。中国科学家数量相当、成本更低，美国必须通过自动化提升效率",
-        "<strong>科学民主化的愿景</strong>：Ginkgo 刚推出 Cloud Lab 服务，单次实验最低 39 美元。Jason 想象一个未来——每个人都可以像点外卖一样点实验，就像 60 年代没人相信小孩会编程一样"
-      ],
-      "url": "https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8"
-    }
-  ]
-},
-
-"2026-04-03": {
+  "2026-04-05": {
+    "date": "4月5日",
+    "dateShort": "04.05",
+    "heroSub": "Marc Andreessen 谈 Agent 架构的本质、Anthropic 锁闭生态引发社区反弹、Claude Code 送免费额度、Cursor 新界面发布",
+    "twitter": [
+      {
+        "author": "Peter Steinberger",
+        "role": "OpenClaw 联合创始人",
+        "text": "公开批评 <strong>Anthropic 锁闭生态</strong>——先是把热门开源功能搬进自家闭源产品，然后封锁开源接入。他说自己和 Dave Morin 曾试图说服 Anthropic，最多只拖延了一周。3220 赞、295 转发，是今天最大的一条。另一条提到 <strong>GitHub API 配额不够用</strong>——设计时没考虑到 Agent 场景，1832 赞。",
+        "url": "https://x.com/steipete/status/2040209434019082522"
+      },
+      {
+        "author": "Thariq",
+        "role": "Claude Code 团队 / Anthropic",
+        "text": "宣布给 Claude Code 用户<strong>赠送一个月免费额度</strong>，作为最近服务不稳定补偿。1728 赞。虽然大方，但在 OpenClaw 被封的背景下，社区情绪很复杂。",
+        "url": "https://x.com/trq212/status/2040215427931156595"
+      },
+      {
+        "author": "Ryo Lu",
+        "role": "Cursor 设计负责人",
+        "text": "发布 <strong>Composer 2 新界面和全新图标系统</strong>——「made with care and character」。强调「simpler is better」的设计哲学。周末开放 2x 使用量。411 赞那条「simpler is better」是互动最高的。",
+        "url": "https://x.com/ryolu_/status/2040270917637648749"
+      },
+      {
+        "author": "Swyx",
+        "role": "Latent Space 播客 / AI 工程师",
+        "text": "展示了一个令人惊讶的实验：<strong>把博客和推文粘贴进 Devin，它一次性完成了完整实现</strong>——他称之为「agentic self improvement」。用的底层模型是 Gemini Flash Lite，表现远超预期。130 赞。另外吐槽 AI Twitter 的信息质量「这就是为什么没人把 AI Twitter 当回事」——127 赞。",
+        "url": "https://x.com/swyx/status/2040181076237443299"
+      },
+      {
+        "author": "Aaron Levie",
+        "role": "Box CEO",
+        "text": "讨论 <strong>Agent 管理的认知极限</strong>：人能 hold 住的上下文有限，所以公司需要层层管理。Agent 目前和人类一样受限于上下文，所以管理 Agent 也需要花费真实的心智成本——这反驳了「人会失业」的论点。127 赞。",
+        "url": "https://x.com/levie/status/2040264454982480138"
+      },
+      {
+        "author": "Claude",
+        "role": "Anthropic",
+        "text": "宣布 <strong>Microsoft 365 连接器</strong>登陆所有 Claude 套餐——可以接入 Outlook、OneDrive、SharePoint，把邮件和文档直接带入对话。14043 赞、1178 转发，是今天互动量最高的推文。",
+        "url": "https://x.com/claudeai/status/2040086268562842097"
+      },
+      {
+        "author": "Peter Yang",
+        "role": "Roblox 产品 / AI 教程博主",
+        "text": "分享了他给 OpenClaw soul.md 写的 prompt——风格定义：<strong>温暖、犀利、干幽默，不是聊天机器人而是一个人</strong>。核心规则包括「跳过 Great question 直接帮忙」「有强观点不要说 it depends」。25 赞，但对于 Agent 人格定制很有参考价值。",
+        "url": "https://x.com/petergyang/status/2040269162719887610"
+      },
+      {
+        "author": "Zara Zhang",
+        "role": "Builder / Harvard '17",
+        "text": "观察到新趋势：<strong>人们开始把同事、网红甚至前任「蒸馏」成 Agent 技能</strong>。78 赞。这个观察很有意思——从模仿名人到个性化 Agent 的人格建模。",
+        "url": "https://x.com/zarazhangrui/status/2040211603875074512"
+      },
+      {
+        "author": "Garry Tan",
+        "role": "Y Combinator CEO",
+        "text": "宣布 GStack 发布 <strong>/plan-devex-review</strong> 工具，帮助开发者创建优秀的开发体验。还秀了 Garry's List 页面速度评分达到 95——「代码生成反对者可以闭嘴了」。113 赞。",
+        "url": "https://x.com/garrytan/status/2040211569775395042"
+      },
+      {
+        "author": "Nan Yu",
+        "role": "Linear 产品负责人",
+        "text": "讨论组织架构：<strong>产品管理和产品营销应该合并</strong>，但设计不应该归产品管理管——否则探索会变浅、美学和品牌会受影响。181 赞，是今天互动最高的非官方推文之一。",
+        "url": "https://x.com/thenanyu/status/2040177368187212157"
+      }
+    ],
+    "podcasts": [
+      {
+        "show": "Latent Space",
+        "title": "Marc Andreessen on The Death of the Browser, Pi + OpenClaw, and Why This Time Is Different",
+        "quote": "Agent 的本质就是 LLM + shell + 文件系统 + markdown + cron。就这么简单。而且它能在你睡觉的时候给自己加新功能。",
+        "points": [
+          "<strong>Agent 架构的本质</strong>：Marc 说 Agent = LLM + Unix shell + 文件系统 + markdown + cron。不需要 MCP 之类的花哨协议，shell 已经有足够的潜在能力。这个组合让 Agent 可以自我迁移、自我修改、自我扩展",
+          "<strong>Agent 和模型是解耦的</strong>：你的 Agent 本质上就是一堆文件。可以换底层 LLM、换执行环境、换文件系统——状态都在。这比任何锁定架构都更强大",
+          "<strong>四次根本性突破</strong>：LLM → 推理（o1/R1）→ Agent（OpenClaw）→ 自我改进（RSI）。四个都在工作，而且每个都在加速",
+          "<strong>浏览器可能要死了</strong>：当 Agent 之间直接对话、直接消费信息，人类不再需要 UI。Marc 说「你不需要浏览器，你只需要结果」。但这需要 Proof of Human 先解决",
+          "<strong>开源 AI 的独特价值</strong>：DeepSeek 的贡献不只是免费模型，而是让全世界知道了推理模型怎么做。R1 发布后三个月，所有 AI 都加了推理能力",
+          "<strong>编码的未来</strong>：软件从稀缺变成无限供应。安全漏洞会被 Agent 批量修复。十年后可能连「编程语言」这个概念都不再有意义",
+          "<strong>AI + Crypto 的统一</strong>：Agent 需要钱来买东西，Stablecoin 是天然的解决方案。AI 是 Crypto 的杀手级应用"
+        ],
+        "url": "https://www.youtube.com/@LatentSpacePod"
+      }
+    ]
+  },
+  "2026-04-04": {
+    "date": "4月4日",
+    "dateShort": "04.04",
+    "heroSub": "Karpathy 用 LLM 构建个人知识库方法论、Cursor 3 发布主打 glass 理念、Claude Computer Use 登陆 Windows、Ginkgo Bioworks 用 AI 重构科学实验",
+    "twitter": [
+      {
+        "author": "Andrej Karpathy",
+        "role": "OpenAI 联合创始团队成员 / 前 Tesla AI 总监",
+        "text": "分享了用 <strong>LLM 构建个人知识库</strong>的完整方法论——不是让 LLM 回答问题，而是让它「编译」知识。核心流程：收集原始资料到 raw/ 目录 → LLM 逐步编译成 wiki（markdown + 图片）→ 用 Obsidian 作为前端查看 → 对 wiki 进行 Q&A → 输出再回流增强 wiki。他特别提到不需要 fancy RAG，LLM 自己维护索引文件就够了。最终形态是<strong>每个问题都会触发一组 LLM 协作，自动构建临时 wiki、lint、循环优化，再输出完整报告</strong>——远超简单的 decode。18265 赞，本周最高互动推文之一。",
+        "url": "https://x.com/karpathy/status/2039805659525644595"
+      },
+      {
+        "author": "Ryo Lu",
+        "role": "Cursor 设计负责人",
+        "text": "发布 <strong>Cursor 3</strong>——核心理念是「glass vs. black box」。她说 AI 让终端变成了更上瘾的黑盒：输入愿望、拉杠杆、出来结果。而 glass 要打破这个盒子——<strong>agent 可见、diff 在那里、plan 可编辑、状态清晰</strong>，用户可以随时 Tab 直接编辑文件。不是不信任 AI，而是最好的成果来自人和模型一起思考。365 赞。",
+        "url": "https://x.com/ryolu_/status/2039780768847958359"
+      },
+      {
+        "author": "Claude",
+        "role": "Anthropic",
+        "text": "宣布 <strong>Computer Use 登陆 Windows</strong>——Claude Cowork 和 Claude Code Desktop 现在都支持 Windows 平台的电脑操控。7752 赞、758 转发，说明社区对跨平台 agent 能力的需求很大。",
+        "url": "https://x.com/claudeai/status/2039836891508261106"
+      },
+      {
+        "author": "Sam Altman",
+        "role": "OpenAI CEO",
+        "text": "公开表达对 TBPN（科技播客）的支持，说这是他最喜欢的科技节目，希望他们继续保持，<strong>不期望对方对 OpenAI 手软</strong>，还自嘲「我偶尔的愚蠢决定肯定能帮他们制造话题」。5080 赞。最近播客市场热度很高——Swyx 也在讨论播客的商业化可能。",
+        "url": "https://x.com/sama/status/2039773740586918137"
+      },
+      {
+        "author": "Aaron Levie",
+        "role": "Box CEO",
+        "text": "分享了构建 AI Agent 最重要的教训：<strong>必须无情地抛弃旧架构</strong>。他描述了一个循环——先为 LLM 搭脚手架 → 模型变强后脚手架变成累赘 → 拆掉旧代码才能获得新性能 → 新能力涌现 → 再搭新脚手架。Box Agent 从设计到发布，多个组件都经历了这种演化。核心信息：<strong>永远利用前沿能力，不要对已经构建的技术恋恋不舍</strong>。",
+        "url": "https://x.com/levie/status/2039931799414194621"
+      },
+      {
+        "author": "Peter Steinberger",
+        "role": "OpenClaw 联合创始人",
+        "text": "引用 Linux 内核安全列表的讨论：<strong>AI 生成的安全报告从两年前的每周 2-3 份，暴增到现在的每天 5-10 份</strong>，而且大部分是正确的——以至于需要引入更多 maintainer 来处理。他的预测：这会杀死一些开源项目。1044 赞。AI slop flooding 开源维护管道是一个值得关注的趋势。",
+        "url": "https://x.com/steipete/status/2039782190838686088"
+      },
+      {
+        "author": "Amjad Masad",
+        "role": "Replit CEO",
+        "text": "用 Replit agent 做了一个 <strong>SEO 审计工具</strong>——给一个 URL 就自动分析网站 SEO 问题。593 赞。另外宣布 Replit 在盐湖城开设销售办公室。从 vibe coding 到企业级销售，AI 开发平台的商业化路径越来越清晰。",
+        "url": "https://x.com/amasad/status/2039838798671126728"
+      },
+      {
+        "author": "Garry Tan",
+        "role": "Y Combinator CEO",
+        "text": "评价 <strong>Perplexity Computer</strong>「相当不错」。另外引用了一句：「如果你热爱你的工作，你就一天都没有工作过」——77 赞。周末发的推，轻松向。",
+        "url": "https://x.com/garrytan/status/2039943351278190840"
+      },
+      {
+        "author": "Peter Yang",
+        "role": "Roblox 产品 / AI 教程博主",
+        "text": "试用 <strong>Cursor 3</strong> 后评价新界面好很多——旧版按钮和开关太多，妨碍了跟 agent 的直接对话。他认为这应该是默认视图。122 赞。",
+        "url": "https://x.com/petergyang/status/2039850011044016291"
+      },
+      {
+        "author": "Dan Shipper",
+        "role": "Every CEO",
+        "text": "分享 Every 对 <strong>Cursor 3.0 的一周试用体验</strong>，附了完整评测链接。另外展示了 Every 的 AI 工具集成面板，图标逐渐丰富中。",
+        "url": "https://x.com/danshipper/status/2039770244361662920"
+      }
+    ],
+    "podcasts": [
+      {
+        "show": "Training Data",
+        "title": "How Autonomous Labs Will Transform Scientific Research: Ginkgo Bioworks' Jason Kelly",
+        "quote": "过去三十年所有的技术革命——互联网、社交媒体——对生物技术完全没有意义。但这次不一样，这次真的会改变我们做科学的根本方式。",
+        "points": [
+          "<strong>Ginkgo 与 OpenAI 的合作成果</strong>：用推理模型 + 自主实验室优化无细胞蛋白质合成，4 轮实验击败 Stanford 基准，6 轮后提升 40%。这是目前最有说服力的「AI 做实验科学」的结果",
+          "<strong>自主实验室的逻辑</strong>：Jason 认为做实验科学的核心循环——提出假设、设计实验、执行、分析数据、再迭代——本质上是逻辑，不需要模拟生物学。关键是让 AI 能跑实验，而不是更聪明",
+          "<strong>科学研究的效率问题</strong>：美国每年花在生物制药研发上的 600-800 亿美元中，不到 5% 花在试剂上，其余全是人力、实验室空间和管理费用。自主实验室可以把 90% 的成本转移到实际实验消耗上",
+          "<strong>信息共享的优势</strong>：想象 100 个 AI 科学家在一个实验室里各自追踪不同的假设，每天共享所有实验数据——正常情况下科学家每 1-2 年才通过论文交流一次",
+          "<strong>不用人形机器人</strong>：Jason 明确说实验室不需要人形机器人。样本通过磁悬浮轨道传输，比双足行走可靠得多，精度达到微米级",
+          "<strong>中国竞争压力</strong>：中国来源的生物制药新药在并购管线中的占比，三年前不到 5%，上个季度已超过 40%。中国科学家数量相当、成本更低，美国必须通过自动化提升效率",
+          "<strong>科学民主化的愿景</strong>：Ginkgo 刚推出 Cloud Lab 服务，单次实验最低 39 美元。Jason 想象一个未来——每个人都可以像点外卖一样点实验，就像 60 年代没人相信小孩会编程一样"
+        ],
+        "url": "https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8"
+      }
+    ]
+  },
+  "2026-04-03": {
     "date": "4月3日",
     "dateShort": "04.03",
     "heroSub": "Claude Code 重写渲染引擎引爆社区、Mistral 发布开源 TTS 模型 Voxtral、OpenClaw 用法新玩法：把 to-do 丢给 agent",
@@ -910,11 +984,7 @@ var digests = {
       }
     ]
   },
-
-
-
-
-"2026-04-02": {
+  "2026-04-02": {
     "date": "4月2日",
     "dateShort": "04.02",
     "heroSub": "一人十亿美元公司产品演示、OpenAI 称 AI 数学证明越来越优雅、Box CEO 警告 Agent 安全没有免费午餐",
@@ -990,10 +1060,7 @@ var digests = {
       }
     ]
   },
-
-
-
-"2026-04-01": {
+  "2026-04-01": {
     "date": "4月1日",
     "dateShort": "04.01",
     "heroSub": "微软任命 OpenClaw 专职 CVP、Impulse 智能灶具跑 Claude 做菜、Garry Tan 谈 AI Agent 时代年龄不重要",
@@ -1039,8 +1106,7 @@ var digests = {
       }
     ]
   },
-
-"2026-03-31": {
+  "2026-03-31": {
     "date": "3月31日",
     "dateShort": "03.31",
     "heroSub": "Claude Code 支持计算机操作、Nan Yu 点评市场动态、Mike Krieger 反思 AI 时代的产品构建哲学",
@@ -1069,7 +1135,7 @@ var digests = {
       }
     ]
   },
-"2026-03-30": {
+  "2026-03-30": {
     "date": "3月30日",
     "dateShort": "03.30",
     "heroSub": "Karpathy 用 LLM 验证自我观点、Swyx 谈虚假等价陷阱、Rauch「Agent 即计算机」、Amjad 重申千倍工程师论",
@@ -1137,7 +1203,7 @@ var digests = {
     ],
     "podcasts": []
   },
-"2026-03-29": {
+  "2026-03-29": {
     "date": "3月29日",
     "dateShort": "03.29",
     "heroSub": "OpenClaw 变身 MCP、Sam Altman Stargate 开工、Claude Cowork 设计师分享内幕、create-context-graph 一键生成行业图谱",
@@ -1211,7 +1277,7 @@ var digests = {
     ],
     "podcasts": []
   },
-"2026-03-28": {
+  "2026-03-28": {
     "date": "3月28日",
     "dateShort": "03.28",
     "heroSub": "Gemini Live 大升级、Claude Code 调整高峰期限流、Karpathy 谈 DevOps 自动化、Steinberger 联手 Telegram",
@@ -1309,8 +1375,7 @@ var digests = {
     ],
     "podcasts": []
   },
-
-"2026-03-27": {
+  "2026-03-27": {
     "date": "3月27日",
     "dateShort": "03.27",
     "heroSub": "Claude 控制你的 Mac、Sora 突然关停、Anthropic 起诉国防部、Ginkgo 自主实验室",
@@ -1422,248 +1487,247 @@ var digests = {
     "dateShort": "03.26",
     "heroSub": "litellm 供应链攻击波及 9700 万用户、Claude Code auto mode 上线、OpenAI Foundation 首年投 10 亿美元",
     "twitter": [
-        {
-            "author": "Andrej Karpathy",
-            "role": "前 Tesla AI 总监, OpenAI 联合创始人",
-            "text": "<strong>警告 litellm PyPI 供应链攻击。</strong>中毒版本的 <code>pip install litellm</code> 会窃取 SSH keys、AWS/GCP/Azure 凭证、Kubernetes 配置、git 凭证、环境变量、加密钱包、SSL 私钥等。LiteLLM 月下载量 9700 万，传播极广。好在中毒版本只上线不到 1 小时就被发现——因为它导致了内存溢出。",
-            "url": "https://x.com/karpathy/status/2036487306585268612"
-        },
-        {
-            "author": "Sam Altman",
-            "role": "OpenAI CEO",
-            "text": "<strong>宣布成立 OpenAI Foundation，首年投入超 10 亿美元。</strong>聚焦 AI 带来的新型社会威胁：生物安全、经济剧变等。联合创始人 Wojciech Zaremba 转任 AI Resilience 负责人。新加入 Jacob Tref（生命科学与疾病治愈负责人）、Robert Kaiden（CFO）、Jeff Arnold（运营总监）。",
-            "url": "https://x.com/sama/status/2036488680769241223"
-        },
-        {
-            "author": "Claude",
-            "role": "Anthropic",
-            "text": "<strong>发布 Claude Code auto mode。</strong>不再逐个批准文件写入和 bash 命令，Claude 自主判断权限。每次操作前有分类器审查——安全操作自动执行，危险操作被阻止。先以研究预览上线 Team 计划，企业版和 API 随后开放。",
-            "url": "https://x.com/claudeai/status/2036503582166393240"
-        },
-        {
-            "author": "Guillermo Rauch",
-            "role": "Vercel CEO",
-            "text": "Vercel 内部几乎所有 SaaS 工具都被自生成的 agent 界面替代了。<strong>「SaaSpocalypse 既被高估也被低估」</strong>——关键系统（Salesforce、Snowflake）还在，但生成的软件更美观、更个性化、更贴合业务。UI 就是数据的函数 f，而 f 正在变成 LLM。",
-            "url": "https://x.com/rauchg/status/2036447879985037495"
-        },
-        {
-            "author": "Aaron Levie",
-            "role": "Box CEO",
-            "text": "「如果你构建的软件不能以 headless 方式让 agent 使用，你还没准备好迎接软件的未来。<strong>Agent 使用软件的频率将是人类的 100 倍。</strong>」",
-            "url": "https://x.com/levie/status/2036478998667207012"
-        },
-        {
-            "author": "Nan Yu",
-            "role": "Linear 产品负责人",
-            "text": "「我好几个月没手写 PRD、手动提 issue、手写代码了。但我产出的工作量和质量标准都比以前更高。」认为做 agent 的动力就是「不想再做烦人的工作了」。",
-            "url": "https://x.com/thenanyu/status/2036549647267709110"
-        },
-        {
-            "author": "Garry Tan",
-            "role": "YC 总裁",
-            "text": "「一旦你说『替代开发者』，你的思路就错了。汽车没有替代走路，它让人能去到步行去不了的地方。」",
-            "url": "https://x.com/garrytan/status/2036674371855823153"
-        },
-        {
-            "author": "Josh Woodward",
-            "role": "Google Labs VP",
-            "text": "「我在 Google 从实习生做到现在，从来没这么激动过。整个公司在脉动。我们在招人。」Gemini App 和 Google Labs 都在招聘。",
-            "url": "https://x.com/joshwoodward/status/2036513009661780291"
-        },
-        {
-            "author": "Peter Yang",
-            "role": "Roblox 产品经理",
-            "text": "Telegram 里全是跟 OpenClaw 和 Claude bot 的对话，还没跟真人说过话。认为 AI agent 会让大家不再沉迷于 specs、designs、roadmaps 这些文档，而是专注于改进产品和快速迭代。",
-            "url": "https://x.com/petergyang/status/2036621615086309468"
-        },
-        {
-            "author": "Zara Zhang",
-            "role": "创作者",
-            "text": "「GitHub 就是新的 Substack，代码是一种自我表达。」她一个非技术背景的人，从不懂 GitHub 到积累了 13k+ stars。",
-            "url": "https://x.com/zarazhangrui/status/2036675965003411514"
-        },
-        {
-            "author": "Swyx",
-            "role": "AI 工程师, Latent Space",
-            "text": "OpenAI 打压 Side Quests 的第一个牺牲品——Sora 死了。另外称赞 Walden Yan 在 Devin 上做的「让 Devin 审查自己的代码」功能，等同于「睡一觉再用新鲜眼光看 PR」。",
-            "url": "https://x.com/swyx/status/2036533647659143630"
-        },
-        {
-            "author": "Alex Albert",
-            "role": "Anthropic 研究员",
-            "text": "「再见 --dangerously-skip-permissions，你好 auto mode」",
-            "url": "https://x.com/alexalbert__/status/2036510206155432293"
-        },
-        {
-            "author": "Thariq",
-            "role": "Claude Code 团队, Anthropic",
-            "text": "「做 AI 安全公司的好处是，你需要确保 AI 能安全运行的时候，这经验刚好用得上。」预告 3/31 和 Figma 的联合直播。",
-            "url": "https://x.com/trq212/status/2036513038983995820"
-        },
-        {
-            "author": "Nikunj Kothari",
-            "role": "FirstMark Capital 合伙人",
-            "text": "抓取了 417 家公司的 subprocessor 列表，发现 AI 原生公司都在用什么基础设施。发布了 DeployGraph.com。",
-            "url": "https://x.com/nikunj/status/2036572222081606065"
-        },
-        {
-            "author": "Peter Steinberger",
-            "role": "OpenClaw ClawFather",
-            "text": "给朋友发 WhatsApp，结果收到了 OpenClaw 的「门卫」回应——agent 自动拦截并回复了消息。",
-            "url": "https://x.com/steipete/status/2036486352964035013"
-        },
-        {
-            "author": "Matt Turck",
-            "role": "FirstMark Capital VC",
-            "text": "「以前：你写了错别字！真糟糕。现在：你写了非 AI 生成的内容！太棒了。」",
-            "url": "https://x.com/mattturck/status/2036488357077717094"
-        },
-        {
-            "author": "Dan Shipper",
-            "role": "Every CEO",
-            "text": "发布了新的 OpenClaw mac mini 贴纸。",
-            "url": "https://x.com/danshipper/status/2036501111394148578"
-        },
-        {
-            "author": "Cat Wu",
-            "role": "Anthropic Claude Code",
-            "text": "邀请大家参加 Code with Claude 大会。",
-            "url": "https://x.com/_catwu/status/2036594646370210229"
-        },
-        {
-            "author": "Amjad Masad",
-            "role": "Replit CEO",
-            "text": "推荐了一个内容创作者学习编程后改变业务的真实故事。",
-            "url": "https://x.com/amasad/status/2036427267296067875"
-        },
-        {
-            "author": "Aditya Agarwal",
-            "role": "South Park Commons 合伙人, 前 Dropbox CTO",
-            "text": "「机器人硬件已经准备好了，只差软件的可靠性和可扩展性。这对美国是利好。」",
-            "url": "https://x.com/adityaag/status/2036426693930291334"
-        }
+      {
+        "author": "Andrej Karpathy",
+        "role": "前 Tesla AI 总监, OpenAI 联合创始人",
+        "text": "<strong>警告 litellm PyPI 供应链攻击。</strong>中毒版本的 <code>pip install litellm</code> 会窃取 SSH keys、AWS/GCP/Azure 凭证、Kubernetes 配置、git 凭证、环境变量、加密钱包、SSL 私钥等。LiteLLM 月下载量 9700 万，传播极广。好在中毒版本只上线不到 1 小时就被发现——因为它导致了内存溢出。",
+        "url": "https://x.com/karpathy/status/2036487306585268612"
+      },
+      {
+        "author": "Sam Altman",
+        "role": "OpenAI CEO",
+        "text": "<strong>宣布成立 OpenAI Foundation，首年投入超 10 亿美元。</strong>聚焦 AI 带来的新型社会威胁：生物安全、经济剧变等。联合创始人 Wojciech Zaremba 转任 AI Resilience 负责人。新加入 Jacob Tref（生命科学与疾病治愈负责人）、Robert Kaiden（CFO）、Jeff Arnold（运营总监）。",
+        "url": "https://x.com/sama/status/2036488680769241223"
+      },
+      {
+        "author": "Claude",
+        "role": "Anthropic",
+        "text": "<strong>发布 Claude Code auto mode。</strong>不再逐个批准文件写入和 bash 命令，Claude 自主判断权限。每次操作前有分类器审查——安全操作自动执行，危险操作被阻止。先以研究预览上线 Team 计划，企业版和 API 随后开放。",
+        "url": "https://x.com/claudeai/status/2036503582166393240"
+      },
+      {
+        "author": "Guillermo Rauch",
+        "role": "Vercel CEO",
+        "text": "Vercel 内部几乎所有 SaaS 工具都被自生成的 agent 界面替代了。<strong>「SaaSpocalypse 既被高估也被低估」</strong>——关键系统（Salesforce、Snowflake）还在，但生成的软件更美观、更个性化、更贴合业务。UI 就是数据的函数 f，而 f 正在变成 LLM。",
+        "url": "https://x.com/rauchg/status/2036447879985037495"
+      },
+      {
+        "author": "Aaron Levie",
+        "role": "Box CEO",
+        "text": "「如果你构建的软件不能以 headless 方式让 agent 使用，你还没准备好迎接软件的未来。<strong>Agent 使用软件的频率将是人类的 100 倍。</strong>」",
+        "url": "https://x.com/levie/status/2036478998667207012"
+      },
+      {
+        "author": "Nan Yu",
+        "role": "Linear 产品负责人",
+        "text": "「我好几个月没手写 PRD、手动提 issue、手写代码了。但我产出的工作量和质量标准都比以前更高。」认为做 agent 的动力就是「不想再做烦人的工作了」。",
+        "url": "https://x.com/thenanyu/status/2036549647267709110"
+      },
+      {
+        "author": "Garry Tan",
+        "role": "YC 总裁",
+        "text": "「一旦你说『替代开发者』，你的思路就错了。汽车没有替代走路，它让人能去到步行去不了的地方。」",
+        "url": "https://x.com/garrytan/status/2036674371855823153"
+      },
+      {
+        "author": "Josh Woodward",
+        "role": "Google Labs VP",
+        "text": "「我在 Google 从实习生做到现在，从来没这么激动过。整个公司在脉动。我们在招人。」Gemini App 和 Google Labs 都在招聘。",
+        "url": "https://x.com/joshwoodward/status/2036513009661780291"
+      },
+      {
+        "author": "Peter Yang",
+        "role": "Roblox 产品经理",
+        "text": "Telegram 里全是跟 OpenClaw 和 Claude bot 的对话，还没跟真人说过话。认为 AI agent 会让大家不再沉迷于 specs、designs、roadmaps 这些文档，而是专注于改进产品和快速迭代。",
+        "url": "https://x.com/petergyang/status/2036621615086309468"
+      },
+      {
+        "author": "Zara Zhang",
+        "role": "创作者",
+        "text": "「GitHub 就是新的 Substack，代码是一种自我表达。」她一个非技术背景的人，从不懂 GitHub 到积累了 13k+ stars。",
+        "url": "https://x.com/zarazhangrui/status/2036675965003411514"
+      },
+      {
+        "author": "Swyx",
+        "role": "AI 工程师, Latent Space",
+        "text": "OpenAI 打压 Side Quests 的第一个牺牲品——Sora 死了。另外称赞 Walden Yan 在 Devin 上做的「让 Devin 审查自己的代码」功能，等同于「睡一觉再用新鲜眼光看 PR」。",
+        "url": "https://x.com/swyx/status/2036533647659143630"
+      },
+      {
+        "author": "Alex Albert",
+        "role": "Anthropic 研究员",
+        "text": "「再见 --dangerously-skip-permissions，你好 auto mode」",
+        "url": "https://x.com/alexalbert__/status/2036510206155432293"
+      },
+      {
+        "author": "Thariq",
+        "role": "Claude Code 团队, Anthropic",
+        "text": "「做 AI 安全公司的好处是，你需要确保 AI 能安全运行的时候，这经验刚好用得上。」预告 3/31 和 Figma 的联合直播。",
+        "url": "https://x.com/trq212/status/2036513038983995820"
+      },
+      {
+        "author": "Nikunj Kothari",
+        "role": "FirstMark Capital 合伙人",
+        "text": "抓取了 417 家公司的 subprocessor 列表，发现 AI 原生公司都在用什么基础设施。发布了 DeployGraph.com。",
+        "url": "https://x.com/nikunj/status/2036572222081606065"
+      },
+      {
+        "author": "Peter Steinberger",
+        "role": "OpenClaw ClawFather",
+        "text": "给朋友发 WhatsApp，结果收到了 OpenClaw 的「门卫」回应——agent 自动拦截并回复了消息。",
+        "url": "https://x.com/steipete/status/2036486352964035013"
+      },
+      {
+        "author": "Matt Turck",
+        "role": "FirstMark Capital VC",
+        "text": "「以前：你写了错别字！真糟糕。现在：你写了非 AI 生成的内容！太棒了。」",
+        "url": "https://x.com/mattturck/status/2036488357077717094"
+      },
+      {
+        "author": "Dan Shipper",
+        "role": "Every CEO",
+        "text": "发布了新的 OpenClaw mac mini 贴纸。",
+        "url": "https://x.com/danshipper/status/2036501111394148578"
+      },
+      {
+        "author": "Cat Wu",
+        "role": "Anthropic Claude Code",
+        "text": "邀请大家参加 Code with Claude 大会。",
+        "url": "https://x.com/_catwu/status/2036594646370210229"
+      },
+      {
+        "author": "Amjad Masad",
+        "role": "Replit CEO",
+        "text": "推荐了一个内容创作者学习编程后改变业务的真实故事。",
+        "url": "https://x.com/amasad/status/2036427267296067875"
+      },
+      {
+        "author": "Aditya Agarwal",
+        "role": "South Park Commons 合伙人, 前 Dropbox CTO",
+        "text": "「机器人硬件已经准备好了，只差软件的可靠性和可扩展性。这对美国是利好。」",
+        "url": "https://x.com/adityaag/status/2036426693930291334"
+      }
     ],
     "podcasts": [
-        {
-            "title": "There Is No AlphaFold for Materials — AI for Materials Discovery with Heather Kulik",
-            "show": "Latent Space",
-            "points": [
-                "材料空间比蛋白质复杂得多——蛋白质只有 20 种氨基酸，而材料的构建块几乎是无限的",
-                "目前没有像 CASP 那样的统一基准来衡量材料科学 AI 的进展",
-                "用 AI 发现了一种让塑料韧性提高 4 倍的新材料",
-                "LLM 连生成 22 个原子的配体都做不到，但可以辅助理解化学",
-                "AlphaFold 解决了蛋白质结构预测，但材料发现是更难的问题"
-            ],
-            "quote": "There is no AlphaFold for materials.",
-            "url": "https://youtube.com/watch?v=KSCCKCz2x04"
-        }
+      {
+        "title": "There Is No AlphaFold for Materials — AI for Materials Discovery with Heather Kulik",
+        "show": "Latent Space",
+        "points": [
+          "材料空间比蛋白质复杂得多——蛋白质只有 20 种氨基酸，而材料的构建块几乎是无限的",
+          "目前没有像 CASP 那样的统一基准来衡量材料科学 AI 的进展",
+          "用 AI 发现了一种让塑料韧性提高 4 倍的新材料",
+          "LLM 连生成 22 个原子的配体都做不到，但可以辅助理解化学",
+          "AlphaFold 解决了蛋白质结构预测，但材料发现是更难的问题"
+        ],
+        "quote": "There is no AlphaFold for materials.",
+        "url": "https://youtube.com/watch?v=KSCCKCz2x04"
+      }
     ]
-},
-"2026-03-25": {
+  },
+  "2026-03-25": {
     "date": "3月25日",
     "dateShort": "03.25",
     "heroSub": "Claude Code 能操控你的电脑了、Sam Altman 辞去 Helion 董事会、Steinberger 663 likes 的 PR 审查心法",
     "twitter": [
-        {
-            "author": "Claude",
-            "role": "Anthropic",
-            "text": "<strong>Claude Code 现在可以操控你的电脑了。</strong>手机上分配任务，转头在电脑上看到已完成的工作。让它每天早上扫邮件或每周五拉报告，它自己就会处理。优先使用 Slack、日历等已连接的应用，没有 connector 时会请求权限直接操作你屏幕上的应用。目前 Pro 和 Max 用户可用。",
-            "url": "https://x.com/claudeai/status/2036195792101212445"
-        },
-        {
-            "author": "Thariq",
-            "role": "Anthropic 工程师，Claude Code",
-            "text": "Claude Code computer use 正式上线，仅限桌面版。另外一条获 186 likes 的推：Anthropic 收购了一家 computer use 公司，4 周后就 shipped。",
-            "url": "https://x.com/trq212/status/2036199619416178814"
-        },
-        {
-            "author": "Sam Altman",
-            "role": "OpenAI CEO",
-            "text": "<strong>辞去 Helion（核聚变公司）董事会职务。</strong>原因是 Helion 和 OpenAI 开始探讨大规模合作，同时担任两方董事不合适。但仍保留财务利益。称 David 和 Chris 是杰出的创始人，公司进展令人印象深刻。",
-            "url": "https://x.com/sama/status/2036137695605563682"
-        },
-        {
-            "author": "Peter Steinberger",
-            "role": "OpenClaw 联合创始人",
-            "text": "分享了自己的 <strong>PR 审查心法（663 likes）</strong>：0) 让 Codex 先审，1) issue 是否清晰（不清晰直接 trash），2) 这是不是最优解（95% 的时候不是），3) 继续讨论、权衡 tradeoff、通常重写。大多数人提交的修复太小太局部，会让项目变得不可维护。另外发布了 CodexBar 0.19.0。",
-            "url": "https://x.com/steipete/status/2036252448399171717"
-        },
-        {
-            "author": "Alex Albert",
-            "role": "Anthropic Research",
-            "text": "极力推荐阅读理论物理学家 Matthew Schwartz 的客座文章。Schwartz 发现 <strong>Opus 4.5 大约相当于二年级研究生水平，帮他加速了 10 倍的研究</strong>。另一条获 917 likes：「不用打开笔记本就能完成工作的未来，正以极快的速度变成现实。」",
-            "url": "https://x.com/alexalbert__/status/2036232980059062550"
-        },
-        {
-            "author": "Kevin Weil",
-            "role": "OpenAI VP Science",
-            "text": "介绍了一位年轻天文学家用 AI 分析海量数据集，<strong>发现了 150 万个新的天体</strong>，NASA 局长直接给了他一份工作外加战斗机兜风作为签约奖励。为此 OpenAI 推出 <strong>ChatGPT 26 项目</strong>：选中者可到 OpenAI 总部、获取最新技术、获得 $10K 现金资助。",
-            "url": "https://x.com/kevinweil/status/2036095876628693168"
-        },
-        {
-            "author": "Aaron Levie",
-            "role": "Box CEO",
-            "text": "深度分析 agent 的「计算机操控」能力：这是 agent 接管知识工作的终极原语。大多数工作需要跨多个应用、处理大量数据，agent 需要能在这些系统间自由穿梭。但安全、权限、身份验证、prompt 注入等都是待解难题。另外还讨论了 agent 到底应该代表用户行动，还是拥有自己的身份和受限权限。",
-            "url": "https://x.com/levie/status/2036290915950797314"
-        },
-        {
-            "author": "Matt Turck",
-            "role": "FirstMark Capital VC",
-            "text": "「未来的人很难理解，在 Claude Code 出现之前，有想法的人会花好几年去找一个『技术合伙人』。」（525 likes）",
-            "url": "https://x.com/mattturck/status/2036182407779365309"
-        },
-        {
-            "author": "Garry Tan",
-            "role": "YC 总裁",
-            "text": "用 GStack 向 Y Combinator 代码库（184 万行代码、14 年技术债务）提交了第一个 PR，2400 行。证明 GStack 不仅适合个人小项目，对巨型企业级代码库同样有效。",
-            "url": "https://x.com/garrytan/status/2036330296308802012"
-        },
-        {
-            "author": "Nan Yu",
-            "role": "Linear 产品负责人",
-            "text": "Codex 注意到 prompt 中有一行间接引用了 app 内另一个 feature flag 后面的功能，并且主动标记了出来。「多少人类审查员能发现这个问题？」（64 likes）",
-            "url": "https://x.com/thenanyu/status/2036095568733143258"
-        },
-        {
-            "author": "Amjad Masad",
-            "role": "Replit CEO",
-            "text": "分享了一个在 Replit 上构建的 <strong>TSA 安检等待时间查询应用</strong>，已经爆火传播（288 likes）。",
-            "url": "https://x.com/amasad/status/2036272008158433564"
-        },
-        {
-            "author": "Dan Shipper",
-            "role": "Every CEO",
-            "text": "「vibe code 出来的东西，vibe fix 也能修。但不一定能修得快。」（47 likes）另外对 Claude computer use 的评价：「这显然是未来。」（279 likes）",
-            "url": "https://x.com/danshipper/status/2036146776319680624"
-        },
-        {
-            "author": "Peter Yang",
-            "role": "Roblox 产品 VP",
-            "text": "盛赞 Anthropic 基本上每天都在 ship 新东西，「真正定义了什么是 AI native 的开发节奏。」（291 likes）",
-            "url": "https://x.com/petergyang/status/2036212646962434395"
-        },
-        {
-            "author": "Nikunj Kothari",
-            "role": "FPV Ventures 合伙人",
-            "text": "在 SF 你会不断听到同样的三件事——Jevons 悖论、Goodhart 定律和 The Bitter Lesson。「给自己提个醒，多读点历史、艺术和科幻。」（196 likes）",
-            "url": "https://x.com/nikunj/status/2036108908532801630"
-        },
-        {
-            "author": "Swyx",
-            "role": "AI 工程师，Latent Space",
-            "text": "总结了一个模式：在 Latent Space 或 AI Dot Engineer 上聊过的创始人，都被 Alex Wang 和 Nat Friedman 投了数十亿美元。祝贺的同时预言 Meta 的 MSL Apps 年底会展示什么。",
-            "url": "https://x.com/swyx/status/2036205006806982931"
-        },
-        {
-            "author": "Google Labs",
-            "role": "Google",
-            "text": "虚拟试穿实验应用 Doppl 将于 4 月 30 日关闭。相关技术已整合到 Google 产品列表和图片搜索结果中。Labs 的目标是测试新想法，成功的技术会被规模化。",
-            "url": "https://x.com/GoogleLabs/status/2036188820128071786"
-        }
+      {
+        "author": "Claude",
+        "role": "Anthropic",
+        "text": "<strong>Claude Code 现在可以操控你的电脑了。</strong>手机上分配任务，转头在电脑上看到已完成的工作。让它每天早上扫邮件或每周五拉报告，它自己就会处理。优先使用 Slack、日历等已连接的应用，没有 connector 时会请求权限直接操作你屏幕上的应用。目前 Pro 和 Max 用户可用。",
+        "url": "https://x.com/claudeai/status/2036195792101212445"
+      },
+      {
+        "author": "Thariq",
+        "role": "Anthropic 工程师，Claude Code",
+        "text": "Claude Code computer use 正式上线，仅限桌面版。另外一条获 186 likes 的推：Anthropic 收购了一家 computer use 公司，4 周后就 shipped。",
+        "url": "https://x.com/trq212/status/2036199619416178814"
+      },
+      {
+        "author": "Sam Altman",
+        "role": "OpenAI CEO",
+        "text": "<strong>辞去 Helion（核聚变公司）董事会职务。</strong>原因是 Helion 和 OpenAI 开始探讨大规模合作，同时担任两方董事不合适。但仍保留财务利益。称 David 和 Chris 是杰出的创始人，公司进展令人印象深刻。",
+        "url": "https://x.com/sama/status/2036137695605563682"
+      },
+      {
+        "author": "Peter Steinberger",
+        "role": "OpenClaw 联合创始人",
+        "text": "分享了自己的 <strong>PR 审查心法（663 likes）</strong>：0) 让 Codex 先审，1) issue 是否清晰（不清晰直接 trash），2) 这是不是最优解（95% 的时候不是），3) 继续讨论、权衡 tradeoff、通常重写。大多数人提交的修复太小太局部，会让项目变得不可维护。另外发布了 CodexBar 0.19.0。",
+        "url": "https://x.com/steipete/status/2036252448399171717"
+      },
+      {
+        "author": "Alex Albert",
+        "role": "Anthropic Research",
+        "text": "极力推荐阅读理论物理学家 Matthew Schwartz 的客座文章。Schwartz 发现 <strong>Opus 4.5 大约相当于二年级研究生水平，帮他加速了 10 倍的研究</strong>。另一条获 917 likes：「不用打开笔记本就能完成工作的未来，正以极快的速度变成现实。」",
+        "url": "https://x.com/alexalbert__/status/2036232980059062550"
+      },
+      {
+        "author": "Kevin Weil",
+        "role": "OpenAI VP Science",
+        "text": "介绍了一位年轻天文学家用 AI 分析海量数据集，<strong>发现了 150 万个新的天体</strong>，NASA 局长直接给了他一份工作外加战斗机兜风作为签约奖励。为此 OpenAI 推出 <strong>ChatGPT 26 项目</strong>：选中者可到 OpenAI 总部、获取最新技术、获得 $10K 现金资助。",
+        "url": "https://x.com/kevinweil/status/2036095876628693168"
+      },
+      {
+        "author": "Aaron Levie",
+        "role": "Box CEO",
+        "text": "深度分析 agent 的「计算机操控」能力：这是 agent 接管知识工作的终极原语。大多数工作需要跨多个应用、处理大量数据，agent 需要能在这些系统间自由穿梭。但安全、权限、身份验证、prompt 注入等都是待解难题。另外还讨论了 agent 到底应该代表用户行动，还是拥有自己的身份和受限权限。",
+        "url": "https://x.com/levie/status/2036290915950797314"
+      },
+      {
+        "author": "Matt Turck",
+        "role": "FirstMark Capital VC",
+        "text": "「未来的人很难理解，在 Claude Code 出现之前，有想法的人会花好几年去找一个『技术合伙人』。」（525 likes）",
+        "url": "https://x.com/mattturck/status/2036182407779365309"
+      },
+      {
+        "author": "Garry Tan",
+        "role": "YC 总裁",
+        "text": "用 GStack 向 Y Combinator 代码库（184 万行代码、14 年技术债务）提交了第一个 PR，2400 行。证明 GStack 不仅适合个人小项目，对巨型企业级代码库同样有效。",
+        "url": "https://x.com/garrytan/status/2036330296308802012"
+      },
+      {
+        "author": "Nan Yu",
+        "role": "Linear 产品负责人",
+        "text": "Codex 注意到 prompt 中有一行间接引用了 app 内另一个 feature flag 后面的功能，并且主动标记了出来。「多少人类审查员能发现这个问题？」（64 likes）",
+        "url": "https://x.com/thenanyu/status/2036095568733143258"
+      },
+      {
+        "author": "Amjad Masad",
+        "role": "Replit CEO",
+        "text": "分享了一个在 Replit 上构建的 <strong>TSA 安检等待时间查询应用</strong>，已经爆火传播（288 likes）。",
+        "url": "https://x.com/amasad/status/2036272008158433564"
+      },
+      {
+        "author": "Dan Shipper",
+        "role": "Every CEO",
+        "text": "「vibe code 出来的东西，vibe fix 也能修。但不一定能修得快。」（47 likes）另外对 Claude computer use 的评价：「这显然是未来。」（279 likes）",
+        "url": "https://x.com/danshipper/status/2036146776319680624"
+      },
+      {
+        "author": "Peter Yang",
+        "role": "Roblox 产品 VP",
+        "text": "盛赞 Anthropic 基本上每天都在 ship 新东西，「真正定义了什么是 AI native 的开发节奏。」（291 likes）",
+        "url": "https://x.com/petergyang/status/2036212646962434395"
+      },
+      {
+        "author": "Nikunj Kothari",
+        "role": "FPV Ventures 合伙人",
+        "text": "在 SF 你会不断听到同样的三件事——Jevons 悖论、Goodhart 定律和 The Bitter Lesson。「给自己提个醒，多读点历史、艺术和科幻。」（196 likes）",
+        "url": "https://x.com/nikunj/status/2036108908532801630"
+      },
+      {
+        "author": "Swyx",
+        "role": "AI 工程师，Latent Space",
+        "text": "总结了一个模式：在 Latent Space 或 AI Dot Engineer 上聊过的创始人，都被 Alex Wang 和 Nat Friedman 投了数十亿美元。祝贺的同时预言 Meta 的 MSL Apps 年底会展示什么。",
+        "url": "https://x.com/swyx/status/2036205006806982931"
+      },
+      {
+        "author": "Google Labs",
+        "role": "Google",
+        "text": "虚拟试穿实验应用 Doppl 将于 4 月 30 日关闭。相关技术已整合到 Google 产品列表和图片搜索结果中。Labs 的目标是测试新想法，成功的技术会被规模化。",
+        "url": "https://x.com/GoogleLabs/status/2036188820128071786"
+      }
     ],
     "podcasts": []
-},
-
+  },
   "2026-03-24": {
     "date": "3月24日",
     "dateShort": "03.24",
