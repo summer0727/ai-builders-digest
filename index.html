@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Builders Digest — 2026-04-14</title>
+  <meta name="description" content="每日追踪 AI 领域顶级 Builder 的动态与思考">
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --surface: #12121a;
+      --card: #1a1a25;
+      --border: #2a2a3a;
+      --text: #e8e8ef;
+      --text-secondary: #8888a0;
+      --accent: #6366f1;
+      --accent-dim: rgba(99,102,241,0.15);
+      --green: #34d399;
+      --orange: #fb923c;
+      --pink: #f472b6;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container { max-width: 720px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+    .header {
+      text-align: center;
+      padding: 3rem 0 2.5rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2.5rem;
+    }
+    .header-badge {
+      display: inline-block;
+      background: var(--accent-dim);
+      color: var(--accent);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.35rem 1rem;
+      border-radius: 100px;
+      margin-bottom: 1.25rem;
+    }
+    .header h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.5rem; }
+    .header .date { color: var(--text-secondary); font-size: 0.9rem; }
+    .header .stats {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+    }
+    .header .stats span { display: flex; align-items: center; gap: 0.35rem; }
+    .header .stats .dot { width: 6px; height: 6px; border-radius: 50%; display: inline-block; }
+    .dot-green { background: var(--green); }
+    .dot-orange { background: var(--orange); }
+    .dot-pink { background: var(--pink); }
+    .section { margin-bottom: 2.5rem; }
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .section-title .icon { font-size: 1rem; }
+    .builder {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem;
+      margin-bottom: 1rem;
+      transition: border-color 0.2s;
+    }
+    .builder:hover { border-color: var(--accent); }
+    .builder-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.75rem; }
+    .builder-name { font-weight: 600; font-size: 0.95rem; }
+    .builder-role { color: var(--text-secondary); font-size: 0.8rem; margin-top: 0.15rem; }
+    .builder-content { font-size: 0.9rem; color: var(--text); line-height: 1.75; }
+    .builder-content p { margin-bottom: 0.5rem; }
+    .builder-content p:last-child { margin-bottom: 0; }
+    .builder-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      color: var(--accent);
+      font-size: 0.8rem;
+      text-decoration: none;
+      margin-top: 0.75rem;
+      transition: opacity 0.2s;
+    }
+    .builder-link:hover { opacity: 0.8; }
+    .podcast {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .podcast-source {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 0.5rem;
+    }
+    .podcast-title { font-size: 1.05rem; font-weight: 600; margin-bottom: 1rem; line-height: 1.5; }
+    .podcast .takeaway {
+      background: var(--accent-dim);
+      border-left: 3px solid var(--accent);
+      padding: 0.75rem 1rem;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    .podcast .takeaway::before {
+      content: "\1F4A1 \6838\5FC3\89C2\70B9";
+      display: block;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      margin-bottom: 0.35rem;
+      font-weight: 600;
+    }
+    .podcast-content { font-size: 0.9rem; line-height: 1.8; }
+    .podcast-content p { margin-bottom: 0.75rem; }
+    .podcast-content p:last-child { margin-bottom: 0; }
+    .podcast-quote {
+      border-left: 2px solid var(--border);
+      padding-left: 1rem;
+      color: var(--text-secondary);
+      font-style: italic;
+      margin: 1rem 0;
+      font-size: 0.88rem;
+    }
+    .podcast-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      color: var(--orange);
+      font-size: 0.8rem;
+      text-decoration: none;
+      margin-top: 1rem;
+      transition: opacity 0.2s;
+    }
+    .podcast-link:hover { opacity: 0.8; }
+    .bullet-list { list-style: none; padding: 0; }
+    .bullet-list li {
+      position: relative;
+      padding-left: 1.25rem;
+      margin-bottom: 0.5rem;
+      font-size: 0.88rem;
+      line-height: 1.6;
+    }
+    .bullet-list li::before {
+      content: "\2192";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .footer {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 0.78rem;
+    }
+    .footer a { color: var(--accent); text-decoration: none; }
+    .footer a:hover { text-decoration: underline; }
+    @media (max-width: 480px) {
+      .container { padding: 1.25rem 1rem 3rem; }
+      .header h1 { font-size: 1.5rem; }
+      .header .stats { gap: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="header-badge">AI Industry Digest</div>
+      <h1>AI Builders Digest</h1>
+      <div class="date">2026 年 4 月 14 日</div>
+      <div class="stats">
+        <span><span class="dot dot-green"></span> 12 位活跃 Builder</span>
+        <span><span class="dot dot-orange"></span> 1 期播客</span>
+        <span><span class="dot dot-pink"></span> 19 条推文</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title"><span class="icon">&#120143;</span> Twitter / X 动态</div>
+
+      <div class="builder">
+        <div class="builder-header"><div><div class="builder-name">Aaron Levie</div><div class="builder-role">Box CEO</div></div></div>
+        <div class="builder-content">
+          <p>过去一周与银行、媒体、零售、医疗、咨询、科技和体育行业的数十位 IT 与 AI 负责人会面，围绕企业 Agent 现状做了深度总结：</p>
+          <ul class="bullet-list">
+            <li>企业正从 AI 聊天阶段转向使用工具、处理数据、执行实际工作的 Agent 阶段</li>
+            <li><strong>Token 预算大战</strong>：大部分企业年度 OpEx 预算已锁定，正在认真讨论如何分配 Token 预算。有公司甚至搞起了&ldquo;鲨鱼池&rdquo;式的算力预算竞标</li>
+            <li><strong>Agent 不会取代岗位</strong>：主要用例是企业之前做不到或顾不上的事情</li>
+            <li><strong>Headless 软件成为主流需求</strong>：企业要求软件能在任何 Agent 生态中运行</li>
+            <li>所有人都比以前更忙了。AI 并没有让人少干活，工作量创下新高</li>
+          </ul>
+          <p>另一条推文中讨论了安全领域的 Jevons 悖论：更好的 AI 安全工具反而会增加对安全人才的需求。</p>
+        </div>
+        <a class="builder-link" href="https://x.com/levie/status/2043426157367095397" target="_blank">查看原文 &rarr;</a>
+      </div>
+
+      <div class="builder">
+        <div class="builder-header"><div><div class="builder-name">Amjad Masad</div><div class="builder-role">Replit CEO</div></div></div>
+        <div class="builder-content">
+          <p>Apple 成立 50 周年之际，正在尽全力成为全世界最令人讨厌的公司（8000+ 赞）。开发者社区的愤怒情绪可见一斑。</p>
+        </div>
+        <a class="builder-link" href="https://x.com/amasad/status/2043394289326289243" target="_blank">查看原文 &rarr;</a>
+      </div>
+
+      <div class="builder">
+        <div class="builder-header"><div><div class="builder-name">Garry Tan</div><div class="builder-role">Y Combinator CEO</div></div></div>
+        <div class="builder-content">
+          <p>分享今年关于 Agent 工程的最核心洞察：把<strong>模糊的、需要人类智能</strong>的操作推到 Markdown skill 里（胖 skill）；把<strong>必须精确的确定性</strong>操作推到代码里（胖代码）；中间的 harness 层保持<strong>极薄</strong>。</p>
+        </div>
+        <a class="builder-link" href="https://x.com/garrytan/status/2043566215927328955" target="_blank">查看原文 &rarr;</a>
+      </div>
+
+      <div class="builder">
+        <div class="builder-header"><div><div class="builder-name">Guillermo Rauch</div><div class="builder-role">Vercel CEO</div></div></div>
+        <div class="builder-content">
+          <p>实操建议：创建一个 X 群聊，拉入你<strong>最好、最挑剔的客户</strong>和工程负责人。快速响应、快速发布、直面反馈。Vercel 的 v0 团队正是这样做的。</p>
+        </div>
+        <a class="builder-link" href="https://x.com/rauchg/status/2043381737754120592" target="_blank">查看原文 &rarr;</a>
+      </div>
+
+      <div class="builder">
+        <div class="builder-header"><div><div class="builder-name">Aditya Agarwal</div><div class="builder-role">South Park Commons 合伙人，前 Dropbox CTO</div></div></div>
+        <div class="builder-content">
+          <p>观察到 Anthropic 的公司文化让他想起了早期的 Facebook&mdash;&mdash;团队内部非常开心、充满黑客文化、有极强的使命感，可能还稍微有点太把自己当回事了。&ldquo;赢能解决很多问题。&rdquo;</p>
+        </div>
+        <a class="builder-link" href="https://x.com/adityaag/status/2043501400626491758" target="_blank">查看原文 &rarr;</a>
+      </div>
+
+      <div class="builder">
+        <div class="builder-header"><div><div class="builder-name">Peter Yang</div><div class="builder-role">Roblox 产品经理</div></div></div>
+        <div class="builder-content">
+          <p>提出引发广泛讨论的问题：&ldquo;我的整个信息流和 Claude subreddit 都在说 Opus 被削弱了。Anthropic 为什么要削弱自己的模型？&rdquo;（532 赞，245 条回复）</p>
+        </div>
+        <a class="builder-link" href="https://x.com/petergyang/status/2043466663258140685" target="_blank">查看原文 &rarr;</a>
+      </div>
+
+      <div class="builder">
+        <div class="builder-header"><div><div class="builder-name">Kevin Weil</div><div class="builder-role">OpenAI VP of Science</div></div></div>
+        <div class="builder-content">
+          <p>转发观点：人类智能和计算机智能不是一条线上的两个不同点，而是一个高维空间中的两个不同位置&mdash;&mdash;我们应该探索这个空间中更多的区域。</p>
+        </div>
+        <a class="builder-link" href="https://x.com/kevinweil/status/2043510607736189193" target="_blank">查看原文 &rarr;</a>
+      </div>
+
+      <div class="builder">
+        <div class="builder-header"><div><div class="builder-name">Zara Zhang</div><div class="builder-role">Builder</div></div></div>
+        <div class="builder-content">
+          <p>开源了自制的 Chrome 新标签页：按域名分组、一键关闭重复标签、&ldquo;容易摘到的果实&rdquo;批量处理、关闭标签时有 swoosh 音效和撒花。真正的 Marie Kondo 式标签页整理术。</p>
+        </div>
+        <a class="builder-link" href="https://x.com/zarazhangrui/status/2043415572688629937" target="_blank">查看原文 &rarr;</a>
+      </div>
+
+      <div class="builder">
+        <div class="builder-header"><div><div class="builder-name">Nikunj Kothari</div><div class="builder-role">FPV Ventures 合伙人</div></div></div>
+        <div class="builder-content">
+          <p>主张采用&ldquo;DoorDash 策略&rdquo;创业&mdash;&mdash;聚焦大城市郊区，在主要玩家抢夺城市时悄悄壮大，最终反噬主流市场。</p>
+        </div>
+        <a class="builder-link" href="https://x.com/nikunj/status/2043374140443553885" target="_blank">查看原文 &rarr;</a>
+      </div>
+
+      <div class="builder">
+        <div class="builder-header"><div><div class="builder-name">Peter Steinberger</div><div class="builder-role">OpenClaw ClawFather</div></div></div>
+        <div class="builder-content">
+          <p>&ldquo;他们长得真快&rdquo;&mdash;&mdash;转发 OpenClaw 生态成长推文，1000+ 赞。</p>
+        </div>
+        <a class="builder-link" href="https://x.com/steipete/status/2043313467512463713" target="_blank">查看原文 &rarr;</a>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-title"><span class="icon">&#127908;</span> 播客精选</div>
+
+      <div class="podcast">
+        <div class="podcast-source">Latent Space</div>
+        <div class="podcast-title">Marc Andreessen 内省：浏览器的死亡、Pi + OpenClaw，以及为什么&ldquo;这次不一样&rdquo;</div>
+        <div class="takeaway">
+          AI 是一场&ldquo;80 年的一夜成功&rdquo;&mdash;&mdash;从 1943 年的神经网络论文到今天，技术积累从未停止。真正的转变点是 LLM、推理、Agent 和自我改进（RSI）这四次突破同时生效，标志着&ldquo;这次真的不一样&rdquo;。
+        </div>
+        <div class="podcast-content">
+          <p>Marc Andreessen 在 a16z 最后的老办公室里，做了一次覆盖面极广的深度对话。这位从 1980 年代就开始接触 AI 的投资老兵，用一种罕见的既理性又激动的语气，讲述了他为什么认为 AI 的夏天不会结束。</p>
+          <p><strong>&ldquo;80 年的一夜成功&rdquo;</strong>是他最核心的叙事框架：ChatGPT、O1、OpenClaw 看起来是一夜爆发的颠覆性产品，但它们背后的技术积累跨越了八个十年。1943 年的神经网络论文、1955 年的 Dartmouth 会议、1980 年代的 AI 繁荣与萧条&mdash;&mdash;那些研究者们方向是对的，只是时间没到。</p>
+          <p>他对 AI 冬天的回应直截了当：&ldquo;投资中最危险的 12 个字是'这次不一样'。所以我告诉你哪里不一样&mdash;&mdash;因为<strong>它真的在工作</strong>。&rdquo;他列出了四个已经验证的功能突破：LLM、推理（O1/R1）、Agent（OpenClaw）、自我改进。全部在工作。</p>
+          <div class="podcast-quote">
+            &ldquo;如果 Linus Torvalds 都说 AI 编程还没他好，那你该知道&mdash;&mdash;这种事以前从未发生过。而现在，芯片变得更值钱而不是更便宜，这在历史上也是第一次。&rdquo;
+          </div>
+          <p>关于 Agent 架构，Andreessen 做了一个精妙的类比：Agent = LLM + Unix Shell + 文件系统 + Markdown + Cron。这不是什么新发明，而是把 Unix 哲学用 LLM 重新激活了。最让他兴奋的是&mdash;&mdash;你的 Agent 就是你的文件，你可以让它自己修改自己、迁移自己、扩展自己。</p>
+          <p>他也谈到了现实中让人清醒的一面：加州需要 900 小时专业培训才能当发型师，美国 K-12 教育是政府垄断，码头工人工会一半人全职拿工资待在家里。技术准备好了，但&ldquo;8 亿人的适应速度不会因为技术成熟而加快&rdquo;。他既不是乌托邦主义者也不是末日论者&mdash;&mdash;两边都太乐观了。</p>
+          <p>关于 AI 安全领域，他预测即将迎来一次&ldquo;安全大爆发&rdquo;：AI 会暴露每一行潜在的安全漏洞，但同时 AI 也是唯一能修复它们的工具。至于&ldquo;人的证明&rdquo;（Proof of Human），他认为这和无人机防御一样，是人类必须现在就面对的两大不对称威胁。</p>
+        </div>
+        <a class="podcast-link" href="https://www.youtube.com/@LatentSpacePod" target="_blank">收听完整播客 &rarr;</a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>由 <a href="https://github.com/zarazhangrui/follow-builders">Follow Builders</a> 技能自动生成</p>
+      <p style="margin-top: 0.5rem; color: #555;">追踪 Builder，不是网红</p>
+    </div>
+  </div>
+</body>
+</html>
