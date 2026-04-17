@@ -173,6 +173,113 @@ body { font-family: var(--font-sans); background: var(--bg); color: var(--text-p
 <footer class="footer"><div class="footer-line"></div><div class="footer-text">Chen &middot; Powered by follow-builders</div></footer>
 <script>
 var digests = {
+  "2026-04-17": {
+    "date": "4月17日",
+    "dateShort": "04.17",
+    "heroSub": "Gemini Mac 原生客户端上线：100 天 100+ 功能、Claude Code 1M 上下文窗口管理与 autocompact 详解、Swyx 分析 Meta AI 转折点、Aaron Levie 谈 AI 为何会创造更多就业",
+    "twitter": [
+      {
+        "author": "Josh Woodward",
+        "role": "Google Labs VP",
+        "text": "Gemini Mac 原生客户端正式上线。<strong>100% Swift</strong> 编写，100 天内构建 100+ 功能。闪电般快速，原生体验（5901赞、406转发）。",
+        "url": "https://x.com/joshwoodward/status/2044452201947627709"
+      },
+      {
+        "author": "Thariq",
+        "role": "Claude Code, Anthropic",
+        "text": "Claude Code <strong>1M 上下文窗口是双刃剑</strong>：允许处理更复杂任务，但也更容易造成上下文污染。解决方案：<strong>1)</strong> 用 autocompact 自动压缩，默认阈值 200K。<strong>2)</strong> 可自定义阈值，如 400K 是好的平衡点（<code>CLAUDE_CODE_AUTO_COMPACT_WINDOW=400000</code>）。（375赞、19转发）。",
+        "url": "https://x.com/trq212/status/2044653083817660431"
+      },
+      {
+        "author": "Swyx",
+        "role": "AI Engineer / 播客主",
+        "text": "Meta AI 叙事分析：经历了 flop（Llama 4）之后正在转向。<strong>1)</strong> 2025 年 soup wars 后重新扩大招聘。<strong>2)</strong> Zuck 搬去跟 Alexandr 和 Nat 同住，重新写代码。<strong>3)</strong> 终于发布接近 Opus 级别模型（无 API、未开源）。<strong>4)</strong> 收购 Dreamer 和 Manus 构建 AI OS 消费层（70赞）。",
+        "url": "https://x.com/swyx/status/2044598788065731017"
+      },
+      {
+        "author": "Swyx",
+        "role": "AI Engineer / 播客主",
+        "text": "「今年是 subagent 之年，但主要是优化问题。逆向问题——让 agent 组合、让 manager agent 管理和查询其他 agent——是能力问题。」作为 Cognition 顾问，参与设计了新的 <strong>Spaces</strong> 概念（49赞）。",
+        "url": "https://x.com/swyx/status/2044542494420214217"
+      },
+      {
+        "author": "Aaron Levie",
+        "role": "Box CEO",
+        "text": "AI 为何会创造更多就业？因为 AI 加速某个环节后，瓶颈会转移到另一个仍需人类的环节。例：更多 AI agent 回答法律咨询 → 更多律师被 ping；更多代码 → 更多安全研究员；自动化患者转诊 → 医生不够用。竞争者也会用 AI 做更好产品，你不得不跟上（156赞、24转发）。",
+        "url": "https://x.com/levie/status/2044621545348481285"
+      },
+      {
+        "author": "Guillermo Rauch",
+        "role": "Vercel CEO",
+        "text": "设计的未来：每个团队都有能力构建自己的「设计工厂」。Shader Lab 用 Claude Code + Three.js + Next.js + Vercel 构建，完全按 @basementstudio 的需求定制。现在<strong>拼装强大软件模块比搜索采购 SaaS 还容易</strong>（1705赞、69转发）。",
+        "url": "https://x.com/rauchg/status/2044445445636972578"
+      },
+      {
+        "author": "Peter Yang",
+        "role": "Roblox 产品 / AI 教程博主",
+        "text": "「感觉 Claude 每隔一天就宕机一次——不知道是因为发布节奏、算力扩容还是其他原因？」引发大量讨论（139赞、63回复）。",
+        "url": "https://x.com/petergyang/status/2044433121580634178"
+      },
+      {
+        "author": "Peter Yang",
+        "role": "Roblox 产品 / AI 教程博主",
+        "text": "中国两周行 15 个观察：AI 工作文化、电动车、2 美元配送、日常生活和工作方式。认为每个产品人都应该去一次中国（245赞、17转发）。",
+        "url": "https://x.com/petergyang/status/2044418914856353901"
+      },
+      {
+        "author": "Garry Tan",
+        "role": "Y Combinator CEO",
+        "text": "OpenClaw 安全性回应：Docker sandbox + logging mitmproxy firewall + Clawvisor 组合，安全隐患时代结束（900赞、46转发）。",
+        "url": "https://x.com/garrytan/status/2044512730087072000"
+      },
+      {
+        "author": "Peter Steinberger",
+        "role": "OpenClaw 创始人",
+        "text": "回应安全问题：4 个月、数千工时后建立了完整安全方案——sandbox（Docker/OpenShell）、allow-lists、per-access exec allow/deny prompts。已有数百名安全研究员渗透测试（1063赞、63转发）。",
+        "url": "https://x.com/steipete/status/2044482797449150520"
+      },
+      {
+        "author": "Amjad Masad",
+        "role": "Replit CEO",
+        "text": "如果安全漏洞发现被前沿模型（如 Mythos）完全自动化，GitHub 应该增加一个类似 Star 的指标——显示花了多少算力来加固一个开源包。例：linus/linux ⭐️ 200K / 安全加固 $239M。这是 OSS 建立信任的唯一途径（410赞、20转发）。",
+        "url": "https://x.com/amasad/status/2044437437141909609"
+      },
+      {
+        "author": "Ryo Lu",
+        "role": "Cursor 设计",
+        "text": "在 Cursor 中试试 <strong>/canvas</strong> 命令——为你的 agent 构建自定义界面。未来瞥见（273赞）。",
+        "url": "https://x.com/ryolu_/status/2044493859821129992"
+      },
+      {
+        "author": "Zara Zhang",
+        "role": "Builder / Harvard '17",
+        "text": "「在 AI 行业，<strong>play（玩）应该被严肃对待</strong>」。用非功利的方式测试模型边界、带着好奇探索和实验，这不仅是浪费时间，回头看往往是最 productive 的时间（75赞、5转发）。",
+        "url": "https://x.com/zarazhangrui/status/2044515052435476685"
+      },
+      {
+        "author": "Aditya Agarwal",
+        "role": "South Park Commons 合伙人",
+        "text": "LLM 怀疑论者的进化路径：1. 只是自动补全 → 2. 只是 next-token 预测 → 3. 会幻觉 → 4. 只能用于训练数据 → 5. 只能写代码 → 6. 只能做可验证的事。承认吧，LLM 很 awesome（52赞）。",
+        "url": "https://x.com/adityaag/status/2044444065199177748"
+      }
+    ],
+    "podcasts": [
+      {
+        "show": "AI & I by Every",
+        "title": "The AI Model Built for What LLMs Can't Do",
+        "quote": "EBM is to have the bird view all the time and you allowed to take different routes. So if you see there's a hole, you're gonna choose a different route.",
+        "points": [
+          "<strong>Energy Based Model（EBM）</strong>：非自回归、无 token，基于能量最小化原理。类比：LLM 像「隧道视野」只能一步步走，EBM 有「鸟瞰视角」能随时调整路线",
+          "<strong>核心差异</strong>：LLM 是黑盒，训练完才能看内部；EBM 训练过程中可以实时检查，架构天然支持约束，可用于 mission-critical 系统",
+          "<strong>与 LLM 兼容而非替代</strong>：EBM 处理空间推理和数据分析，LLM 处理语言，两者可叠加使用，降低 LLM 成本",
+          "<strong>行业洞察</strong>：LLM 在 B2B 领域几乎零采用——企业不愿分享数据、需要定制 AI、需要确定性输出，这正是 EBM 的机会",
+          "<strong>创业策略</strong>：不要求放弃 LLM 投资，而是作为 LLM 生态的补充层，解决 LLM 做不了的任务"
+        ],
+        "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL"
+      }
+    ]
+  },
+
   "2026-04-16": {
     "date": "4月16日",
     "dateShort": "04.16",
