@@ -5,28 +5,255 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Builders Digest</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; }
-        .header { text-align: center; margin-bottom: 40px; }
-        .section { margin-bottom: 30px; }
-        .footer { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; color: #666; font-size: 0.9em; }
-        a { color: #3498db; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            background-color: #f9fafb;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+        .header .date {
+            font-size: 1.1em;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+        .section {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            color: #667eea;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-size: 1.8em;
+        }
+        .builder {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .builder:last-child {
+            border-bottom: none;
+        }
+        .builder-name {
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 8px;
+        }
+        .builder-tweet {
+            background: #f8fafc;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 6px;
+        }
+        .tweet-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .tweet-link:hover {
+            text-decoration: underline;
+        }
+        .podcast {
+            background: #f0f9ff;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+        .podcast-title {
+            font-weight: 600;
+            color: #1e40af;
+            margin-bottom: 10px;
+        }
+        .podcast-link {
+            color: #1e40af;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .podcast-link:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #6b7280;
+            font-size: 0.9em;
+        }
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .header h1 {
+                font-size: 2em;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="header">
         <h1>AI Builders Digest</h1>
-        <p>2026年4月15日</p>
+        <div class="date">2026年4月27日</div>
     </div>
-    
+
     <div class="section">
-        <h2>📝 消息摘要</h2>
-        <p>当前没有可更新的AI建设者内容。</p>
+        <h2>X / TWITTER</h2>
+        
+        <div class="builder">
+            <div class="builder-name">Swyx</div>
+            <div class="builder-tweet">
+                📢 正在与 @hhua_ 合作开发新项目（ICML首尔会议后的日程安排）<br>
+                🔥 赞同"代码并不便宜"的观点<br>
+                💭 PM与工程师在不同场景下的思考差异
+                <br><a href="https://x.com/swyx/status/2048126046487322835" class="tweet-link">查看原推文 →</a>
+            </div>
+        </div>
+
+        <div class="builder">
+            <div class="builder-name">Peter Yang (Peter @ Roblox)</div>
+            <div class="builder-tweet">
+                🤖 7岁孩子的AI期望测试：用Codex时，"为什么不能立即建成宠物龙养成游戏？我很无聊"<br>
+                📚 寻找设计、编程、产品方面的人工精选技能仓库<br>
+                🛠️ 经常需要用Codex修复OpenClaw设置
+                <br><a href="https://x.com/petergyang/status/2048220045726322934" class="tweet-link">查看原推文 →</a>
+            </div>
+        </div>
+
+        <div class="builder">
+            <div class="builder-name">Nan Yu (@ Linear)</div>
+            <div class="builder-tweet">
+                🏙️ 美国西海岸住房问题：从圣克鲁兹往上，包括SF、Marin、西雅图、波特兰<br>
+                🚀 处于采用前沿的挑战：需要不断调整做事方式<br>
+                💡 最佳策略：在相对较新但能经受住行业波动的技术后几步
+                <br><a href="https://x.com/thenanyu/status/2048210021553405955" class="tweet-link">查看原推文 →</a>
+            </div>
+        </div>
+
+        <div class="builder">
+            <div class="builder-name">Amjad Masad (@ Replit CEO)</div>
+            <div class="builder-tweet">
+                📈 2000年代：每家公司都是互联网公司<br>
+                💻 2010年代：每家公司都是软件公司<br>
+                🤖 2020年代：每家公司都是AI公司<br>
+                🔒 2025+：每家公司都是网络安全公司
+                <br><a href="https://x.com/amasad/status/2048265772775162078" class="tweet-link">查看原推文 →</a>
+            </div>
+        </div>
+
+        <div class="builder">
+            <div class="builder-name">Aaron Levie (@ Box CEO)</div>
+            <div class="builder-tweet">
+                🚀 AI提供了前所未有的杠杆效应，使高抱负和核心技能的人能够克服历史经验要求<br>
+                🎯 这意味着无论资历深浅，每个人都能比几年前做得更多<br>
+                💡 公司应该积极寻找这些"看起来来自未来"的人才，让他们担任关键职位
+                <br><a href="https://x.com/levie/status/2048223146063609965" class="tweet-link">查看原推文 →</a>
+            </div>
+        </div>
+
+        <div class="builder">
+            <div class="builder-name">Garry Tan (@ Y Combinator CEO)</div>
+            <div class="builder-tweet">
+                🧠 发布GBrain v0.22 - 搜索和检索修复 + 新的评估系统<br>
+                🌐 发布GStack浏览器技能，可与Claude Code并排控制浏览器<br>
+                💡 开源项目：gbrain-evals独立仓库防止检出膨胀
+                <br><a href="https://x.com/garrytan/status/2048290087318773807" class="tweet-link">查看原推文 →</a>
+            </div>
+        </div>
+
+        <div class="builder">
+            <div class="builder-name">Zara Zhang</div>
+            <div class="builder-tweet">
+                ✍️ 写作 ≠ 生成文本，构建产品 ≠ 写PRD，设计 ≠ 制作原型，工程 ≠ 写代码<br>
+                🧠 当我开始在键盘上打字时，这并不是写作的开始，而是最后一步<br>
+                💭 80%的写作工作已经在脑中完成
+                <br><a href="https://x.com/zarazhangrui/status/2048101948826751429" class="tweet-link">查看原推文 →</a>
+            </div>
+        </div>
+
+        <div class="builder">
+            <div class="builder-name">Nikunj Kothari (@ FP Ventures)</div>
+            <div class="builder-tweet">
+                📝 简洁清晰是大多数写作中所缺乏的<br>
+                🤔 优秀的写作能够清晰地传达事情的核心并分享正在酝酿但尚未充分探索的线索<br>
+                🌊 每次经过邻居的侧门时，都有一种 visceral 感觉这是一个通往另一个宇宙的门户
+                <br><a href="https://x.com/nikunj/status/2048056524845482131" class="tweet-link">查看原推文 →</a>
+            </div>
+        </div>
+
+        <div class="builder">
+            <div class="builder-name">Peter Steinberger (@ OpenClaw)</div>
+            <div class="builder-tweet">
+                📝 Summarize 📝0.14.0发布 - GPT-5.5快速模式、Reddit线程提取、本地PDF提取<br>
+                🎚️ CodexBar 🎚️ 0.23发布 - Mistral支持、Claude Designs使用、GPT-5.5定价<br>
+                💬 GitHub团队成员很棒，即使我们让他们服务器过载时也是如此
+                <br><a href="https://x.com/steipete/status/2048275589224628677" class="tweet-link">查看原推文 →</a>
+            </div>
+        </div>
+
+        <div class="builder">
+            <div class="builder-name">Dan Shipper (@ Every)</div>
+            <div class="builder-tweet">
+                🔍 我们观察到从来不是模型本身，只是模型暴露给我们的提问方式<br>
+                🧪 这意味着观测结果取决于我们如何提问，而不仅仅是模型本身
+                <br><a href="https://x.com/danshipper/status/2048026505461080076" class="tweet-link">查看原推文 →</a>
+            </div>
+        </div>
+
+        <div class="builder">
+            <div class="builder-name">Sam Altman</div>
+            <div class="builder-tweet">
+                🚀 "他们怎么能写代码这么快？！"<br>
+                🎯 "我们会修复前者"（指代码速度问题）<br>
+                💪 "在前端我们仍然需要looksmaxxed一点，但现在我们在IQ方面已经碾压了"
+                <br><a href="https://x.com/sama/status/2048165186482389253" class="tweet-link">查看原推文 →</a>
+            </div>
+        </div>
     </div>
-    
+
+    <div class="section">
+        <h2>PODCASTS</h2>
+        
+        <div class="podcast">
+            <div class="podcast-title">No Priors: Scaling Global Organizations in the Age of AI with ServiceNow CEO Bill McDermott</div>
+            <div>
+                <p><strong>核心观点：</strong>企业平台与AI的完美结合 - "AI思考，工作流执行"。ServiceNow作为AI控制塔，整合所有系统、语言模型和云计算资源。</p>
+                <p><strong>关键洞察：</strong>用AI模型复制企业平台功能的成本将是原来的10倍，企业更信任有支持平台的AI解决方案。</p>
+                <p><strong>未来展望：</strong>220亿个AI助手将进入 workforce，员工需要专注于创新和人际连接，而不仅仅是重复性工作。</p>
+                <p><strong>金句摘录：</strong>"人们会原谅人类的错误，但永远不会原谅软件的错误。"</p>
+            </div>
+            <a href="https://www.youtube.com/watch?v=tNNFJa5pUEg" class="podcast-link">收听完整节目 →</a>
+        </div>
+    </div>
+
     <div class="footer">
-        <p>AI Builders Digest — 跟踪AI建设者的最新动态和深度思考</p>
-        <p>Generated through the Follow Builders skill: <a href="https://github.com/zarazhangrui/follow-builders">https://github.com/zarazhangrui/follow-builders</a></p>
+        <p>通过 Follow Builders skill 生成：<a href="https://github.com/zarazhangrui/follow-builders" target="_blank">https://github.com/zarazhangrui/follow-builders</a></p>
+        <p>生成时间：2026年4月27日</p>
     </div>
 </body>
 </html>
