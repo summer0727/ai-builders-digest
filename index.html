@@ -181,7 +181,7 @@ var digests = {
             {
                 "author": "Sam Altman",
                 "role": "OpenAI CEO",
-                "text": "<strong>称 Agents SDK 2.0 被严重低估</strong>（2773 likes），引发社区广泛关注。同时连续发文致敬 Greg Brockman，称「<strong>没有 Greg 就不可能想象 OpenAI 的成功</strong>」，回顾十年合作历程，特别强调 Greg 的技术才华和纯粹意志力。",
+                "text": "<strong>称 Agents SDK 2.0 被严重低估</strong>，引发社区广泛关注。同时连续发文致敬 Greg Brockman，称「<strong>没有 Greg 就不可能想象 OpenAI 的成功</strong>」，回顾十年合作历程，特别强调 Greg 的技术才华和纯粹意志力。",
                 "url": "https://x.com/sama/status/2050998576671859003"
             },
             {
@@ -294,7 +294,7 @@ var digests = {
             {
                 "title": "Baseten CEO Tuhin Srivastava on the AI Inference Crunch, Custom Models, and Building the Inference Cloud",
                 "author": "No Priors",
-                "text": "Baseten 一年增长 30 倍、预计今年营收超 10 亿美元。核心洞察：<strong>推理是「最后一个市场」</strong>——即使 AGI 到来，剩下的也只有推理。95% 的 token 来自客户定制模型，没人跑原生开源权重。计算产能极度紧张，90+ 集群利用率中九十。客户在推理→评估→后训练→更多推理之间形成闭环。中国企业（DeepSeek 等）在补贴美国企业使用。",
+                "text": "推理可能是 AI 整个价值链里最被低估的一环。Baseten 用一年 30 倍的增长证明了这一点，今年营收要冲 10 亿美元。CEO Tuhin 的核心判断很清醒：<strong>推理是「最后一个市场」</strong>——模型训练完之后干嘛？推理。就算 AGI 真的来了，它也得跑在某个东西上。一个反直觉的数据：<strong>95% 的 token 来自客户自己定制过的模型，几乎没人直接跑开源原版权重</strong>。说明现在不是「拿模型就能用」的时代，而是「拿模型还得自己调」的时代。算力紧张到什么程度？集群利用率一直在 90% 以上，客户已经形成推理→评估→后训练→再推理的闭环，像永动机一样吃算力。更有意思的是地缘反转：<strong>中国企业（比如 DeepSeek）在用极低价格补贴美国公司的推理需求</strong>。一边是美国的模型能力领先，一边是中国的基础设施成本碾压，这个格局值得细品。",
                 "url": "https://www.youtube.com/watch?v=XAbKflCncDo"
             }
         ]
@@ -387,7 +387,7 @@ var digests = {
             {
                 "title": "Demis Hassabis: Building DeepMind, AlphaFold, and the Final Stretch to AGI",
                 "author": "Training Data",
-                "text": "DeepMind 创始人 Hassabis 回顾从棋童到游戏开发到神经科学再到 AI 创业的非线性路径。关键洞察：<strong>想领先 5 年而不是 50 年</strong>（Elixir Studios 教训）；2009 年创业时学术界和工业界都觉得 AGI 是科幻；AlphaGo 胜利后正式启动 AI for Science；<strong>Isomorphic Labs 目标将药物发现从十年缩短到月甚至周</strong>，几乎全部探索在计算机内完成，湿实验只做验证；认为 <strong>AGI 大约在 2030 年实现</strong>，符合 2010 年的 20 年预期；AI 可能催生全新学科，特别是基于模拟器的社会科学；信息可能是比能量和物质更基本的宇宙构成要素。",
+                "text": "Hassabis 的经历本身就是一部「长期主义」的教科书——从国际象棋神童到游戏开发者，从神经科学博士到创办 DeepMind，每一步看起来都在换赛道，但实际上都在往同一个方向走。<strong>他 2010 年就给 AGI 设了 20 年的预期，现在看 2030 年，刚好对上</strong>——这种预测精度本身就说明他的认知框架有多稳。Elixir Studios 的创业失败教会他一件事：想领先 5 年，别想领先 50 年。AlphaGo 赢了李世石之后，他才正式启动 AI for Science，Isomorphic Labs 现在的目标是<strong>把药物发现从十年压缩到几周甚至几天</strong>，几乎所有探索都在计算机里完成，湿实验室只做最终验证。两个更大胆的观点：AI 可能催生全新的学科（特别是基于模拟器的社会科学），以及<strong>信息可能比能量和物质更基本</strong>——这不是技术判断，是哲学判断。",
                 "url": "https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8"
             }
         ]
@@ -623,7 +623,8 @@ var digests = {
                     "<strong>Stripe 推出 Shared Payment Token</strong>，让 Agent 安全传递支付凭证给商家而非直接暴露卡号，商家仍为 merchant of record",
                     "<strong>LLM 对 Stripe Docs 的访问量同比增 10 倍</strong>，机器正在成为开发者基础设施的用户，推出了 Stripe Projects 让 Agent 从命令行管理软件栈"
                 ],
-                "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL"
+                "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL",
+                "text": "Stripe 在讨论 AI Agent 时代的支付基础设施布局。<strong>当 AI Agent 开始自主完成交易——下单、付款、订阅——现有的支付系统根本扛不住</strong>，因为你不能再假设屏幕后面坐着一个人类。Stripe 在做的，本质上是为「没有人类参与的交易」重新设计整个支付管道：鉴权、风控、结算，全部从 Agent 的视角重写。"
             }
         ]
     },
