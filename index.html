@@ -173,6 +173,63 @@ body { font-family: var(--font-sans); background: var(--bg); color: var(--text-p
 
 <script>
 var digests = {
+    "2026-05-04": {
+        "date": "5月4日",
+        "dateShort": "05.04",
+        "heroSub": "Sam Altman 称 Agents SDK 2.0 被严重低估、Andrej Karpathy 从 Vibe Coding 到 Agentic Engineering 的完整进化论、Aaron Levie 深度分析企业实施 AI Agent 的真实工作量、Garry Tan 提出 Personal AI 新战场、Steipete 发布 RepoBar 0.4.0 和新版 OpenClaw beta、Amjad Masad 展示 Replit 平台上惊人的 agent 并行能力",
+        "twitter": [
+            {
+                "author": "Sam Altman",
+                "role": "OpenAI CEO",
+                "text": "<strong>称 Agents SDK 2.0 被严重低估</strong>（2773 likes），引发社区广泛关注。同时连续发文致敬 Greg Brockman，称「<strong>没有 Greg 就不可能想象 OpenAI 的成功</strong>」，回顾十年合作历程，特别强调 Greg 的技术才华和纯粹意志力。",
+                "url": "https://x.com/sama/status/2050998576671859003"
+            },
+            {
+                "author": "Aaron Levie",
+                "role": "Box CEO",
+                "text": "发表长篇分析，指出<strong>企业实施 AI Agent 的工作量将远超想象</strong>——需要解决安全数据访问、权限控制、流程文档化、人机协作设计等系统性问题。企业级 AI 转型的速度变化既是祝福也是诅咒，比个人工具切换难 100 倍。另强调<strong>应将 AI 视为 utility（基础设施）而非 being（生命体）</strong>，混淆二者的类比只会让人困惑。",
+                "url": "https://x.com/levie/status/2051057677984469277"
+            },
+            {
+                "author": "Garry Tan",
+                "role": "YC 总裁兼 CEO",
+                "text": "阐述 Personal AI 的愿景：<strong>一个让个体人类借助 AI 完成有意义工作、而不被掠夺性机构捕获的文明</strong>。在智能爆炸的时代，拥有自己的 prompt 和数据比以往任何时候都重要——这是「真正的自由」的新战场，2034 年不必像 1984。",
+                "url": "https://x.com/garrytan/status/2051099735176659256"
+            },
+            {
+                "author": "Peter Steinberger",
+                "role": "OpenClaw/OpenAI（ClawFather）",
+                "text": "发布 RepoBar 0.4.0，新增 SQLite 持久化缓存、可见的 rate limit 显示、更优的 Issues/PR 加载和 archive 回退支持，大幅减少 GitHub API 浪费调用。同时发布新版 OpenClaw beta。",
+                "url": "https://x.com/steipete/status/2051088325100831046"
+            },
+            {
+                "author": "Amjad Masad",
+                "role": "Replit CEO",
+                "text": "展示 Replit 平台的惊人数据：同时 10 个 agent 活跃运行、198 个草稿中、700+ 已完成。<strong>互联网上没有任何地方比 Replit 上发生着更多的 agentic 并行计算</strong>。同时感叹 marathon vibe coding 一天能达到的产出令人震撼。",
+                "url": "https://x.com/amasad/status/2051167532523074015"
+            },
+            {
+                "author": "Peter Yang",
+                "role": "Roblox 产品经理 / AI 教程作者",
+                "text": "对比了 Hermes 和 OpenClaw 两款 AI coding agent 工具，向社区征集真实使用体验差异，引发 200+ 回复的热烈讨论。此外分享了 MacBook 合盖后保持 agent 运行的实用技巧。",
+                "url": "https://x.com/petergyang/status/2051129249348894754"
+            },
+            {
+                "author": "Zara Zhang",
+                "role": "Builder / GitHub 开源贡献者",
+                "text": "指出 AI 正在彻底改变「构建小东西」的经济学：<strong>以前软件开发成本太高需要团队和审批；现在只需要你和 coding agent</strong>。coding agent 不需要被说服，所以去构建那些在大厂产品评审会上一定会被毙掉的东西吧。",
+                "url": "https://x.com/zarazhangrui/status/2051155065331941873"
+            }
+        ],
+        "podcasts": [
+            {
+                "title": "Andrej Karpathy: From Vibe Coding to Agentic Engineering",
+                "author": "Training Data",
+                "text": "<strong>The Takeaway：传统计算机能自动化你能用代码指定的东西，但 LLM 能自动化你能验证的东西——这条分界线决定了 AI 在哪些领域会碾压人类，在哪些领域会犯蠢。</strong>Andrej Karpathy，OpenAI 联合创始人和前 Tesla AI 总监，提出一个反直觉的观察：<strong>Vibe Coding 提升了所有人的下限，Agentic Engineering 则保留了专业软件的质量标准</strong>。善于 agentic engineering 的人产出远超 10x。最矛盾的一点：<strong>Opus 4.7 能同时重构十万行代码库或发现零日漏洞，却会在「洗车距离五十米该开车还是走路」这种问题上犯蠢</strong>——这不是模型不够聪明，而是强化学习训练中对可验证性反馈的偏好。Karpathy 对人类的定位也很清醒：<strong>「你可以外包思考，但不能外包理解。」</strong>审美、判断力和品味才是人不可替代的部分。",
+                "url": "https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8"
+            }
+        ]
+    },
     "2026-05-03": {
         "date": "5月3日",
         "dateShort": "05.03",
@@ -3486,7 +3543,7 @@ var digests = {
             }
         ]
     }
-};
+}};
 var dates = Object.keys(digests).sort().reverse();
 var idx = 0;
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
