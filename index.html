@@ -151,26 +151,12 @@ body { font-family: var(--font-sans); background: var(--bg); color: var(--text-p
 </head>
 <body>
 <header class="header"><div class="header-inner"><div class="logo"><div class="logo-mark">B</div><div class="logo-text"><div class="logo-title">AI Builders</div><div class="logo-sub">Daily Digest</div></div></div><div class="header-date" id="headerDate"></div></div></header>
-
-<div class="side-nav left" id="navLeft">
-  <button class="nav-arrow-btn" id="prevBtn" onclick="go(1)" title="后一天">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
-  </button>
-  <span class="nav-label" id="navLeftLabel">后一天</span>
-</div>
-
-<div class="side-nav right" id="navRight">
-  <button class="nav-arrow-btn" id="nextBtn" onclick="go(-1)" title="前一天">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg>
-  </button>
-  <span class="nav-label" id="navRightLabel">前一天</span>
-</div>
-
 <div class="page-wrapper" id="pageWrapper">
-  <div id="content"></div>
+  <div id="content"><p style="color:#999;text-align:center;padding:3rem">Loading...</p></div>
 </div>
 
 <footer class="footer"><div class="footer-line"></div><div class="footer-text">Chen &middot; Powered by follow-builders</div></footer>
+
 <script>
 var digests = {
     "2026-05-03": {
@@ -3489,46 +3475,73 @@ var digests = {
 };
 var dates = Object.keys(digests).sort().reverse();
 var idx = 0;
-var sliding = false;
-function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
 function render(){
-  var dk=dates[idx], d=digests[dk];
-  document.getElementById('headerDate').textContent=d.date;
-  document.title='AI Builders Digest - '+d.date;
-  var h='<div class="hero"><div class="hero-date">'+esc(d.date)+'</div><div class="hero-sub">'+esc(d.heroSub)+'</div><div class="hero-line"></div></div><div class="main">';
-  if(d.twitter&&d.twitter.length){h+='<div class="digest-section"><div class="section-label"><div class="section-dot twitter"></div><div class="section-name">X / Twitter</div></div>';for(var i=0;i<d.twitter.length;i++){var t=d.twitter[i];h+='<div class="card"><div class="card-author">'+esc(t.author)+(t.role?' <span class="role">/ '+esc(t.role)+'</span>':'')+'</div><div class="card-body">'+t.text+'</div><a class="card-link" href="'+esc(t.url)+'" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> 查看原文</a></div>';}h+='</div>';}
-  if(d.podcasts&&d.podcasts.length){h+='<div class="digest-section"><div class="section-label"><div class="section-dot podcast"></div><div class="section-name">Podcasts</div></div>';for(var i=0;i<d.podcasts.length;i++){var p=d.podcasts[i];h+='<div class="card podcast-card"><div class="podcast-title">'+esc(p.title)+'</div><div class="podcast-show">'+esc(p.show)+'</div><ul class="podcast-points">';for(var j=0;j<p.points.length;j++){h+='<li>'+p.points[j]+'</li>';}h+='</ul>';if(p.quote){h+='<div class="podcast-quote">'+p.quote+'</div>';}h+='<a class="card-link" href="'+esc(p.url)+'" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> 收听完整播客</a></div>';}h+='</div>';}
-  h+='</div>';
-  document.getElementById('content').innerHTML=h;
-  var total=dates.length;
-  var hasNewer=idx<total-1, hasOlder=idx>0;
-  document.getElementById('prevBtn').disabled=!hasNewer;
-  document.getElementById('nextBtn').disabled=!hasOlder;
-  document.getElementById('navLeftLabel').textContent=hasNewer?digests[dates[idx+1]].date:'';
-  document.getElementById('navRightLabel').textContent=hasOlder?digests[dates[idx-1]].date:'';
+  try {
+    var dk = dates[idx];
+    if (!dk || !digests[dk]) {
+      document.getElementById('content').innerHTML = '<p style="color:red;text-align:center;padding:3rem">No data for this date</p>';
+      return;
+    }
+    var d = digests[dk];
+    document.getElementById('headerDate').textContent = d.date;
+    document.title = 'AI Builders Digest - ' + d.date;
+    var h = '<div style="max-width:760px;margin:0 auto;padding:2rem 2rem 4rem">';
+    h += '<div style="margin-bottom:2rem">';
+    h += '<div style="font-size:1.8rem;font-weight:700;font-family:var(--font-serif);margin-bottom:0.5rem">' + esc(d.date) + '</div>';
+    h += '<div style="color:var(--text-secondary);font-size:0.9rem;line-height:1.8">' + esc(d.heroSub) + '</div>';
+    h += '<div style="height:1px;background:linear-gradient(90deg,var(--accent),transparent);margin-top:1.5rem;opacity:0.25"></div>';
+    h += '</div>';
+
+    if (d.twitter && d.twitter.length) {
+      h += '<div style="margin-bottom:3rem">';
+      h += '<div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:1.5rem">';
+      h += '<div style="width:8px;height:8px;border-radius:50%;background:var(--tag-twitter)"></div>';
+      h += '<div style="font-weight:600;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.05em">X / Twitter</div>';
+      h += '</div>';
+      for (var i = 0; i < d.twitter.length; i++) {
+        var t = d.twitter[i];
+        h += '<div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.25rem 1.5rem;margin-bottom:1rem">';
+        h += '<div style="font-weight:600;margin-bottom:0.5rem">' + esc(t.author) + (t.role ? ' <span style="color:var(--text-muted);font-weight:400;font-size:0.85rem">/ ' + esc(t.role) + '</span>' : '') + '</div>';
+        h += '<div style="color:var(--text-primary);font-size:0.9rem;line-height:1.8">' + t.text + '</div>';
+        if (t.url) h += '<a href="' + esc(t.url) + '" target="_blank" style="display:inline-block;margin-top:0.5rem;font-size:0.72rem;color:var(--text-muted);text-decoration:none;font-family:var(--font-mono)">查看原文 →</a>';
+        h += '</div>';
+      }
+      h += '</div>';
+    }
+
+    if (d.podcasts && d.podcasts.length) {
+      h += '<div style="margin-bottom:3rem">';
+      h += '<div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:1.5rem">';
+      h += '<div style="width:8px;height:8px;border-radius:50%;background:var(--tag-podcast)"></div>';
+      h += '<div style="font-weight:600;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.05em">Podcasts</div>';
+      h += '</div>';
+      for (var i = 0; i < d.podcasts.length; i++) {
+        var p = d.podcasts[i];
+        h += '<div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.25rem 1.5rem;margin-bottom:1rem">';
+        h += '<div style="font-weight:600;margin-bottom:0.25rem">' + esc(p.title) + '</div>';
+        if (p.show) h += '<div style="color:var(--text-muted);font-size:0.8rem;margin-bottom:0.75rem">' + esc(p.show) + '</div>';
+        if (p.points && p.points.length) {
+          h += '<ul style="padding-left:1.25rem;color:var(--text-secondary);font-size:0.9rem;line-height:1.8">';
+          for (var j = 0; j < p.points.length; j++) {
+            h += '<li style="margin-bottom:0.25rem">' + p.points[j] + '</li>';
+          }
+          h += '</ul>';
+        }
+        if (p.quote) h += '<div style="border-left:3px solid var(--accent);padding-left:1rem;margin-top:1rem;color:var(--text-secondary);font-style:italic;font-size:0.9rem">' + p.quote + '</div>';
+        if (p.url) h += '<a href="' + esc(p.url) + '" target="_blank" style="display:inline-block;margin-top:0.5rem;font-size:0.72rem;color:var(--text-muted);text-decoration:none;font-family:var(--font-mono)">收听完整播客 →</a>';
+        h += '</div>';
+      }
+      h += '</div>';
+    }
+
+    h += '</div>';
+    document.getElementById('content').innerHTML = h;
+  } catch(e) {
+    document.getElementById('content').innerHTML = '<p style="color:red;padding:2rem">Render error: ' + esc(e.message) + '</p>';
+    console.error('Render error:', e);
+  }
 }
-function go(dir){
-  if(sliding) return;
-  var ni=idx+dir;
-  if(ni<0||ni>=dates.length) return;
-  sliding=true;
-  var pw=document.getElementById('pageWrapper');
-  pw.classList.add(dir>0?'slide-left':'slide-right');
-  setTimeout(function(){
-    idx=ni;
-    render();
-    window.scrollTo({top:0,behavior:'instant'});
-    pw.classList.remove('slide-left','slide-right');
-    pw.classList.add(dir>0?'slide-right':'slide-left');
-    requestAnimationFrame(function(){
-      requestAnimationFrame(function(){
-        pw.classList.remove('slide-left','slide-right');
-        sliding=false;
-      });
-    });
-  },260);
-}
-document.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')go(1);if(e.key==='ArrowRight')go(-1);});
 render();
 </script>
 </body>
