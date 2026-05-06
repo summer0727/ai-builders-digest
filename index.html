@@ -173,7 +173,82 @@ body { font-family: var(--font-sans); background: var(--bg); color: var(--text-p
 
 <script>
 var digests = {
-    "2026-05-05": {
+    
+    "2026-05-06": {
+            "date": "5月6日",
+            "dateShort": "05.06",
+            "heroSub": "Sam Altman 对语音模型改变人机交互方式感到兴奋、Swyx 用图表对比 OAI 与 Anthropic 的估值与 ARR 关系、Guillermo Rauch 发布开源 agent 安全审查工具 deepsec、Aaron Levie 指出企业 Agent 部署需要大规模 IT 系统升级、Nikunj Kothari 认为 momentum 不再是创业护城河、Waymo CTO 分享2000万次全自动驾驶经验",
+            "twitter": [
+                        {
+                                    "author": "Sam Altman",
+                                    "role": "OpenAI CEO",
+                                    "text": "对语音模型的发展感到兴奋，观察到人们已经开始改变与 AI 的交互方式，<strong>语音正在成为新的界面</strong>。",
+                                    "url": "https://x.com/sama/status/2051464865634742334"
+                        },
+                        {
+                                    "author": "Swyx",
+                                    "role": "AI 工程师大会创始人",
+                                    "text": "根据 WSJ 数据重建图表对比两大 AI 巨头：OpenAI <strong>850B 估值 vs ~30B ARR</strong>，Anthropic <strong>~900B 估值 vs ~44B ARR</strong>。",
+                                    "url": "https://x.com/swyx/status/2051440392722391180"
+                        },
+                        {
+                                    "author": "Guillermo Rauch",
+                                    "role": "Vercel CEO",
+                                    "text": "发布开源 agent 编排工具 <strong>npx deepsec</strong>，用于深度安全审查。编码 agent 能在<strong>几分钟内找到关键漏洞</strong>，而人类团队可能需要几个月。",
+                                    "url": "https://x.com/rauchg/status/2051386798899888539"
+                        },
+                        {
+                                    "author": "Aaron Levie",
+                                    "role": "Box CEO",
+                                    "text": "Anthropic 和 OpenAI 都在推出企业 Agent 部署计划。Agent 进入知识工作后，需要<strong>升级 IT 系统、获取上下文、现代化工作流、处理人机关系</strong>等大量工作。",
+                                    "url": "https://x.com/levie/status/2051344780328858040"
+                        },
+                        {
+                                    "author": "Nikunj Kothari",
+                                    "role": "FPV Ventures 合伙人",
+                                    "text": "2023-2025 年的创业公司正在认识到：花哨的 launch 视频和只关注分发能拿到融资，但<strong>momentum 不再是护城河</strong>。同时推荐 <strong>Gemini Flash</strong>：又便宜又好，1M context window + structured outputs，是生产环境最常用的模型。",
+                                    "url": "https://x.com/nikunj/status/2051349526171287930"
+                        },
+                        {
+                                    "author": "Peter Yang",
+                                    "role": "Roblox Product",
+                                    "text": "提出 AI 进展三阶段论：<strong>Coding 是第一个前沿，知识工作是第二个，Personal Agents 是第三个</strong>。想让8岁的女儿开始用 agents 做项目，分享给同学甚至赚第一笔钱。",
+                                    "url": "https://x.com/petergyang/status/2051508988936937764"
+                        },
+                        {
+                                    "author": "Peter Steinberger",
+                                    "role": "OpenClaw 联合创始人",
+                                    "text": "<strong>Crabbox 0.5.0</strong> 发布：支持桌面/浏览器租赁、VNC + 认证 WebVNC、AWS Windows + WSL2。可以在临时 crabbox 中复现 issue，agent 设置精确状态来测试和修复，<strong>在 PR 上发视频</strong>。",
+                                    "url": "https://x.com/steipete/status/2051485798613111116"
+                        },
+                        {
+                                    "author": "Garry Tan",
+                                    "role": "Y Combinator CEO",
+                                    "text": "介绍 <strong>GBrain v0.27</strong>：不是单纯的 memory layer、code tool 或 search engine，而是三者统一的图数据库。新版本支持更多非 Anthropic/OpenAI 的 embeddings 和 LLM，<strong>多模态 embeddings 和深度照片 OCR 即将推出</strong>。",
+                                    "url": "https://x.com/garrytan/status/2051517574589116510"
+                        },
+                        {
+                                    "author": "Amjad Masad",
+                                    "role": "Replit CEO",
+                                    "text": "Replit 帮助一位创业者找到投资人并约到会议，同时分享<strong>多模态学习平台为聋哑学生提供教育</strong>的 AI 应用案例。",
+                                    "url": "https://x.com/amasad/status/2051406536443035922"
+                        }
+            ],
+            "podcasts": [
+                        {
+                                    "title": "Waymo's Dmitri Dolgov: 20 Million Rides and the Road to Full Autonomy",
+                                    "author": "Training Data",
+                                    "points": [
+                                                "Waymo CTO Dmitri Dolgov 讲述 <strong>21年自动驾驶之路</strong>，从2005年 DARPA 挑战赛到2009年 Google 自动驾驶项目",
+                                                "端到端不是二选一，而是 <strong>end-to-end + 额外结构化中间表示</strong>。Waymo Driver 比人类安全 <strong>13倍</strong>（严重伤害事故）",
+                                                "累计 <strong>2000万次</strong> 全自动驾驶，其中 <strong>1000万次</strong> 在最近7个月内完成，每周 <strong>400万英里</strong> 全自动驾驶",
+                                                "LiDAR 曾检测到公交车底部行人的脚步声。第六代硬件、纯电 Zeekr 车型即将开放，计划扩展到<strong>伦敦和东京</strong>"
+                                    ],
+                                    "url": "https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8"
+                        }
+            ]
+},
+        "2026-05-05": {
         "date": "5月5日",
         "dateShort": "05.05",
         "heroSub": "Aaron Levie 深度分析企业部署 Agent 的复杂性与挑战、Sam Altman 称 Agents SDK 2.0 被低估并感谢 Greg Brockman、Garry Tan 提出个人 AI 文明愿景与 GBrain 开源项目、Zara Zhang 鼓励独立开发者用 coding agent 实现疯狂想法、Amjad Masad 展示 Replit 上大规模 agentic parallelism、Peter Steinberger 发布 RepoBar 0.4.0 GitHub 工具",
