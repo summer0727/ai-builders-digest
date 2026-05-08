@@ -175,6 +175,63 @@ body { font-family: var(--font-sans); background: var(--bg); color: var(--text-p
 var digests = {
     
     "2026-05-06": {
+"2026-05-08": {
+            "date": "5月8日",
+            "dateShort": "05.08",
+            "heroSub": "Boris Cherny 分享 Claude Code 创造始末：前6个月根本不好用、现在100%代码由模型写、晚上几千个agent在跑；Dario 透露 Anthropic 今年用量收入增长80倍；Claude 发布 Outcomes 质量控制和 Dreaming 记忆学习两大功能",
+            "twitter": [
+                        {
+                                    "author": "Peter Yang",
+                                    "role": "Product at Roblox",
+                                    "text": "引用 Anthropic 联合创始人 Dario 和 Daniela 的三个核心观点：<strong>要为指数级增长而构建，有些产品当前模型做不了但未来模型可以</strong>；模型正在从写代码进化到软件工程，再到直接经营业务；快速交付会积累大量技术债，但<strong>模型本身也能帮你还债</strong>。",
+                                    "url": "https://x.com/petergyang/status/2052123472583864780"
+                        },
+                        {
+                                    "author": "Peter Yang",
+                                    "role": "Product at Roblox",
+                                    "text": "Dario 透露 Anthropic 今年早些时候<strong>用量和收入增长了 80 倍</strong>，这就是为什么他们要持续尽可能地获取更多算力。",
+                                    "url": "https://x.com/petergyang/status/2052117599744672195"
+                        },
+                        {
+                                    "author": "Thariq",
+                                    "role": "Claude Code, Anthropic",
+                                    "text": "引用 Dario 在 Code with Claude 活动中的发言：<strong>每天都在想办法获取更多算力传递给用户，虽然需要时间但会尽可能多拿</strong>。1319 个赞，大家都在等算力。",
+                                    "url": "https://x.com/trq212/status/2052250816720056604"
+                        },
+                        {
+                                    "author": "Zara Zhang",
+                                    "role": "Builder",
+                                    "text": "总结与 Claude Code 创作者 Boris Cherny 的访谈亮点：Boris 晚上有<strong>几千个 agent 同时在跑</strong>，现在几乎只用手机上的 Claude Code。<strong>编程将成为新的读写能力</strong>，不是要不要学的问题，而是基本功。",
+                                    "url": "https://x.com/zarazhangrui/status/2052277868319916402"
+                        },
+                        {
+                                    "author": "Claude",
+                                    "role": "Anthropic 官方",
+                                    "text": "发布 Outcomes 功能：可以<strong>设置质量标准和评分标准，用独立的 grader 检查输出</strong>，agent 会自动迭代直到达标，还支持 webhook 通知。让 agent 输出质量可控了。",
+                                    "url": "https://x.com/claudeai/status/2052067403228455419"
+                        },
+                        {
+                                    "author": "Claude",
+                                    "role": "Anthropic 官方",
+                                    "text": "发布 Dreaming 功能：<strong>agent 可以回顾过去的工作会话，自动提取模式、整理记忆</strong>，让 agent 随着时间推移不断学习进化。从一次性工具变成持续成长的伙伴。",
+                                    "url": "https://x.com/claudeai/status/2052067400690851842"
+                        }
+            ],
+            "podcasts": [
+                        {
+                                    "title": "Anthropic's Boris Cherny: Coding's Printing Press Moment",
+                                    "author": "Training Data podcast",
+                                    "points": [
+                                                "核心观点：编程正经历印刷术式的民主化时刻——未来最好的会计软件应该由会计写，不是工程师。",
+                                                "Claude Code 的创造者现在 <strong>100% 的代码由模型生成</strong>，一天最多产出 150 个 PR。他的工作方式是手机上同时跑 5-10 个 session，每个 session 下有几百个 agent，晚上几千个 agent 在并行做深度工作——\"I'm running 5 to 10 sessions at a time, each with hundreds of agents\"。",
+                                                "Anthropic 内部已经<strong>完全没有手写代码</strong>，所有 SQL 和业务代码都是模型写的。不同团队的 Claude Code agent 之间通过 Slack 互相通信协作，形成了一个多 agent 自动化网络。",
+                                                "他用 <strong>Loop 功能</strong>（cron 定时调度 agent）实现了几十个自动化任务：自动修 CI、自动 rebase PR、每 30 分钟从 Twitter 抓用户反馈并聚类分析。代码审查、bug 修复这些重复劳动被彻底自动化了。",
+                                                "Boris 认为 <strong>创业公司将增加 10 倍</strong>，因为小团队用 AI 就能构建与大公司竞争的产品，而大公司内部有组织惯性。SaaSpocalypse 不会发生，但切换成本和流程壁垒正在快速瓦解。"
+                                    ],
+                                    "url": "https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8"
+                        }
+            ]
+},
             "2026-05-07": {
             "date": "5月7日",
             "dateShort": "05.07",
